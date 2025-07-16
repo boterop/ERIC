@@ -1,4 +1,4 @@
-# Contributing to React Native Template App
+# Contributing to ERIC App
 
 Thank you for considering contributing to this project! Follow these guidelines to ensure a smooth collaboration.
 
@@ -10,8 +10,8 @@ Thank you for considering contributing to this project! Follow these guidelines 
 2. **Clone Your Fork**
 
    ```sh
-   git clone https://github.com/yourusername/react_native_template.git
-   cd react_native_template
+   git clone https://github.com/boterop/ERIC
+   cd ERIC
    ```
 
 3. **Create a New Branch**  

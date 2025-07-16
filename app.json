@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ReactNativeTemplate",
-    "slug": "React Native Template",
+    "name": "ERIC",
+    "slug": "ERIC",
     "version": "0.1.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -32,7 +32,8 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true
