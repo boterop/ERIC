@@ -1,10 +1,10 @@
 import { loginUser } from "../domain/usecases/loginUser";
 import { userRepository } from "../infrastructure/users/UserRepository";
-import { tokenService } from "../infrastructure/tokens/TokenService";
+import { sessionService } from "../domain/ports/SessionService";
 import { storageService } from "../infrastructure/storage/StorageService";
 
 export const loginService = loginUser({
   userRepo: userRepository,
-  tokenService: tokenService,
+  sessionService: sessionService,
   storage: storageService,
 });

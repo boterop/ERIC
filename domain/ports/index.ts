@@ -1,3 +1,3 @@
 export * from "./StorageService";
-export * from "./TokenService";
+export * from "./SessionService";
 export * from "./UserRepository";

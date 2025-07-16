@@ -1,11 +1,11 @@
-import { UserRepository, TokenService, StorageService } from "../ports";
+import { UserRepository, SessionService, StorageService } from "../ports";
 import "react-native-get-random-values";
 import bcrypt from "bcryptjs";
 
 export const loginUser =
   (deps: {
     userRepo: UserRepository;
-    tokenService: TokenService;
+    sessionService: SessionService;
     storage: StorageService;
   }) =>
   async (email: string, password: string): Promise<string | null> => {
@@ -16,11 +16,8 @@ export const loginUser =
 
     if (!canAccess) return null;
 
-    const token = await deps.tokenService.generateToken({
-      email: user.email,
-      name: user.name,
-    });
+    const token = await deps.sessionService.create(user.email);
 
-    deps.storage.save("token", token);
+    deps.storage.save("session", token);
     return token;
   };
