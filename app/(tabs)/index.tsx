@@ -1,7 +1,11 @@
-import { Text } from "react-native";
+import { Text, View } from "react-native";
 
 const HomeScreen = () => {
-  return <Text>Hi</Text>;
+  return (
+    <View style={tw`flex w-full h-full items-center justify-center`}>
+      <Text style={tw`font-bold text-3xl`}>ERIC</Text>
+    </View>
+  );
 };
 
 export default HomeScreen;
