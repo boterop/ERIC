@@ -1,7 +1,7 @@
-import { FX82LA_plus } from "@/screens";
+import { Text } from "react-native";
 
 const HomeScreen = () => {
-  return <FX82LA_plus />;
+  return <Text>Hi</Text>;
 };
 
 export default HomeScreen;
