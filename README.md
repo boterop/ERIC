@@ -51,7 +51,7 @@ For more information, please visit [CocoaPods Getting Started guide](https://gui
 
 ```sh
 # Using npm
-npm ios
+npm run ios
 
 # OR using Yarn
 yarn ios
