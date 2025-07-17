@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { View, TextInput, Alert, Text, TouchableOpacity } from "react-native";
 import { loginService } from "../services/LoginService";
+import { router } from "expo-router";
 
-export const LoginScreen = () => {
+const LoginScreen = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -12,14 +13,14 @@ export const LoginScreen = () => {
     else Alert.alert("Error ❌", "Credenciales incorrectas");
   };
 
-  const goToRegister = () => Alert.alert("En construcción ⚠️");
+  const goToRegister = () => router.push("/register");
 
   return (
     <View
       style={tw`flex w-full h-full items-center justify-center bg-gray-100`}
     >
       <View
-        style={tw`flex gap-4 bg-white w-60% p-4 py-8 rounded shadow-md items-center justify-center`}
+        style={tw`flex gap-4 bg-white w-80% p-4 py-8 rounded shadow-md items-center justify-center`}
       >
         <Text style={tw`text-2xl capitalize`}>Iniciar sesión</Text>
         <TextInput
@@ -50,3 +51,5 @@ export const LoginScreen = () => {
     </View>
   );
 };
+
+export default LoginScreen;

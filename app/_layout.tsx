@@ -4,9 +4,9 @@ import * as SplashScreen from "expo-splash-screen";
 import { StatusBar } from "expo-status-bar";
 import { useEffect } from "react";
 import "react-native-reanimated";
-import Application from "./application";
 
 import "./globals";
+import { Slot } from "expo-router";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -29,7 +29,7 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={DefaultTheme}>
       <StatusBar style="auto" />
-      <Application />
+      <Slot />
     </ThemeProvider>
   );
 }
