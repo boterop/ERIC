@@ -8,10 +8,10 @@ export default function IndexPage() {
 
   useEffect(() => {
     const checkLogin = async () => {
-      const token = await storageService.get("token");
+      const token = await storageService.get("session");
       if (!token) return router.replace("/login");
 
-      router.replace("/register"); // TODO: Redirect to /home
+      router.replace("/home");
     };
 
     if (!initialMount.current) return;

@@ -9,8 +9,8 @@ const LoginScreen = () => {
 
   const handleLogin = async () => {
     const token = await loginService(email, password);
-    if (token) Alert.alert("Login exitoso ✅", token.slice(0, 20) + "...");
-    else Alert.alert("Error ❌", "Credenciales incorrectas");
+    if (token) router.replace("/home");
+    else Alert.alert("", "Credenciales incorrectas");
   };
 
   const goToRegister = () => router.push("/register");

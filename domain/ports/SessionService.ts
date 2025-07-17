@@ -1,3 +1,3 @@
 export interface SessionService {
-  create(email: string): Promise<string>;
+  create(_email: string): Promise<string>;
 }
