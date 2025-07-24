@@ -1,10 +1,8 @@
-import { loginUser } from "@/domain/usecases/loginUser";
-import { userRepository } from "@/infrastructure/users/UserRepository";
-import { sessionService } from "@/infrastructure/tokens/SessionService";
-import { storageService } from "@/infrastructure/storage/StorageService";
+import { loginUser } from "@/adapters/loginUser";
+import { userApi } from "@/adapters/userApi";
+import { storageService } from "@/adapters/storageService";
 
 export const loginService = loginUser({
-  userRepo: userRepository,
-  sessionService: sessionService,
+  userApi: userApi,
   storage: storageService,
 });

@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { router } from "expo-router";
 import { View, ActivityIndicator } from "react-native";
-import { storageService } from "@/infrastructure/storage/StorageService";
+import { storageService } from "@/adapters/storageService";
 
 export default function IndexPage() {
   const initialMount = useRef<boolean>(true);

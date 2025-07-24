@@ -1,5 +1,5 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { StorageService } from "../../domain/ports/StorageService";
+import { StorageService } from "../ports/StorageService";
 
 export const storageService: StorageService = {
   save: (key, value) => AsyncStorage.setItem(`eric-${key}`, value),

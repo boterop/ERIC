@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { View, TextInput, Alert, Text, TouchableOpacity } from "react-native";
-import { loginService } from "../services/LoginService";
 import { router } from "expo-router";
 
 const RegisterScreen = () => {
@@ -9,9 +8,7 @@ const RegisterScreen = () => {
   const [password, setPassword] = useState("");
 
   const handleLogin = async () => {
-    const token = await loginService(email, password);
-    if (token) Alert.alert("Login exitoso ✅", token.slice(0, 20) + "...");
-    else Alert.alert("Error ❌", "Credenciales incorrectas");
+    Alert.alert("", "Credenciales incorrectas");
   };
 
   const goToLogin = () => router.push("/login");
