@@ -9,11 +9,11 @@ const RegisterScreen = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleRegister = async () => {
+  const handleRegister = () => {
     if (!name || !email || !password)
       return Alert.alert("", "Todos los campos son obligatorios");
 
-    await userService
+    userService
       .register(name, email, password)
       .then(async (_user) => {
         const token = await userService.login(email, password);
@@ -21,7 +21,7 @@ const RegisterScreen = () => {
         if (token) {
           storageService.save("session", token);
         }
-        router.push("/home");
+        router.replace("/home");
       })
       .catch((error) => {
         Alert.alert("", error.message);

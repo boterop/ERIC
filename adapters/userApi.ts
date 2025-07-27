@@ -1,5 +1,4 @@
 import { UserApi } from "@/ports/UserApi";
-import { User } from "@/domain/User";
 import { API_URL } from "@/config/api";
 
 export const userApi: UserApi = {
@@ -18,7 +17,7 @@ export const userApi: UserApi = {
     });
 
     if (!response.ok) {
-      throw new Error((await response.json()).errors);
+      throw new Error((await response.json()).error);
     }
 
     return (await response.json()).data;

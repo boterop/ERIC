@@ -1,20 +1,27 @@
 import { useState } from "react";
 import { View, TextInput, Alert, Text, TouchableOpacity } from "react-native";
-import userService from "@/services/userService";
+import service from "@/services/userService";
 import storageService from "@/services/storageService";
 import { router } from "expo-router";
+import { UserApi } from "@/ports";
 
-const LoginScreen = () => {
+const LoginScreen = ({ userService }: { userService?: UserApi }) => {
+  const uService = userService || service;
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = async () => {
-    const token = await userService.login(email, password);
-    if (!token) return Alert.alert("", "Credenciales incorrectas");
-
-    storageService.save("session", token);
-    router.replace("/home");
-  };
+  const handleLogin = async () =>
+    uService
+      .login(email, password)
+      .then((token) => {
+        storageService.save("session", token || "");
+        router.replace("/home");
+      })
+      .catch((error) => {
+        if (error.message === "invalid_credentials")
+          return Alert.alert("", "Credenciales incorrectas");
+        Alert.alert("", error.message);
+      });
 
   const goToRegister = () => router.push("/register");
 
