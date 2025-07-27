@@ -18,7 +18,7 @@ export const userApi: UserApi = {
     });
 
     if (!response.ok) {
-      return null;
+      throw new Error((await response.json()).errors);
     }
 
     return (await response.json()).data;
@@ -39,7 +39,9 @@ export const userApi: UserApi = {
     });
 
     if (!response.ok) {
-      return null;
+      const error = (await response.json()).errors;
+      const key = Object.keys(error)[0];
+      throw new Error(`${key} ${error[key]}`);
     }
 
     return (await response.json()).data;

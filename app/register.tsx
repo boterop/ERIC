@@ -13,17 +13,19 @@ const RegisterScreen = () => {
     if (!name || !email || !password)
       return Alert.alert("", "Todos los campos son obligatorios");
 
-    const user = await userService.register(name, email, password);
+    await userService
+      .register(name, email, password)
+      .then(async (_user) => {
+        const token = await userService.login(email, password);
 
-    if (!user)
-      return Alert.alert("", "Este usuario ya se encuentra registrado");
-
-    const token = await userService.login(email, password);
-
-    if (token) {
-      storageService.save("session", token);
-    }
-    router.push("/home");
+        if (token) {
+          storageService.save("session", token);
+        }
+        router.push("/home");
+      })
+      .catch((error) => {
+        Alert.alert("", error.message);
+      });
   };
 
   const goToLogin = () => router.push("/login");
