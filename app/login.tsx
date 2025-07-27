@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { View, TextInput, Alert, Text, TouchableOpacity } from "react-native";
-import { loginService } from "../services/LoginService";
+import userService from "@/services/userService";
+import storageService from "@/services/storageService";
 import { router } from "expo-router";
 
 const LoginScreen = () => {
@@ -8,9 +9,11 @@ const LoginScreen = () => {
   const [password, setPassword] = useState("");
 
   const handleLogin = async () => {
-    const token = await loginService(email, password);
-    if (token) router.replace("/home");
-    else Alert.alert("", "Credenciales incorrectas");
+    const token = await userService.login(email, password);
+    if (!token) return Alert.alert("", "Credenciales incorrectas");
+
+    storageService.save("session", token);
+    router.replace("/home");
   };
 
   const goToRegister = () => router.push("/register");

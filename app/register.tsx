@@ -1,14 +1,29 @@
 import { useState } from "react";
 import { View, TextInput, Alert, Text, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
+import userService from "@/services/userService";
+import storageService from "@/services/storageService";
 
 const RegisterScreen = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = async () => {
-    Alert.alert("", "Credenciales incorrectas");
+  const handleRegister = async () => {
+    if (!name || !email || !password)
+      return Alert.alert("", "Todos los campos son obligatorios");
+
+    const user = await userService.register(name, email, password);
+
+    if (!user)
+      return Alert.alert("", "Este usuario ya se encuentra registrado");
+
+    const token = await userService.login(email, password);
+
+    if (token) {
+      storageService.save("session", token);
+    }
+    router.push("/home");
   };
 
   const goToLogin = () => router.push("/login");
@@ -42,7 +57,7 @@ const RegisterScreen = () => {
         />
         <TouchableOpacity
           style={tw`w-full rounded-full bg-blue-500 py-2 px-4 text-white`}
-          onPress={handleLogin}
+          onPress={handleRegister}
         >
           <Text style={tw`text-center text-white`}>Registrarse</Text>
         </TouchableOpacity>

@@ -1,1 +1,1 @@
-export const API_URL = "eric.boterop.io/api";
+export const API_URL = "https://eric.boterop.io/api";
