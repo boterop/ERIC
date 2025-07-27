@@ -1,4 +1,9 @@
 {
+  "language": {
+    "english": "English",
+    "spanish": "Spanish",
+    "french": "French"
+  },
   "all_fields_required": "All fields are required",
   "confirm_password": "Confirm password",
   "email": "Email",
@@ -9,5 +14,6 @@
   "password": "Password",
   "passwords_dont_match": "Passwords don't match",
   "register": "Register",
-  "register_login": "Already have an account? Login"
+  "register_login": "Already have an account? Login",
+  "select_language": "Select language"
 }

@@ -3,7 +3,8 @@ jest.mock("react-i18next", () => {
 
   return {
     useTranslation: () => ({
-      t: (key: string) => (en as Record<string, string>)[key] ?? key,
+      t: (key: string) =>
+        key.split(".").reduce((obj, k) => obj?.[k], en) ?? key,
     }),
   };
 });

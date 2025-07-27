@@ -1,4 +1,9 @@
 {
+  "language": {
+    "english": "Inglés",
+    "spanish": "Español",
+    "french": "Francés"
+  },
   "all_fields_required": "Todos los campos son obligatorios",
   "confirm_password": "Confirmar contraseña",
   "email": "Correo",
@@ -8,5 +13,6 @@
   "login_register": "¿No tienes cuenta? Registrate",
   "password": "Contraseña",
   "register": "Registro",
-  "register_login": "¿Ya tienes cuenta? Iniciar sesión"
+  "register_login": "¿Ya tienes cuenta? Iniciar sesión",
+  "select_language": "Selecciona el idioma"
 }

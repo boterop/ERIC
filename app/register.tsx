@@ -27,7 +27,7 @@ const RegisterScreen = () => {
         if (token) {
           storageService.save("session", token);
         }
-        router.replace("/home");
+        router.replace("/language");
       })
       .catch((error) => {
         Alert.alert("", error.message);
