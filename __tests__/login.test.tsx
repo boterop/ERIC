@@ -41,7 +41,7 @@ describe("LoginScreen", () => {
     userService.register(email, email, password);
 
     const buttonText = "Iniciar sesión";
-    const component = render(<LoginScreen userService={userService} />);
+    const component = render(<LoginScreen />);
     const emailElement = component.getByPlaceholderText("Correo");
     const passwordElement = component.getByPlaceholderText("Contraseña");
     const element = component.getAllByText(buttonText).pop();

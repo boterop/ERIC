@@ -1,17 +1,15 @@
 import { useState } from "react";
 import { View, TextInput, Alert, Text, TouchableOpacity } from "react-native";
-import service from "@/services/userService";
+import userService from "@/services/userService";
 import storageService from "@/services/storageService";
 import { router } from "expo-router";
-import { UserApi } from "@/ports";
 
-const LoginScreen = ({ userService }: { userService?: UserApi }) => {
-  const uService = userService || service;
+const LoginScreen = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleLogin = async () =>
-    uService
+    userService
       .login(email, password)
       .then((token) => {
         storageService.save("session", token || "");
