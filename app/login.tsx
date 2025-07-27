@@ -3,8 +3,10 @@ import { View, TextInput, Alert, Text, TouchableOpacity } from "react-native";
 import userService from "@/services/userService";
 import storageService from "@/services/storageService";
 import { router } from "expo-router";
+import { useTranslation } from "react-i18next";
 
 const LoginScreen = () => {
+  const { t } = useTranslation();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -16,9 +18,7 @@ const LoginScreen = () => {
         router.replace("/home");
       })
       .catch((error) => {
-        if (error.message === "invalid_credentials")
-          return Alert.alert("", "Credenciales incorrectas");
-        Alert.alert("", error.message);
+        Alert.alert("", t(error.message));
       });
 
   const goToRegister = () => router.push("/register");
@@ -30,16 +30,16 @@ const LoginScreen = () => {
       <View
         style={tw`flex gap-4 bg-white w-80% p-4 py-8 rounded shadow-md items-center justify-center`}
       >
-        <Text style={tw`text-2xl capitalize`}>Iniciar sesión</Text>
+        <Text style={tw`text-2xl capitalize`}>{t("login")}</Text>
         <TextInput
           style={tw`w-full rounded-lg border-2 border-gray-300 p-2`}
-          placeholder="Correo"
+          placeholder={t("email")}
           onChangeText={setEmail}
           value={email}
         />
         <TextInput
           style={tw`w-full rounded-lg border-2 border-gray-300 p-2`}
-          placeholder="Contraseña"
+          placeholder={t("password")}
           secureTextEntry
           onChangeText={setPassword}
           value={password}
@@ -48,11 +48,11 @@ const LoginScreen = () => {
           style={tw`w-full rounded-full bg-blue-500 py-2 px-4 text-white`}
           onPress={handleLogin}
         >
-          <Text style={tw`text-center text-white`}>Iniciar sesión</Text>
+          <Text style={tw`text-center text-white`}>{t("login")}</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => goToRegister()}>
           <Text style={tw`text-center text-blue-500`}>
-            ¿No tienes cuenta? Registrate
+            {t("login_register")}
           </Text>
         </TouchableOpacity>
       </View>

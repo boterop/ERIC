@@ -1,0 +1,12 @@
+{
+  "all_fields_required": "Todos los campos son obligatorios",
+  "confirm_password": "Confirmar contraseña",
+  "email": "Correo",
+  "full_name": "Nombre completo",
+  "invalid_credentials": "Credenciales incorrectas",
+  "login": "Iniciar sesión",
+  "login_register": "¿No tienes cuenta? Registrate",
+  "password": "Contraseña",
+  "register": "Registro",
+  "register_login": "¿Ya tienes cuenta? Iniciar sesión"
+}

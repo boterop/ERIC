@@ -1,0 +1,13 @@
+{
+  "all_fields_required": "All fields are required",
+  "confirm_password": "Confirm password",
+  "email": "Email",
+  "full_name": "Full name",
+  "invalid_credentials": "Invalid credentials",
+  "login": "Login",
+  "login_register": "Don't have an account? Register",
+  "password": "Password",
+  "passwords_dont_match": "Passwords don't match",
+  "register": "Register",
+  "register_login": "Already have an account? Login"
+}
