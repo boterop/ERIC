@@ -3,15 +3,21 @@ import { View, TextInput, Alert, Text, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
 import userService from "@/services/userService";
 import storageService from "@/services/storageService";
+import { useTranslation } from "react-i18next";
 
 const RegisterScreen = () => {
+  const { t } = useTranslation();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
   const handleRegister = () => {
-    if (!name || !email || !password)
-      return Alert.alert("", "Todos los campos son obligatorios");
+    if (!name || !email || !password || !confirmPassword)
+      return Alert.alert("", t("all_fields_required"));
+
+    if (password !== confirmPassword)
+      return Alert.alert("", t("passwords_dont_match"));
 
     userService
       .register(name, email, password)
@@ -37,35 +43,42 @@ const RegisterScreen = () => {
       <View
         style={tw`flex gap-4 bg-white w-80% p-4 py-8 rounded shadow-md items-center justify-center`}
       >
-        <Text style={tw`text-2xl capitalize`}>Registro</Text>
+        <Text style={tw`text-2xl capitalize`}>{t("register")}</Text>
         <TextInput
           style={tw`w-full rounded-lg border-2 border-gray-300 p-2`}
-          placeholder="Nombre completo"
+          placeholder={t("full_name")}
           onChangeText={setName}
           value={name}
         />
         <TextInput
           style={tw`w-full rounded-lg border-2 border-gray-300 p-2`}
-          placeholder="Correo"
+          placeholder={t("email")}
           onChangeText={setEmail}
           value={email}
         />
         <TextInput
           style={tw`w-full rounded-lg border-2 border-gray-300 p-2`}
-          placeholder="Contraseña"
+          placeholder={t("password")}
           secureTextEntry
           onChangeText={setPassword}
           value={password}
+        />
+        <TextInput
+          style={tw`w-full rounded-lg border-2 border-gray-300 p-2`}
+          placeholder={t("confirm_password")}
+          secureTextEntry
+          onChangeText={setConfirmPassword}
+          value={confirmPassword}
         />
         <TouchableOpacity
           style={tw`w-full rounded-full bg-blue-500 py-2 px-4 text-white`}
           onPress={handleRegister}
         >
-          <Text style={tw`text-center text-white`}>Registrarse</Text>
+          <Text style={tw`text-center text-white`}>{t("register")}</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => goToLogin()}>
           <Text style={tw`text-center text-blue-500`}>
-            ¿Ya tienes cuenta? Iniciar sesión
+            {t("register_login")}
           </Text>
         </TouchableOpacity>
       </View>
