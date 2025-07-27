@@ -5,7 +5,7 @@ import { storageService } from "@/adapters/storageService";
 import { I18nextProvider } from "react-i18next";
 import i18n from "@/lang";
 
-export default function IndexPage() {
+const IndexPage = () => {
   const initialMount = useRef<boolean>(true);
 
   const checkLogin = async () => {
@@ -35,4 +35,6 @@ export default function IndexPage() {
       </View>
     </I18nextProvider>
   );
-}
+};
+
+export default IndexPage;
