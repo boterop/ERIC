@@ -1,4 +1,10 @@
 {
+  "dimension": {
+    "procedural": "Procedural",
+    "emotional": "Emotional",
+    "cognitive": "Cognitive",
+    "critial": "Critical"
+  },
   "language": {
     "english": "English",
     "spanish": "Spanish",
@@ -15,5 +21,7 @@
   "passwords_dont_match": "Passwords don't match",
   "register": "Register",
   "register_login": "Already have an account? Login",
-  "select_language": "Select language"
+  "select_dimension": "Select dimension",
+  "select_language": "Select language",
+  "start": "Start"
 }
