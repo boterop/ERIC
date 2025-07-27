@@ -52,7 +52,7 @@ describe("LoginScreen", () => {
     fireEvent.press(element);
 
     await waitFor(() => {
-      expect(router.replace).toHaveBeenCalledWith("/home");
+      expect(router.replace).toHaveBeenCalledWith("/language");
     });
   });
 });

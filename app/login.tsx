@@ -15,7 +15,7 @@ const LoginScreen = () => {
       .login(email, password)
       .then((token) => {
         storageService.save("session", token || "");
-        router.replace("/home");
+        router.replace("/language");
       })
       .catch((error) => {
         Alert.alert("", t(error.message));
