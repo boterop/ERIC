@@ -56,8 +56,7 @@
     "procedural": "Procedural",
     "emotional": "Affective",
     "cognitive": "Cognitive",
-<<<<<<< HEAD
-    "critical": "Criticism"
+    "critical": "Critical"
   },
   "emotional": {
     "instructions": "Next you will find a series of statements on intercultural communicative competence (CCI) in its affective dimension.\n\nThere are no correct or incorrect answers. Please fill in the questionnaire indicating its degree of agreement on said statement.\n\nThank you very much for your cooperation and help.\n\nSelect the number corresponding to your answer:\n1: Disagree very\n5: Very agree",
@@ -87,9 +86,6 @@
       "14": "I appreciate cultural diversity because it is a condition of the human being.",
       "15": "I usually discourage me when I am with people from other cultures."
     }
-=======
-    "critical": "Critical"
->>>>>>> 5dfb499 (Basic questionnaire)
   },
   "language": {
     "english": "English",
