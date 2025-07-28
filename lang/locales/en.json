@@ -56,6 +56,7 @@
     "procedural": "Procedural",
     "emotional": "Affective",
     "cognitive": "Cognitive",
+<<<<<<< HEAD
     "critical": "Criticism"
   },
   "emotional": {
@@ -86,6 +87,9 @@
       "14": "I appreciate cultural diversity because it is a condition of the human being.",
       "15": "I usually discourage me when I am with people from other cultures."
     }
+=======
+    "critical": "Critical"
+>>>>>>> 5dfb499 (Basic questionnaire)
   },
   "language": {
     "english": "English",
@@ -125,8 +129,8 @@
   "full_name": "Full name",
   "invalid_credentials": "Incorrect credentials",
   "login": "Login",
-  "login_register": "You don't have an account? Register",
-  "logout": "Close session",
+  "login_register": "Don't have an account? Register",
+  "logout": "Logout",
   "next": "Following",
   "of": "of",
   "password": "Password",
