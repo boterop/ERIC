@@ -3,7 +3,7 @@
     "procedural": "Procédural",
     "emotional": "Emotionnel",
     "cognitive": "Cognitif",
-    "critial": "Critique"
+    "critical": "Critique"
   },
   "language": {
     "english": "Anglais",
@@ -17,6 +17,7 @@
   "invalid_credentials": "Identifiants incorrects",
   "login": "Connexion",
   "login_register": "Vous n'avez pas de compte ? Inscrivez-vous",
+  "logout": "Se déconnecter",
   "password": "Mot de passe",
   "register": "Inscription",
   "register_login": "Vous avez déjà un compte ? Connectez-vous",
