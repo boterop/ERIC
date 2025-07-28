@@ -1,14 +1,123 @@
 {
+  "cognitive": {
+    "instructions": "A continuación encontrará una serie de afirmaciones sobre la Competencia Comunicativa Intercultural (CCI) en su dimensión cognitiva.\n\nNo hay respuestas correctas o incorrectas. Por favor, rellene el cuestionario rápidamente y marque la primera impresión, indicando cuánto conoce dichos hechos.\n\nMuchas gracias por su cooperación y ayuda.\n\nSeleccione el número correspondiente a su respuesta:\n1: casi nada\n5: mucho",
+    "description": "",
+    "count": 14,
+    "options": {
+      "1": "Casi nada",
+      "2": "Poco",
+      "3": "Algo",
+      "4": "Bastante",
+      "5": "Mucho"
+    },
+    "questions": {
+      "1": "Conozco la diversidad lingüística de mi propio entorno (dialectos, lenguas indígenas y criollas, etc).",
+      "2": "Conozco algunas diferencias en la expresión de las emociones en otras lenguas.",
+      "3": "Conozco qué es una cultura puedo dar una definición.",
+      "4": "Conozco otras lenguas en las que aspectos como quién puede hablar, quién empieza a hablar o cuando se puede hablar son diferentes a los de la mía.",
+      "5": "Conozco temas o comportamientos que en otras culturas son tabúes.",
+      "6": "Conozco ciertos hábitos lingüísticos (saludarse, despedirse, ser cortés, etc.) que son diferentes en otras lenguas.",
+      "7": "Conozco las principales características de mi cultura.",
+      "8": "Conozco prácticas sociales o costumbres de mi cultura que son diferentes a las otras culturas.",
+      "9": "Conozco algunos hechos históricos que han tenido influencia en la evolución de otras culturas.",
+      "10": "Conozco cómo influyen la lengua y la cultura en la construcción de la identidad de las personas.",
+      "11": "Conozco qué culturas han influido en mi cultura.",
+      "12": "Conozco gestos que tienen significados diferentes en otras culturas.",
+      "13": "Conozco rutinas o hábitos diarios que en otras culturas se realizan de manera diferente respecto a la mía.",
+      "14": "Conozco (en mi propia cultura o en otras) prácticas culturales que varían en función de los grupos sociales o generacionales."
+    }
+  },
+  "critical": {
+    "instructions": "A continuación encontrará una serie de afirmaciones\nsobre la Competencia Comunicativa Intercultural (CCI) en\nsu dimensión crítica. No hay respuestas correctas o\nincorrectas. Por favor, rellene el cuestionario indicando la\nfrecuencia con la que realiza dicha afirmación.\nMuchas gracias por su cooperación y ayuda.\nSeleccione el número correspondiente a su respuesta\n1: casi nunca  5: casi siempre.",
+    "description": "DOCENTES: CUANDO ESTOY\nENSEÑANDO LENGUAS\nEXTRANJERAS...\nESTUDIANTES: CUANDO ESTOY\nAPRENDIENDO LENGUAS\nEXTRANJERAS…",
+    "count": 0,
+    "options": {
+      "1": "Casi nunca",
+      "2": "Pocas veces",
+      "3": "A veces",
+      "4": "Frecuentemente",
+      "5": "Casi siempre"
+    },
+    "questions": {
+      "1": "Construimos conocimiento a partir de la diversidad de lenguas y culturas.",
+      "2": "Reflexionamos en torno a situaciones, comportamientos sociales o sistemas que promueven relaciones de poder y sumisión e impiden relaciones justas y equitativas",
+      "3": "Participamos activamente en la construcción del conocimiento para visualizar alternativas sociales de mejora considerando los diferentes puntos de vista, experiencias y conocimientos.",
+      "4": "Promovemos la responsabilidad colectiva en el logro de metas locales con impacto global.",
+      "5": "Enriquecemos nuestras perspectivas para tomar decisiones y resolver conflictos a partir del diálogo con los demás.",
+      "6": "Promovemos el diálogo y la coconstrucción de saberes en torno a temas relacionados con la democracia, la justicia social, los derechos humanos, la ciudadanía.",
+      "7": "Conectamos el aprendizaje en el aula con el servicio hacia la comunidad para generar un impacto positivo tanto a nivel local como global.",
+      "8": "Participamos activamente en proyectos de apoyo comunitario para promover cambios positivos en mi comunidad.",
+      "9": "Dialogamos en torno a conceptos tradicionales tales como cultura, nacionalidad, identidad.",
+      "10": "Construimos reflexiones críticas en torno a los riesgos que implica generalizar, estereotipar y tener prejuicios frente a las culturas.",
+      "11": "Involucramos el reconocimiento de culturas y lenguas minoritarias, visualizando la lucha de poderes entre lenguas globales y ancestrales así como su relevancia para el desarrollo crítico de los conocimientos."
+    }
+  },
   "dimension": {
-    "procedural": "Procedural",
-    "emotional": "Emocional",
-    "cognitive": "Cognitivo",
-    "critial": "Crítico"
+    "procedural": "Procedimental",
+    "emotional": "Afectiva",
+    "cognitive": "Cognitiva",
+    "critical": "Crítica"
+  },
+  "emotional": {
+    "instructions": "A continuación encontrará una serie de afirmaciones sobre la Competencia Comunicativa Intercultural (CCI) en su dimensión afectiva.\n\nNo hay respuestas correctas o incorrectas. Por favor, rellene el cuestionario indicando su grado de acuerdo sobre dicha afirmación.\n\nMuchas gracias por su cooperación y ayuda.\n\nSeleccione el número correspondiente a su respuesta:\n1: muy en desacuerdo\n5: muy de acuerdo",
+    "description": "",
+    "count": 15,
+    "options": {
+      "1": "Totalmente en desacuerdo",
+      "2": "En desacuerdo",
+      "3": "Neutral",
+      "4": "De acuerdo",
+      "5": "Totalmente de acuerdo"
+    },
+    "questions": {
+      "1": "Respeto los valores de las personas de otras culturas.",
+      "2": "Me altero (me inquieto, me perturbo) fácilmente cuando interactúo con personas de otras culturas.",
+      "3": "Cuando estoy rodeado de gente de diferentes orígenes culturales siento que mis valores son amenazados.",
+      "4": "Siempre sé qué decir cuando hablo con gente de otras culturas.",
+      "5": "Estoy dispuesto a distanciarme de mi identidad cultural para comprender mejor otras culturas.",
+      "6": "Puedo ser tan sociable como quiera cuando interactúo con gente de otras culturas.",
+      "7": "Evito aquellas situaciones en las que tendré que tratar con compañeros con culturas diferentes a la mía.",
+      "8": "Respeto la manera de comportarse de personas de diferentes culturas a la mía.",
+      "9": "No aceptaría las opiniones de gente de diferentes culturas a la mía.",
+      "10": "Confío en mi capacidad para superar las dificultades que se presenten en la interacción con gente de otras culturas (incertidumbre, ansiedad, críticas, etc).",
+      "11": "No me gusta estar con gente de otras culturas.",
+      "12": "Normalmente me siento poco útil cuando interactúo con gente de otras culturas.",
+      "13": "Estoy bastante seguro de mí mismo cuando interactúo con gente de otras culturas.",
+      "14": "Aprecio la diversidad cultural porque es una condición propia del ser humano.",
+      "15": "Normalmente me desanimo cuando estoy con gente de otras culturas."
+    }
   },
   "language": {
     "english": "Inglés",
     "spanish": "Español",
     "french": "Francés"
+  },
+  "procedural": {
+    "instructions": "A continuación encontrará una serie de afirmaciones sobre la Competencia Comunicativa Intercultural (CCI) y la dimensión procedimental.\nNo hay respuestas correctas o incorrectas. Por favor, rellene el cuestionario indicando la frecuencia con la que realiza dicha afirmación.\nMuchas gracias por su cooperación y ayuda.\n\nSeleccione el número correspondiente a su respuesta\n\n1: casi nunca\n5: casi siempre",
+    "description": "CUANDO ESTOY CON PERSONAS DE OTRAS CULTURAS...",
+    "count": 13,
+    "options": {
+      "1": "Casi nunca",
+      "2": "Pocas veces",
+      "3": "A veces",
+      "4": "Frecuentemente",
+      "5": "Casi siempre"
+    },
+    "questions": {
+      "1": "Interpreto su comportamiento desde mi perspectiva cultural.",
+      "2": "Califico a éstas personas según los valores y creencias de mi cultura.",
+      "3": "Recuerdo mis experiencias interculturales previas que tuvieron éxito para ser más efectivo.",
+      "4": "Intento descubrir los objetivos y los propósitos que tienen las otras personas en la interacción.",
+      "5": "Analizo previamente la situación y aquellos aspectos que puedan influir en la comunicación.",
+      "6": "Comparo la comunicación no verbal (gestos, miradas, distancias, posturas, etc) de mi interlocutor con lo adecuado a esa situación en mi cultura.",
+      "7": "Adapto mis intervenciones al receptor si creo que no me entiende (hablo más lento, hago más pausas, pronuncio con más detalle, etc)",
+      "8": "Comparo la manera de comunicarse de mi interlocutor con la adecuada a esa situación en mi cultura.",
+      "9": "Analizo las costumbres y los hábitos de la gente de esa cultura desde la perspectiva de mi cultura",
+      "10": "Pregunto las cosas que quiero saber a la gente de esa cultura.",
+      "11": "Participo de la visión de mundo que tiene la gente de esa cultura aunque eso suponga dejar de lado la mía.",
+      "12": "Comparto mis opiniones sobre aspectos culturales con gente de esa cultura.",
+      "13": "Reflexiono sobre lo que ya sé de esa cultura cuando encuentro información desconocida"
+    }
   },
   "all_fields_required": "Todos los campos son obligatorios",
   "confirm_password": "Confirmar contraseña",
@@ -17,7 +126,12 @@
   "invalid_credentials": "Credenciales incorrectas",
   "login": "Iniciar sesión",
   "login_register": "¿No tienes cuenta? Registrate",
+  "logout": "Cerrar sesión",
+  "next": "Siguiente",
+  "of": "de",
   "password": "Contraseña",
+  "previous": "Anterior",
+  "question": "Pregunta",
   "register": "Registro",
   "register_login": "¿Ya tienes cuenta? Iniciar sesión",
   "select_dimension": "Selecciona dimensión",

@@ -1,26 +1,140 @@
 {
+  "cognitive": {
+    "instructions": "Ensuite, vous trouverez une série de déclarations sur la compétence communicative interculturelle (CCI) dans sa dimension cognitive.\n\nIl n'y a pas de réponses correctes ou incorrectes. Veuillez remplir le questionnaire rapidement et marquer la première impression, indiquant combien ces faits savent.\n\nMerci beaucoup pour votre coopération et votre aide.\n\nSélectionnez le numéro correspondant à votre réponse:\n1: Presque rien\n5: beaucoup",
+    "description": "",
+    "count": 14,
+    "options": {
+      "1": "Presque rien",
+      "2": "Peu",
+      "3": "Quelque chose",
+      "4": "Assez",
+      "5": "Beaucoup"
+    },
+    "questions": {
+      "1": "Je connais la diversité linguistique de mon propre environnement (dialectes, langues autochtones et créole, etc.).",
+      "2": "Je connais quelques différences dans l'expression des émotions dans d'autres langues.",
+      "3": "Je sais quelle culture je peux donner une définition.",
+      "4": "Je sais que d'autres langues dans quels aspects tels que qui peuvent parler, qui commencent à parler ou quand vous pouvez parler sont différents des miens.",
+      "5": "Je connais des problèmes ou des comportements qui, dans d'autres cultures, sont des tabous.",
+      "6": "Je connais certaines habitudes linguistiques (saluez-vous, dites au revoir, soyez courtois, etc.) qui sont différentes dans d'autres langues.",
+      "7": "Je connais les principales caractéristiques de ma culture.",
+      "8": "Je connais des pratiques sociales ou des coutumes de ma culture qui sont différentes des autres cultures.",
+      "9": "Je connais certains faits historiques qui ont eu une influence sur l'évolution d'autres cultures.",
+      "10": "Je sais comment la langue et la culture influencent la construction de l'identité des gens.",
+      "11": "Je sais quelles cultures ont influencé ma culture.",
+      "12": "Je connais des gestes qui ont des significations différentes dans d'autres cultures.",
+      "13": "Je connais des routines ou des habitudes quotidiennes qui sont effectuées différemment par rapport à la mienne.",
+      "14": "Je connais (dans ma propre culture ou dans d'autres) des pratiques culturelles qui varient en fonction des groupes sociaux ou générationnels."
+    }
+  },
+  "critical": {
+    "instructions": "Ensuite, vous trouverez une série de déclarations\nsur la compétence communicative interculturelle (CCI)\nSa dimension critique. Il n'y a pas de réponses correctes ou\nIncorrect, veuillez remplir le questionnaire indiquant le\nFréquence avec laquelle cette déclaration fait.\nMerci beaucoup pour votre coopération et votre aide.\nSélectionnez le numéro correspondant à votre réponse\n1: Presque jamais 5: Presque toujours.",
+    "description": "Enseignants: quand je suis\nLangues d'enseignement\nÉtrangers ...\nÉtudiants: quand je suis\nApprentissage des langues\nÉtrangers ...",
+    "count": 0,
+    "options": {
+      "1": "Rarement",
+      "2": "Rarement",
+      "3": "Parfois",
+      "4": "Fréquemment",
+      "5": "Presque toujours"
+    },
+    "questions": {
+      "1": "Nous créons des connaissances à partir de la diversité des langues et des cultures.",
+      "2": "Nous réfléchissons aux situations, aux comportements sociaux ou aux systèmes qui favorisent les relations de puissance et de soumission et empêcher les relations équitables et équitables",
+      "3": "Nous participons activement à la construction de connaissances pour visualiser des alternatives sociales d'amélioration en considérant les différents points de vue, expériences et connaissances.",
+      "4": "Nous promouvons la responsabilité collective dans la réalisation des objectifs locaux avec un impact mondial.",
+      "5": "Enrichissons nos perspectives pour prendre des décisions et résoudre les conflits du dialogue avec les autres.",
+      "6": "Nous promouvons le dialogue et la coconstruction des connaissances sur les questions liées à la démocratie, à la justice sociale, aux droits de l'homme, à la citoyenneté.",
+      "7": "Nous connectons l'apprentissage en classe avec le service à la communauté pour générer un impact positif à la fois local et mondial.",
+      "8": "Nous participons activement à des projets de soutien communautaire pour promouvoir des changements positifs dans ma communauté.",
+      "9": "Nous dialogues sur des concepts traditionnels tels que la culture, la nationalité, l'identité.",
+      "10": "Nous construisons des réflexions critiques sur les risques impliqués dans la généralisation, le stéréotype et avons des préjugés contre les cultures.",
+      "11": "Nous impliquons la reconnaissance des cultures et des langues minoritaires, visualisant la lutte des pouvoirs entre les langues mondiales et ancestrales ainsi que sa pertinence pour le développement critique des connaissances."
+    }
+  },
   "dimension": {
-    "procedural": "Procédural",
-    "emotional": "Emotionnel",
+    "procedural": "De procédure",
+    "emotional": "Affectif",
     "cognitive": "Cognitif",
-    "critial": "Critique"
+    "critical": "Critique"
+  },
+  "emotional": {
+    "instructions": "Ensuite, vous trouverez une série de déclarations sur la compétence communicative interculturelle (CCI) dans sa dimension affective.\n\nIl n'y a pas de réponses correctes ou incorrectes. Veuillez remplir le questionnaire indiquant son degré d'accord sur ladite déclaration.\n\nMerci beaucoup pour votre coopération et votre aide.\n\nSélectionnez le numéro correspondant à votre réponse:\n1: en désaccord très\n5: Très d'accord",
+    "description": "",
+    "count": 15,
+    "options": {
+      "1": "Totalement en désaccord",
+      "2": "Être en désaccord",
+      "3": "Neutre",
+      "4": "D'ACCORD",
+      "5": "Totalement d'accord"
+    },
+    "questions": {
+      "1": "Je respecte les valeurs des personnes d'autres cultures.",
+      "2": "Je me modifie (je suis inquiet, je me dérange facilement) facilement quand j'interagis avec des gens d'autres cultures.",
+      "3": "Quand je suis entouré de gens d'origine culturelle différentes, je pense que mes valeurs sont menacées.",
+      "4": "Je sais toujours quoi dire quand je parle à des gens d'autres cultures.",
+      "5": "Je suis prêt à me distancier de mon identité culturelle pour mieux comprendre les autres cultures.",
+      "6": "Je peux être aussi sociable que vous le souhaitez lorsque j'interagis avec des gens d'autres cultures.",
+      "7": "J'évite les situations dans lesquelles je devrai faire face à des collègues avec des cultures autres que la mienne.",
+      "8": "Je respecte comment se comporter de personnes de différentes cultures à la mienne.",
+      "9": "Je n'accepterais pas les opinions de personnes, des cultures différentes à la mienne.",
+      "10": "Je fais confiance à ma capacité à surmonter les difficultés qui surviennent dans l'interaction avec les personnes d'autres cultures (incertitude, anxiété, critique, etc.).",
+      "11": "Je n'aime pas être avec des gens d'autres cultures.",
+      "12": "Je me sens généralement peu utile lorsque j'interagis avec des gens d'autres cultures.",
+      "13": "Je suis tout à fait sûr de moi lorsque j'interagis avec des gens d'autres cultures.",
+      "14": "J'apprécie la diversité culturelle parce que c'est une condition de l'être humain.",
+      "15": "Je me décourage généralement quand je suis avec des gens d'autres cultures."
+    }
   },
   "language": {
     "english": "Anglais",
     "spanish": "Espagnol",
     "french": "Français"
   },
+  "procedural": {
+    "instructions": "Ensuite, vous trouverez une série de déclarations sur la compétence communicative interculturelle (CCI) et la dimension procédurale.\nIl n'y a pas de réponses correctes ou incorrectes. Veuillez remplir le questionnaire indiquant la fréquence avec laquelle cette déclaration fait.\nMerci beaucoup pour votre coopération et votre aide.\n\nSélectionnez le numéro correspondant à votre réponse\n\n1: presque jamais\n5: Presque toujours",
+    "description": "Quand je suis avec des gens d'autres cultures ...",
+    "count": 13,
+    "options": {
+      "1": "Rarement",
+      "2": "Rarement",
+      "3": "Parfois",
+      "4": "Fréquemment",
+      "5": "Presque toujours"
+    },
+    "questions": {
+      "1": "J'interprète leur comportement de mon point de vue culturel.",
+      "2": "Je qualifie ces gens en fonction des valeurs et des croyances de ma culture.",
+      "3": "Je me souviens de mes expériences interculturelles précédentes qui ont réussi à être plus efficaces.",
+      "4": "J'essaie de découvrir les objectifs et les objectifs que les autres ont en interaction.",
+      "5": "J'analyse auparavant la situation et les aspects qui peuvent influencer la communication.",
+      "6": "Je compare la communication non verbale (gestes, regards, distances, postures, etc.) de mon interlocuteur avec la pertinence de cette situation dans ma culture.",
+      "7": "J'adapte mes interventions au récepteur si je pense qu'il ne me comprend pas (je parle plus lentement, je fais plus de pauses, je prononce plus en détail, etc.)",
+      "8": "Je compare la façon de communiquer mon interlocuteur avec la situation appropriée à cette situation dans ma culture.",
+      "9": "J'analyse les coutumes et les habitudes du peuple de cette culture du point de vue de ma culture",
+      "10": "Je demande les choses que je veux connaître les gens de cette culture.",
+      "11": "Je participe à la vision du monde que les gens ont de cette culture même si cela implique de laisser de côté le mien.",
+      "12": "Je partage mes opinions sur les aspects culturels avec des gens de cette culture.",
+      "13": "Je réfléchis à ce que je sais déjà de cette culture quand je trouve des informations inconnues"
+    }
+  },
   "all_fields_required": "Tous les champs sont obligatoires",
-  "confirm_password": "Confirmer le mot de passe",
-  "email": "Email",
-  "full_name": "Nom complet",
-  "invalid_credentials": "Identifiants incorrects",
-  "login": "Connexion",
-  "login_register": "Vous n'avez pas de compte ? Inscrivez-vous",
+  "confirm_password": "Confirmez le mot de passe",
+  "email": "Mail",
+  "full_name": "Nom et prénom",
+  "invalid_credentials": "Des références incorrectes",
+  "login": "Se connecter",
+  "login_register": "Vous n'avez pas de compte? Registre",
+  "logout": "Séance fermée",
+  "next": "Suivant",
+  "of": "de",
   "password": "Mot de passe",
-  "register": "Inscription",
-  "register_login": "Vous avez déjà un compte ? Connectez-vous",
-  "select_dimension": "Sélectionnez la dimension",
+  "previous": "Ancien",
+  "question": "Demander",
+  "register": "Enregistrer",
+  "register_login": "Avez-vous déjà un compte? Se connecter",
+  "select_dimension": "Sélectionner la dimension",
   "select_language": "Sélectionnez la langue",
   "start": "Commencer"
 }
