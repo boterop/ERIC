@@ -17,12 +17,7 @@ const HomeScreen = () => {
 
   const goTo = (dimension: string) => router.push(`/dimensions/${dimension}`);
 
-  const Score = ({ score }: { score: number }) => {
-    let color = "#00FF00";
-    if (score < 0.9) color = "#FF9900";
-    if (score < 0.6) color = "#FF6600";
-    if (score < 0.3) color = "#FF0000";
-
+  const Score = ({ score, color }: { score: number; color?: string }) => {
     return (
       <ProgressCircle
         color={color}
@@ -45,6 +40,7 @@ const HomeScreen = () => {
     isCompleted = false,
     answerCount = 0,
     score = 0,
+    color,
   }: {
     icon: ReactNode;
     title: string;
@@ -52,6 +48,7 @@ const HomeScreen = () => {
     isCompleted?: boolean;
     answerCount?: number;
     score?: number;
+    color?: string;
   }) => {
     const AnswersLeft = ({ style }: { style?: string }) => (
       <Text style={style || tw`text-xl`}>
@@ -78,7 +75,7 @@ const HomeScreen = () => {
             </TouchableOpacity>
           )) || <AnswersLeft />}
         </View>
-        {isCompleted && <Score score={score} />}
+        {isCompleted && <Score score={score} color={color} />}
       </View>
     );
   };
@@ -103,12 +100,23 @@ const HomeScreen = () => {
       const isCompleted = answers.length >= parseInt(questionsCount);
 
       const score = 1;
+      let color = "#009F00";
+      if (score < 0.9) color = "#FF9900";
+      if (score < 0.6) color = "#FF6600";
+      if (score < 0.3) color = "#FF0000";
 
       const icon = isCompleted ? "Trophy" : "question";
       buttons.push(
         <Card
           key={dimension}
-          icon={<AntDesign name={icon} size={24} color="black" />}
+          icon={
+            <AntDesign
+              name={icon}
+              size={24}
+              color={answers.length > 0 ? color : "black"}
+            />
+          }
+          color={color}
           title={t(`dimension.${dimension}`)}
           dimension={dimension}
           answerCount={answers.length}
