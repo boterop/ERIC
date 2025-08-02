@@ -6,6 +6,7 @@ import storageService from "@/services/storageService";
 import { ReactNode, useEffect, useState } from "react";
 import answerService from "@/services/answerService";
 import { Dimension } from "@/domain/Answer";
+import ProgressCircle from "react-native-progress/Circle";
 
 const dimensions = ["procedural", "emotional", "cognitive", "critical"];
 
@@ -16,18 +17,41 @@ const HomeScreen = () => {
 
   const goTo = (dimension: string) => router.push(`/dimensions/${dimension}`);
 
+  const Score = ({ score }: { score: number }) => {
+    let color = "#00FF00";
+    if (score < 0.9) color = "#FF9900";
+    if (score < 0.6) color = "#FF6600";
+    if (score < 0.3) color = "#FF0000";
+
+    return (
+      <ProgressCircle
+        color={color}
+        animated={false}
+        progress={score}
+        borderWidth={0}
+        thickness={3}
+        showsText={true}
+        size={60}
+        strokeCap="round"
+        textStyle={tw`font-bold`}
+      />
+    );
+  };
+
   const Card = ({
     icon,
     title,
     dimension,
     isCompleted = false,
     answerCount = 0,
+    score = 0,
   }: {
     icon: ReactNode;
     title: string;
     dimension: string;
     isCompleted?: boolean;
     answerCount?: number;
+    score?: number;
   }) => {
     const AnswersLeft = ({ style }: { style?: string }) => (
       <Text style={style || tw`text-xl`}>
@@ -37,27 +61,33 @@ const HomeScreen = () => {
 
     return (
       <View
-        style={tw`flex-row items-center justify-between w-[90%] rounded-lg border-2 border-gray-300 p-4`}
+        style={tw`flex-col gap-4 items-center justify-between w-[90%] rounded-lg border-2 border-gray-300 p-4`}
       >
-        <View style={tw`flex-row gap-2 items-center justify-center`}>
-          {icon}
-          <Text style={tw`text-xl capitalize`}>{title}</Text>
+        <View style={tw`flex-row w-full items-center justify-between`}>
+          <View style={tw`flex-row gap-2 items-center justify-center`}>
+            {icon}
+            <Text style={tw`text-xl capitalize`}>{title}</Text>
+          </View>
+          {(!isCompleted && (
+            <TouchableOpacity
+              onPress={() => goTo(dimension)}
+              style={tw`flex gap-2 items-center justify-center`}
+            >
+              <AntDesign name="play" size={24} color="#007AFF" />
+              <AnswersLeft style="text-sm" />
+            </TouchableOpacity>
+          )) || <AnswersLeft />}
         </View>
-        {(!isCompleted && (
-          <TouchableOpacity
-            onPress={() => goTo(dimension)}
-            style={tw`flex gap-2 items-center justify-center`}
-          >
-            <AntDesign name="play" size={24} color="#007AFF" />
-            <AnswersLeft style="text-sm" />
-          </TouchableOpacity>
-        )) || <AnswersLeft />}
+        {isCompleted && <Score score={score} />}
       </View>
     );
   };
 
   const Loading = () => (
-    <Text style={tw`text-2xl capitalize`}>{t("waiting_connection")}</Text>
+    <View style={tw`flex gap-4 items-center justify-center`}>
+      <ProgressCircle size={30} indeterminate={true} />;
+      <Text style={tw`text-2xl capitalize`}>{t("waiting_connection")}</Text>
+    </View>
   );
 
   const createItems = async () => {
@@ -72,6 +102,8 @@ const HomeScreen = () => {
       const questionsCount = t(`${dimension}.count`);
       const isCompleted = answers.length >= parseInt(questionsCount);
 
+      const score = 1;
+
       const icon = isCompleted ? "Trophy" : "question";
       buttons.push(
         <Card
@@ -81,6 +113,7 @@ const HomeScreen = () => {
           dimension={dimension}
           answerCount={answers.length}
           isCompleted={isCompleted}
+          score={score}
         />,
       );
     }
