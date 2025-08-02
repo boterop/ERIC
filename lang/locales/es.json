@@ -121,6 +121,7 @@
   },
   "all_fields_required": "Todos los campos son obligatorios",
   "confirm_password": "Confirmar contraseña",
+  "connection_error": "Hubo un error al conectar al servidor. Por favor, inténtelo de nuevo más tarde.",
   "email": "Correo",
   "full_name": "Nombre completo",
   "invalid_credentials": "Credenciales incorrectas",

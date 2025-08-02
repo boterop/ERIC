@@ -56,7 +56,7 @@
     "procedural": "Procedural",
     "emotional": "Affective",
     "cognitive": "Cognitive",
-    "critical": "Criticism"
+    "critical": "Critical"
   },
   "emotional": {
     "instructions": "Next you will find a series of statements on intercultural communicative competence (CCI) in its affective dimension.\n\nThere are no correct or incorrect answers. Please fill in the questionnaire indicating its degree of agreement on said statement.\n\nThank you very much for your cooperation and help.\n\nSelect the number corresponding to your answer:\n1: Disagree very\n5: Very agree",
@@ -121,20 +121,21 @@
   },
   "all_fields_required": "All fields are mandatory",
   "confirm_password": "Confirm Password",
-  "email": "Mail",
+  "connection_error": "There was an error connecting to the server. Please try again later.",
+  "email": "Email",
   "full_name": "Full name",
   "invalid_credentials": "Incorrect credentials",
   "login": "Login",
   "login_register": "You don't have an account? Register",
-  "logout": "Close session",
-  "next": "Following",
+  "logout": "Logout",
+  "next": "Next",
   "of": "of",
   "password": "Password",
-  "previous": "Former",
-  "question": "Ask",
-  "register": "Record",
+  "previous": "previous",
+  "question": "Question",
+  "register": "Register",
   "register_login": "Do you already have an account? Login",
   "select_dimension": "Select dimension",
   "select_language": "Select the language",
-  "start": "Begin"
+  "start": "Start"
 }
