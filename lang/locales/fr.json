@@ -121,7 +121,7 @@
   },
   "all_fields_required": "Tous les champs sont obligatoires",
   "confirm_password": "Confirmer le mot de passe",
-  "email": "Email",
+  "email": "Courriel",
   "full_name": "Nom complet",
   "invalid_credentials": "Identifiants incorrects",
   "login": "Connexion",

@@ -1,33 +1,113 @@
+import { Dimension } from "@/domain/Answer";
+import answerService from "@/services/answerService";
+import storageService from "@/services/storageService";
 import { AntDesign, Feather } from "@expo/vector-icons";
 import { router, useLocalSearchParams } from "expo-router";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Text, TouchableOpacity, View } from "react-native";
+import { Alert, Text, TouchableOpacity, View } from "react-native";
 import ProgressBar from "react-native-progress/Bar";
 
 const DimensionScreen = () => {
+  const token = useRef<string>("");
+
   const { t } = useTranslation();
   const { dimension } = useLocalSearchParams();
   const options = Array.from({ length: 5 }, (_, i) => i + 1);
   const count = parseInt(t(`${dimension}.count`));
 
+  const [isReady, setIsReady] = useState(false);
   const [showInstructions, setShowInstructions] = useState(true);
   const [question, setQuestion] = useState(1);
   const [response, setResponse] = useState(0);
 
+  const getQuestion = useCallback(async () => {
+    const answers = await answerService.listByDimension(
+      dimension.toString() as Dimension,
+      token.current,
+    );
+
+    if (answers.length === 0) return null;
+
+    return answers.find((a) => a.question === question);
+  }, [dimension, question]);
+
+  const saveResp = useCallback(async () => {
+    const resp = await answerService.create(
+      {
+        question: question,
+        value: response,
+        dimension: dimension.toString() as Dimension,
+      },
+      token.current,
+    );
+
+    return resp.id !== null;
+  }, [dimension, response, question]);
+
+  const updateResp = useCallback(
+    async (id: string) => {
+      const resp = await answerService.update(
+        {
+          id: id,
+          question: question,
+          value: response,
+          dimension: dimension.toString() as Dimension,
+        },
+        token.current || "",
+      );
+
+      const noUpdated = resp.id === null;
+
+      if (noUpdated) return false;
+
+      return true;
+    },
+    [dimension, response, question],
+  );
+
+  const updateResponse = useCallback(async () => {
+    const answer = await getQuestion();
+    if (!answer) return setResponse(0);
+
+    setResponse(answer.value);
+  }, [getQuestion]);
+
   useEffect(() => {
-    // TODO: Load response and check it
-    setResponse(0);
-  }, [question]);
+    if (isReady) return;
+
+    storageService.get("session").then((t) => {
+      token.current = t || "";
+      setIsReady(true);
+    });
+  }, []);
+
+  useEffect(() => {
+    updateResponse();
+  }, [isReady, question]);
 
   const previous = () => {
     if (question === 1) return;
     setQuestion(question - 1);
   };
-  const next = () => {
+
+  const next = async () => {
+    const savedResponse = await getQuestion();
+    let savedUpdated = false;
+    if (!savedResponse) {
+      savedUpdated = await saveResp();
+    } else {
+      if (response === savedResponse.value) savedUpdated = true;
+      else savedUpdated = await updateResp(savedResponse.id || "");
+    }
+
+    if (!savedUpdated) {
+      return Alert.alert("Error", t("connection_error"));
+    }
+
     if (question === count) return router.replace("/home");
+
     setQuestion(question + 1);
-    // TODO: Save or update response
   };
 
   const Instructions = () => (
@@ -64,6 +144,7 @@ const DimensionScreen = () => {
     </View>
   );
 
+  if (!isReady) return null;
   if (showInstructions) return <Instructions />;
 
   return (
