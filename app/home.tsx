@@ -67,6 +67,7 @@ const HomeScreen = () => {
           </View>
           {(!isCompleted && (
             <TouchableOpacity
+              testID={`${title}-button`}
               onPress={() => goTo(dimension)}
               style={tw`flex gap-2 items-center justify-center`}
             >
