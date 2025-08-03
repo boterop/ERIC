@@ -66,4 +66,15 @@ describe("HomeScreen", () => {
       expect(router.push).toHaveBeenCalledWith("/dimensions/procedural");
     });
   });
+
+  it('show 2 answers for "cognitive" dimension', async () => {
+    answerService.create({ dimension: "cognitive", question: 1, value: 2 }, "");
+    answerService.create({ dimension: "cognitive", question: 2, value: 1 }, "");
+
+    const component = render(<HomeScreen />);
+
+    waitFor(() => {
+      expect(component.getByText(`2/${en.cognitive.count}`)).toBeTruthy();
+    });
+  });
 });
