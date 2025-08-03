@@ -6,30 +6,35 @@ import en from "@/lang/locales/en.json";
 import answerService from "@/services/answerService";
 
 describe("HomeScreen", () => {
-  it("renders correctly", () => {
+  it("renders correctly", async () => {
     const expectedText = en.select_dimension;
     const component = render(<HomeScreen />);
 
-    waitFor(() => {
+    await waitFor(() => {
       expect(component.getByText(expectedText)).toBeTruthy();
     });
   });
 
-  it("loading view", () => {
+  it("loading view", async () => {
     const expectedText = en.waiting_connection;
     const component = render(<HomeScreen />);
 
-    expect(component.getByText(expectedText)).toBeTruthy();
+    await waitFor(() => {
+      expect(component.getByText(expectedText)).toBeTruthy();
+    });
   });
 
-  it("logout", () => {
+  it("logout", async () => {
     const buttonText = en.logout;
     const component = render(<HomeScreen />);
-    const element = component.getByText(buttonText);
 
-    fireEvent.press(element);
+    await waitFor(() => {
+      const element = component.getByText(buttonText);
 
-    expect(router.replace).toHaveBeenCalledWith("/login");
+      fireEvent.press(element);
+
+      expect(router.replace).toHaveBeenCalledWith("/login");
+    });
   });
 
   it("draw 4 dimensions", async () => {
@@ -73,7 +78,7 @@ describe("HomeScreen", () => {
 
     const component = render(<HomeScreen />);
 
-    waitFor(() => {
+    await waitFor(() => {
       expect(component.getByText(`2/${en.cognitive.count}`)).toBeTruthy();
     });
   });

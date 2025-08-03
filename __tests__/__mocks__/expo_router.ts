@@ -4,7 +4,7 @@ jest.mock("expo-router", () => ({
     replace: jest.fn(),
     back: jest.fn(),
   }),
-  useLocalSearchParams: () => ({}),
+  useLocalSearchParams: () => ({ dimension: "procedural" }),
   useNavigation: () => ({}),
   Stack: () => null,
   Slot: () => null,
