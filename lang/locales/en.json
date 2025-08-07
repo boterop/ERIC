@@ -30,7 +30,7 @@
   "critical": {
     "instructions": "Next you will find a series of statements\non intercultural communicative competence (CCI) in\nIts critical dimension. There are no correct answers or\nIncorrect Please fill in the questionnaire indicating the\nfrequency with which this statement makes.\nThank you very much for your cooperation and help.\nSelect the number corresponding to your answer\n1: Almost never 5: almost always.",
     "description": "Teachers: When I am\nTeaching languages\nForeigners ...\nStudents: When I am\nLearning languages\nForeigners ...",
-    "count": 0,
+    "count": 11,
     "options": {
       "1": "Hardly ever",
       "2": "Rarely",
@@ -137,5 +137,6 @@
   "register_login": "Do you already have an account? Login",
   "select_dimension": "Select dimension",
   "select_language": "Select the language",
-  "start": "Start"
+  "start": "Start",
+  "waiting_connection": "Waiting for connection"
 }

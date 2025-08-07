@@ -30,7 +30,7 @@
   "critical": {
     "instructions": "Ensuite, vous trouverez une série de déclarations\nsur la compétence communicative interculturelle (CCI)\nSa dimension critique. Il n'y a pas de réponses correctes ou\nIncorrect, veuillez remplir le questionnaire indiquant le\nFréquence avec laquelle cette déclaration fait.\nMerci beaucoup pour votre coopération et votre aide.\nSélectionnez le numéro correspondant à votre réponse\n1: Presque jamais 5: Presque toujours.",
     "description": "Enseignants: quand je suis\nLangues d'enseignement\nÉtrangers ...\nÉtudiants: quand je suis\nApprentissage des langues\nÉtrangers ...",
-    "count": 0,
+    "count": 11,
     "options": {
       "1": "Rarement",
       "2": "Rarement",
@@ -137,5 +137,6 @@
   "register_login": "Avez-vous déjà un compte? Se connecter",
   "select_dimension": "Sélectionner la dimension",
   "select_language": "Sélectionnez la langue",
-  "start": "Commencer"
+  "start": "Commencer",
+  "waiting_connection": "En attente de connexion"
 }
