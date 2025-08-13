@@ -139,7 +139,7 @@ const DimensionScreen = () => {
           size={24}
           color="black"
         />
-        <Text style={tw`text-xl capitalize`}>{label}</Text>
+        <Text style={tw`text-xl`}>{label}</Text>
       </TouchableOpacity>
     </View>
   );
@@ -153,7 +153,7 @@ const DimensionScreen = () => {
     >
       <Text style={tw`text-2xl capitalize`}>{t(`dimension.${dimension}`)}</Text>
       <View style={tw`flex w-full gap-2 items-center justify-center`}>
-        <Text>{`${t("question")} ${question - 1} ${t("of")} ${count}`}</Text>
+        <Text>{`${t("question")} ${question} ${t("of")} ${count}`}</Text>
         <ProgressBar
           progress={(question - 1) / count}
           color="black"
@@ -165,7 +165,7 @@ const DimensionScreen = () => {
         style={tw`flex gap-8 bg-white w-90% p-4 py-8 rounded shadow-md items-center justify-center`}
       >
         {t(`${dimension}.description`) && (
-          <Text style={tw`w-full font-bold text-start capitalize`}>
+          <Text style={tw`w-full font-bold text-start`}>
             {t(`${dimension}.description`)}
           </Text>
         )}

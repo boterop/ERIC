@@ -135,8 +135,9 @@
   "question": "Pregunta",
   "register": "Registro",
   "register_login": "¿Ya tienes cuenta? Iniciar sesión",
-  "select_dimension": "Selecciona dimensión",
+  "select_dimension": "Selecciona la dimensión",
   "select_language": "Selecciona el idioma",
   "start": "Empezar",
+  "start_screen": "Bienvenido a la\n\rEscala de\n\rRecursos\n\rInterculturales y\n\rDimensión\n\rCrítica.\nEste cuestionario te permitirá entender cómo te comunicas con personas de diferentes culturas. Basado en los resultados, podrás reflexionar sobre la mejor manera de comunicarte apropiada y efectivamente",
   "waiting_connection": "Esperando conexión"
 }
