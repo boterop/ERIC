@@ -105,14 +105,13 @@ const HomeScreen = () => {
       const questionsCount = t(`${dimension}.count`);
       const isCompleted = answers.length >= parseInt(questionsCount);
 
-      const score = 1;
+      const score = 5;
       let color = "#009F00";
-      if (score < 0.9) color = "#FF9900";
-      if (score < 0.6) color = "#FF6600";
-      if (score < 0.3) color = "#FF0000";
+      if (score <= 4.08) color = "#FF9900";
+      if (score <= 3.28) color = "#FF0000";
       if (score == 0) color = "#000000";
 
-      let icon = null;
+      let icon: ReactNode = null;
 
       switch (dimension) {
         case "emotional":
@@ -131,6 +130,8 @@ const HomeScreen = () => {
           break;
       }
 
+      const percent = score / 5;
+
       buttons.push(
         <Card
           key={dimension}
@@ -140,7 +141,7 @@ const HomeScreen = () => {
           dimension={dimension}
           answerCount={answers.length}
           isCompleted={isCompleted}
-          score={score}
+          score={percent}
         />,
       );
     }
