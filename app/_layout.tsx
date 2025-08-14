@@ -28,7 +28,7 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={DefaultTheme}>
-      <StatusBar style="auto" />
+      <StatusBar hidden />
       <Slot />
     </ThemeProvider>
   );

@@ -1,6 +1,6 @@
 import { router } from "expo-router";
 import { useTranslation } from "react-i18next";
-import { Text, TouchableOpacity, View } from "react-native";
+import { StatusBar, Text, TouchableOpacity, View } from "react-native";
 import { AntDesign } from "@expo/vector-icons/";
 import storageService from "@/services/storageService";
 import { ReactNode, useEffect, useState } from "react";
@@ -139,26 +139,24 @@ const HomeScreen = () => {
   }, []);
 
   return (
-    <View style={tw`flex gap-16 w-full h-full items-center justify-center p-4`}>
+    <View style={tw`flex gap-8 w-full h-full items-center justify-start p-4`}>
       <TouchableOpacity
-        style={tw`absolute top-12 right-4 flex-row gap-2 items-center justify-center`}
+        style={tw`flex-row gap-2 w-full items-center justify-end`}
         onPress={async () => {
           storageService.remove("session");
           router.replace("/login");
         }}
       >
-        <Text style={tw`text-right capitalize`}>{t("logout")}</Text>
+        <Text style={tw`capitalize`}>{t("logout")}</Text>
         <AntDesign name="logout" size={13} color="black" />
       </TouchableOpacity>
+      <Text style={tw`text-2xl capitalize`}>{t("select_dimension")}</Text>
       {dimensionButtons.length === 0 ? (
         <Loading />
       ) : (
-        <>
-          <Text style={tw`text-2xl capitalize`}>{t("select_dimension")}</Text>
-          <View style={tw`flex gap-4 w-full items-center justify-center`}>
-            {dimensionButtons}
-          </View>
-        </>
+        <View style={tw`flex gap-4 w-full items-center justify-center`}>
+          {dimensionButtons}
+        </View>
       )}
     </View>
   );
