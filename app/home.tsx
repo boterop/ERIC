@@ -1,7 +1,12 @@
 import { router } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { StatusBar, Text, TouchableOpacity, View } from "react-native";
-import { AntDesign } from "@expo/vector-icons/";
+import {
+  AntDesign,
+  Entypo,
+  Feather,
+  MaterialCommunityIcons,
+} from "@expo/vector-icons/";
 import storageService from "@/services/storageService";
 import { ReactNode, useEffect, useState } from "react";
 import answerService from "@/services/answerService";
@@ -109,18 +114,31 @@ const HomeScreen = () => {
       if (score < 0.9) color = "#FF9900";
       if (score < 0.6) color = "#FF6600";
       if (score < 0.3) color = "#FF0000";
+      if (score == 0) color = "#000000";
 
-      const icon = isCompleted ? "Trophy" : "question";
+      let icon = null;
+
+      switch (dimension) {
+        case "emotional":
+          icon = <Feather name="smile" size={24} color={color} />;
+          break;
+        case "cognitive":
+          icon = (
+            <MaterialCommunityIcons name="brain" size={24} color={color} />
+          );
+          break;
+        case "critical":
+          icon = <Entypo name="magnifying-glass" size={24} color={color} />;
+          break;
+        default:
+          icon = <Feather name="pen-tool" size={24} color={color} />;
+          break;
+      }
+
       buttons.push(
         <Card
           key={dimension}
-          icon={
-            <AntDesign
-              name={icon}
-              size={24}
-              color={answers.length > 0 ? color : "black"}
-            />
-          }
+          icon={icon}
           color={color}
           title={t(`dimension.${dimension}`)}
           dimension={dimension}
