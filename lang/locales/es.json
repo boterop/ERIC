@@ -120,8 +120,10 @@
     }
   },
   "all_fields_required": "Todos los campos son obligatorios",
+  "authors": "Autores:\nJacqueline García Botero\nMargarita Alexandra Botero Restrepo\nMónica Rolong\n\nAplicación Desarrollada por\nSantiago Botero Pelaez",
   "confirm_password": "Confirmar contraseña",
   "connection_error": "Hubo un error al conectar al servidor. Por favor, inténtelo de nuevo más tarde.",
+  "continue": "Continuar",
   "email": "Correo",
   "full_name": "Nombre completo",
   "invalid_credentials": "Credenciales incorrectas",
@@ -135,8 +137,9 @@
   "question": "Pregunta",
   "register": "Registro",
   "register_login": "¿Ya tienes cuenta? Iniciar sesión",
-  "select_dimension": "Selecciona dimensión",
+  "select_dimension": "Selecciona la dimensión",
   "select_language": "Selecciona el idioma",
   "start": "Empezar",
+  "start_screen": "Bienvenido a ERIC (Escala de Recursos Interculturales y Dimensión Crítica).\nEste cuestionario te permitirá entender cómo te comunicas con personas de diferentes culturas. Basado en los resultados, podrás reflexionar sobre la mejor manera de comunicarte apropiada y efectivamente",
   "waiting_connection": "Esperando conexión"
 }

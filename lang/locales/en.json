@@ -1,11 +1,11 @@
 {
   "cognitive": {
-    "instructions": "Next you will find a series of statements on intercultural communicative competence (CCI) in its cognitive dimension.\n\nThere are no correct or incorrect answers. Please fill the questionnaire quickly and mark the first impression, indicating how much these facts know.\n\nThank you very much for your cooperation and help.\n\nSelect the number corresponding to your answer:\n1: Almost nothing\n5: Much",
+    "instructions": "Next you will find a series of statements on intercultural communicative competence (ICC) in its cognitive dimension.\n\nThere are no correct or incorrect answers. Please fill in the questionnaire, indicating how much you know about this facts.\n\nThank you very much for your cooperation and help.\n\nSelect the number corresponding to your answer:\n1: Almost nothing\n5: A lot",
     "description": "",
     "count": 14,
     "options": {
-      "1": "Next to nothing",
-      "2": "Bit",
+      "1": "Almost nothing",
+      "2": "A bit",
       "3": "Something",
       "4": "Quite",
       "5": "A lot"
@@ -13,10 +13,10 @@
     "questions": {
       "1": "I know the linguistic diversity of my own environment (dialects, indigenous languages and Creole, etc).",
       "2": "I know some differences in the expression of emotions in other languages.",
-      "3": "I know what a culture is I can give a definition.",
+      "3": "I know what a culture is and I can give a definition.",
       "4": "I know other languages in which aspects such as who can speak, who starts talking or when you can talk are different from mine.",
       "5": "I know issues or behaviors that in other cultures are taboos.",
-      "6": "I know certain linguistic habits (greet yourself, say goodbye, be courteous, etc.) that are different in other languages.",
+      "6": "I know certain linguistic habits (greetings, saying goodbye, being courteous, etc.) that are different in other languages.",
       "7": "I know the main characteristics of my culture.",
       "8": "I know social practices or customs of my culture that are different from other cultures.",
       "9": "I know some historical facts that have had influence on the evolution of other cultures.",
@@ -28,11 +28,11 @@
     }
   },
   "critical": {
-    "instructions": "Next you will find a series of statements\non intercultural communicative competence (CCI) in\nIts critical dimension. There are no correct answers or\nIncorrect Please fill in the questionnaire indicating the\nfrequency with which this statement makes.\nThank you very much for your cooperation and help.\nSelect the number corresponding to your answer\n1: Almost never 5: almost always.",
-    "description": "Teachers: When I am\nTeaching languages\nForeigners ...\nStudents: When I am\nLearning languages\nForeigners ...",
+    "instructions": "Next you will find a series of statements on intercultural communicative competence (ICC) in its critical dimension. There are no correct or incorrect answers.\nPlease fill in the questionnaire indicating the frequency with which you make this statement.\nThank you very much for your cooperation and help.\n\nSelect the number corresponding to your answer\n1: Almost never\n5: Almost always.",
+    "description": "Teachers: when I am teaching foreign languages ...\n\nStudents: when I am learning foreign languages ...",
     "count": 11,
     "options": {
-      "1": "Hardly ever",
+      "1": "Almost never",
       "2": "Rarely",
       "3": "Sometimes",
       "4": "Frequently",
@@ -43,12 +43,12 @@
       "2": "We reflect on situations, social behaviors or systems that promote power and submission relationships and prevent fair and equitable relationships",
       "3": "We actively participate in the construction of knowledge to visualize social alternatives of improvement considering the different points of view, experiences and knowledge.",
       "4": "We promote collective responsibility in achieving local goals with global impact.",
-      "5": "Let's enrich our perspectives to make decisions and resolve conflicts from dialogue with others.",
-      "6": "We promote dialogue and coconstruction of knowledge around issues related to democracy, social justice, human rights, citizenship.",
-      "7": "We connect learning in the classroom with the service to the community to generate a positive impact both local and global.",
-      "8": "We actively participate in community support projects to promote positive changes in my community.",
+      "5": "We enrich our perspectives to make decisions and resolve conflicts from dialogue with others.",
+      "6": "We promote dialogue and co-construction of knowledge around issues related to democracy, social justice, human rights, citizenship.",
+      "7": "We connect learning in the classroom with the service to the community to generate a positive impact both locally and globaly.",
+      "8": "We actively participate in community projects to promote positive changes in my community.",
       "9": "We dialogue around traditional concepts such as culture, nationality, identity.",
-      "10": "We build critical reflections around the risks involved in generalizing, stereotype and have prejudices against cultures.",
+      "10": "We build critical reflections around the risks involved in generalizing, stereotyping and having prejudices against cultures.",
       "11": "We involve the recognition of minority cultures and languages, visualizing the struggle of powers between global and ancestral languages as well as its relevance to the critical development of knowledge."
     }
   },
@@ -59,32 +59,32 @@
     "critical": "Critical"
   },
   "emotional": {
-    "instructions": "Next you will find a series of statements on intercultural communicative competence (CCI) in its affective dimension.\n\nThere are no correct or incorrect answers. Please fill in the questionnaire indicating its degree of agreement on said statement.\n\nThank you very much for your cooperation and help.\n\nSelect the number corresponding to your answer:\n1: Disagree very\n5: Very agree",
+    "instructions": "Next you will find a series of statements on intercultural communicative competence (ICC) in its affective dimension.\n\nThere are no correct or incorrect answers. Please fill in the questionnaire indicating its degree of agreement on said statement.\n\nThank you very much for your cooperation and help.\n\nSelect the number corresponding to your answer:\n1: Totaly disagree\n5: Totaly agree",
     "description": "",
     "count": 15,
     "options": {
       "1": "Totally disagree",
       "2": "Disagree",
       "3": "Neutral",
-      "4": "OK",
+      "4": "Agree",
       "5": "Totally agree"
     },
     "questions": {
       "1": "I respect the values of people from other cultures.",
-      "2": "I alter me (I am worried, I disturb me) easily when I interact with people from other cultures.",
+      "2": "I get easily uneasy (I am worried, I am disturbed) when I interact with people from other cultures.",
       "3": "When I am surrounded by people from different cultural origins I feel that my values are threatened.",
       "4": "I always know what to say when I talk to people from other cultures.",
       "5": "I am willing to distance myself from my cultural identity to better understand other cultures.",
-      "6": "I can be as sociable as you want when I interact with people from other cultures.",
-      "7": "I avoid those situations in which I will have to deal with colleagues with cultures other than mine.",
-      "8": "I respect how to behave of people from different cultures to mine.",
-      "9": "I would not accept the opinions of people from different cultures to mine.",
+      "6": "I can be as sociable as I want when interacting with people from other cultures.",
+      "7": "I avoid those situations in which I will have to deal with colleagues with cultures different from mine.",
+      "8": "I respect the behaviour of people from different cultures.",
+      "9": "I would not accept the opinions of people from different cultures.",
       "10": "I trust my ability to overcome the difficulties that arise in interaction with people from other cultures (uncertainty, anxiety, criticism, etc).",
       "11": "I don't like being with people from other cultures.",
       "12": "I usually feel little useful when I interact with people from other cultures.",
       "13": "I am quite sure of myself when I interact with people from other cultures.",
-      "14": "I appreciate cultural diversity because it is a condition of the human being.",
-      "15": "I usually discourage me when I am with people from other cultures."
+      "14": "I appreciate cultural diversity because it is a human condition.",
+      "15": "I usually get discouraged when I am with people from other cultures."
     }
   },
   "language": {
@@ -93,11 +93,11 @@
     "french": "French"
   },
   "procedural": {
-    "instructions": "Next you will find a series of statements on intercultural communicative competence (CCI) and the procedural dimension.\nThere are no correct or incorrect answers. Please fill in the questionnaire indicating the frequency with which this statement makes.\nThank you very much for your cooperation and help.\n\nSelect the number corresponding to your answer\n\n1: almost never\n5: Almost always",
+    "instructions": "Next you will find a series of statements on intercultural communicative competence (ICC) and the procedural dimension.\nThere are no correct or incorrect answers. Please fill in the questionnaire indicating the frequency with which you make this statement.\nThank you very much for your cooperation and help.\n\nSelect the number corresponding to your answer\n\n1: Almost never\n5: Almost always",
     "description": "When I am with people from other cultures ...",
     "count": 13,
     "options": {
-      "1": "Hardly ever",
+      "1": "Almost never",
       "2": "Rarely",
       "3": "Sometimes",
       "4": "Frequently",
@@ -107,21 +107,23 @@
       "1": "I interpret their behavior from my cultural perspective.",
       "2": "I qualify these people according to the values and beliefs of my culture.",
       "3": "I remember my previous intercultural experiences that were successful to be more effective.",
-      "4": "I try to discover the objectives and purposes that other people have in interaction.",
+      "4": "I try to discover the objectives and purposes that other people have during the interaction.",
       "5": "I previously analyze the situation and those aspects that can influence communication.",
       "6": "I compare nonverbal communication (gestures, looks, distances, postures, etc.) of my interlocutor with the appropriateness of that situation in my culture.",
-      "7": "I adapt my interventions to the receiver if I think it does not understand me (I speak slower, I make more pauses, I pronounce in more detail, etc)",
-      "8": "I compare the way of communicating my interlocutor with the appropriate one to that situation in my culture.",
-      "9": "I analyze the customs and habits of the people of that culture from the perspective of my culture",
-      "10": "I ask the things I want to know the people of that culture.",
-      "11": "I participate in the world's vision that people have of that culture even if that involves leaving aside mine.",
+      "7": "I adapt my interventions to the receiver if I think he/she does not understand me (I speak slower, I make more pauses, I pronounce in more detail, etc)",
+      "8": "I compare the way my interlocutor comunicates with the appropriate one to that situation in my culture.",
+      "9": "I analyze the customs and habits of the people of that culture from my own cultural perspective",
+      "10": "I ask the things I want to know to the people of that culture.",
+      "11": "I participate in other's people world's view even if that involves leaving mine aside.",
       "12": "I share my opinions about cultural aspects with people from that culture.",
       "13": "I reflect on what I already know about that culture when I find unknown information"
     }
   },
   "all_fields_required": "All fields are mandatory",
+  "authors": "Authors:\nJacqueline García Botero\nMargarita Alexandra Botero Restrepo\nMónica Rolong\n\nApp Developed by\nSantiago Botero Pelaez",
   "confirm_password": "Confirm Password",
   "connection_error": "There was an error connecting to the server. Please try again later.",
+  "continue": "Continue",
   "email": "Email",
   "full_name": "Full name",
   "invalid_credentials": "Incorrect credentials",
@@ -138,5 +140,6 @@
   "select_dimension": "Select dimension",
   "select_language": "Select the language",
   "start": "Start",
+  "start_screen": "Welcome to the Critical Intercultural Resources Scale. This questionnaire will help you understand how you communicate with people from different cultures. Based on the results, you will be able to reflect on the best way to communicate appropriately and effectively.",
   "waiting_connection": "Waiting for connection"
 }

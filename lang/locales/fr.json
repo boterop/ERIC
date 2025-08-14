@@ -120,8 +120,10 @@
     }
   },
   "all_fields_required": "Tous les champs sont obligatoires",
+  "authors": "Auteurs:\nJacqueline García Botero\nMargarita Alexandra Botero Restrepo\nMónica Rolong\n\nApplication développée par\nSantiago Botero Pelaez",
   "confirm_password": "Confirmer le mot de passe",
   "connection_error": "Erreur de connexion",
+  "continue": "Continuer",
   "email": "Courriel",
   "full_name": "Nom complet",
   "invalid_credentials": "Informations d'identification non valides",
@@ -138,5 +140,6 @@
   "select_dimension": "Sélectionner la dimension",
   "select_language": "Sélectionnez la langue",
   "start": "Commencer",
+  "start_screen": "Bienvenue dans l’Échelle des Ressources Interculturelles et la Dimension Critique. Ce questionnaire vous permettra de comprendre comment vous communiquez avec des personnes de différentes cultures. En fonction des résultats, vous pourrez réfléchir à la meilleure façon de communiquer de manière appropriée et efficace.",
   "waiting_connection": "En attente de connexion"
 }
