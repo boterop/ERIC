@@ -120,8 +120,10 @@
     }
   },
   "all_fields_required": "All fields are mandatory",
+  "authors": "Authors:\nJacqueline García Botero\nMargarita Alexandra Botero Restrepo\nMónica Rolong\n\nApp Developed by\nSantiago Botero Pelaez",
   "confirm_password": "Confirm Password",
   "connection_error": "There was an error connecting to the server. Please try again later.",
+  "continue": "Continue",
   "email": "Email",
   "full_name": "Full name",
   "invalid_credentials": "Incorrect credentials",

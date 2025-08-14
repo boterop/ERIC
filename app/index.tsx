@@ -10,7 +10,7 @@ const IndexPage = () => {
 
   const checkLogin = async () => {
     const token = await storageService.get("session");
-    if (!token) return router.replace("/login");
+    if (!token) return router.replace("/start_screen");
 
     router.replace("/home");
   };

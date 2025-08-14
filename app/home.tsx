@@ -7,7 +7,6 @@ import { ReactNode, useEffect, useState } from "react";
 import answerService from "@/services/answerService";
 import { Dimension } from "@/domain/Answer";
 import ProgressCircle from "react-native-progress/Circle";
-import StartScreen from "./start_screen";
 
 const dimensions = ["procedural", "emotional", "cognitive", "critical"];
 const scoreInversion = {
@@ -18,7 +17,6 @@ const scoreInversion = {
 const HomeScreen = () => {
   const { t } = useTranslation();
 
-  const [startScreen, setStartScreen] = useState(true);
   const [dimensionButtons, setDimensionButtons] = useState<ReactNode[]>([]);
 
   const goTo = (dimension: string) => router.push(`/dimensions/${dimension}`);
@@ -139,8 +137,6 @@ const HomeScreen = () => {
   useEffect(() => {
     createItems();
   }, []);
-
-  if (startScreen) return <StartScreen setStartScreen={setStartScreen} />;
 
   return (
     <View style={tw`flex gap-16 w-full h-full items-center justify-center p-4`}>
