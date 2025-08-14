@@ -1,6 +1,6 @@
 import { router } from "expo-router";
 import { useTranslation } from "react-i18next";
-import { StatusBar, Text, TouchableOpacity, View } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 import {
   AntDesign,
   Entypo,
@@ -14,10 +14,6 @@ import { Dimension } from "@/domain/Answer";
 import ProgressCircle from "react-native-progress/Circle";
 
 const dimensions = ["procedural", "emotional", "cognitive", "critical"];
-const scoreInversion = {
-  procedural: [1, 2, 9],
-  emotional: [2, 3, 9],
-};
 
 const HomeScreen = () => {
   const { t } = useTranslation();
