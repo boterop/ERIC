@@ -29,9 +29,9 @@ const score: Score = {
 
     const length = dimensionAnswers.length;
 
-    const calification = calc(dimension, dimensionAnswers) / length;
+    const qualification = calc(dimension, dimensionAnswers) / length;
 
-    return calification;
+    return qualification;
   },
 };
 
