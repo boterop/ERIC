@@ -125,6 +125,7 @@
   "connection_error": "Erreur de connexion",
   "continue": "Continuer",
   "email": "Courriel",
+  "finish": "Finir",
   "full_name": "Nom complet",
   "invalid_credentials": "Informations d'identification non valides",
   "login": "Connexion",
@@ -137,9 +138,11 @@
   "question": "Demander",
   "register": "Enregistrer",
   "register_login": "Avez-vous déjà un compte? Se connecter",
+  "results": "Résultats",
   "select_dimension": "Sélectionner la dimension",
   "select_language": "Sélectionnez la langue",
   "start": "Commencer",
   "start_screen": "Bienvenue dans l’Échelle des Ressources Interculturelles et la Dimension Critique. Ce questionnaire vous permettra de comprendre comment vous communiquez avec des personnes de différentes cultures. En fonction des résultats, vous pourrez réfléchir à la meilleure façon de communiquer de manière appropriée et efficace.",
+  "thank_you": "Merci d'avoir terminé l'Échelle des Ressources Interculturelles et la Dimension Critique.",
   "waiting_connection": "En attente de connexion"
 }

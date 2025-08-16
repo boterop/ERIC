@@ -92,6 +92,11 @@
     "spanish": "Español",
     "french": "Francés"
   },
+  "message": {
+    "low": "No es lo suficientemente bueno",
+    "medium": "No es muy bueno",
+    "high": ""
+  },
   "procedural": {
     "instructions": "A continuación encontrará una serie de afirmaciones sobre la Competencia Comunicativa Intercultural (CCI) y la dimensión procedimental.\nNo hay respuestas correctas o incorrectas. Por favor, rellene el cuestionario indicando la frecuencia con la que realiza dicha afirmación.\nMuchas gracias por su cooperación y ayuda.\n\nSeleccione el número correspondiente a su respuesta\n\n1: casi nunca\n5: casi siempre",
     "description": "CUANDO ESTOY CON PERSONAS DE OTRAS CULTURAS...",
@@ -125,6 +130,7 @@
   "connection_error": "Hubo un error al conectar al servidor. Por favor, inténtelo de nuevo más tarde.",
   "continue": "Continuar",
   "email": "Correo",
+  "finish": "Terminar",
   "full_name": "Nombre completo",
   "invalid_credentials": "Credenciales incorrectas",
   "login": "Iniciar sesión",
@@ -137,6 +143,8 @@
   "question": "Pregunta",
   "register": "Registro",
   "register_login": "¿Ya tienes cuenta? Iniciar sesión",
+  "results": "Resultados",
+  "thank_you": "Gracias por completar la Escala de Recursos Interculturales y dimensión Crítica.",
   "select_dimension": "Selecciona la dimensión",
   "select_language": "Selecciona el idioma",
   "start": "Empezar",

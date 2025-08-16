@@ -107,10 +107,22 @@ const HomeScreen = () => {
       const isCompleted = answers.length >= parseInt(questionsCount);
 
       const score = scoreService.calculate(dimension as Dimension, answers);
-      let color = "#009F00";
-      if (score <= 4.08) color = "#FF9900";
-      if (score <= 3.28) color = "#FF0000";
-      if (score == 0) color = "#000000";
+      const level = scoreService.toLevel(score);
+
+      let color = "#000000";
+      if (isCompleted) {
+        switch (level) {
+          case "low":
+            color = "#FF0000";
+            break;
+          case "medium":
+            color = "#FF9900";
+            break;
+          default:
+            color = "#009F00";
+            break;
+        }
+      }
 
       let icon: ReactNode = null;
 

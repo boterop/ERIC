@@ -105,7 +105,11 @@ const DimensionScreen = () => {
       return Alert.alert("Error", t("connection_error"));
     }
 
-    if (question === count) return router.replace("/home");
+    if (question === count)
+      return router.replace({
+        pathname: "/score",
+        params: { dimension: dimension },
+      });
 
     setQuestion(question + 1);
   };
@@ -204,7 +208,9 @@ const DimensionScreen = () => {
             style={tw`flex-1 flex-row gap-2 items-center justify-center rounded-full py-2 px-4 ${response === 0 ? "bg-blue-100" : "bg-blue-500"}`}
             onPress={next}
           >
-            <Text style={tw`text-lg text-center text-white`}>{t("next")}</Text>
+            <Text style={tw`text-lg text-center text-white`}>
+              {question === count ? t("finish") : t("next")}
+            </Text>
             <AntDesign name="right" size={14} color="white" />
           </TouchableOpacity>
         </View>
