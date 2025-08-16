@@ -1,4 +1,5 @@
 import { Answer, Dimension } from "@/domain/Answer";
+import { Level } from "@/domain/Level";
 import { Score } from "@/ports/Score";
 
 const scoreInversion = {
@@ -22,6 +23,13 @@ const calc = (dimension: Dimension, answers: Answer[]): number => {
 };
 
 const score: Score = {
+  toLevel: (score: number) => {
+    let level = "high";
+    if (score <= 4.08) level = "medium";
+    if (score <= 3.28) level = "low";
+
+    return level as Level;
+  },
   calculate: (dimension: Dimension, answers: Answer[]): number => {
     const dimensionAnswers = answers.filter(
       (answer) => answer.dimension === dimension,

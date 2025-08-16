@@ -125,6 +125,7 @@
   "connection_error": "There was an error connecting to the server. Please try again later.",
   "continue": "Continue",
   "email": "Email",
+  "finish": "Finish",
   "full_name": "Full name",
   "invalid_credentials": "Incorrect credentials",
   "login": "Login",
@@ -137,9 +138,11 @@
   "question": "Question",
   "register": "Register",
   "register_login": "Do you already have an account? Login",
+  "results": "Results",
   "select_dimension": "Select dimension",
   "select_language": "Select the language",
   "start": "Start",
   "start_screen": "Welcome to the Critical Intercultural Resources Scale. This questionnaire will help you understand how you communicate with people from different cultures. Based on the results, you will be able to reflect on the best way to communicate appropriately and effectively.",
+  "thank_you": "Thank you for completing the Critical Intercultural Resources Scale and Critical Dimension.",
   "waiting_connection": "Waiting for connection"
 }
