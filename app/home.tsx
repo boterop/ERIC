@@ -12,6 +12,7 @@ import { ReactNode, useEffect, useState } from "react";
 import answerService from "@/services/answerService";
 import { Dimension } from "@/domain/Answer";
 import ProgressCircle from "react-native-progress/Circle";
+import scoreService from "@/services/scoreService";
 
 const dimensions = ["procedural", "emotional", "cognitive", "critical"];
 
@@ -105,7 +106,7 @@ const HomeScreen = () => {
       const questionsCount = t(`${dimension}.count`);
       const isCompleted = answers.length >= parseInt(questionsCount);
 
-      const score = 5;
+      const score = scoreService.calculate(dimension as Dimension, answers);
       let color = "#009F00";
       if (score <= 4.08) color = "#FF9900";
       if (score <= 3.28) color = "#FF0000";
