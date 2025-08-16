@@ -14,7 +14,7 @@ const calc = (dimension: Dimension, answers: Answer[]): number => {
 
   const isInvertedAnswer =
     (dimension === "procedural" || dimension === "emotional") &&
-    scoreInversion[dimension].includes(answer.value);
+    scoreInversion[dimension].includes(answer.question);
 
   const value = isInvertedAnswer ? invert(answer.value) : answer.value;
 
