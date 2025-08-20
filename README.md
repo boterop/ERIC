@@ -84,6 +84,27 @@ Write the changes in the `CHANGELOG.md` file and run the following command:
 python3 change_version.py
 ```
 
+## Build the APK
+
+Install EAS
+
+```sh
+npm install -g eas-cli
+eas login
+```
+
+### Development APK
+
+```sh
+eas build --platform android --profile development
+```
+
+### Production aab
+
+```sh
+eas build --platform android
+```
+
 ### Now what?
 
 - If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).

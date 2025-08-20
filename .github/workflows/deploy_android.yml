@@ -13,7 +13,8 @@ jobs:
   deploy:
     if: ${{ github.event.pull_request.merged }}
     runs-on: ubuntu-latest
-
+    env:
+      RELEASE_FOLDER: "."
     steps:
       - name: Harden the runner (Audit all outbound calls)
         uses: step-security/harden-runner@4d991eb9b905ef189e4c376166672c3f2f230481 # v2.11.0
@@ -25,6 +26,12 @@ jobs:
         with:
           distribution: "oracle"
           java-version: 18
+
+      - name: Setup EAS
+        uses: expo/expo-github-action@c7b66a9c327a43a8fa7c0158e7f30d6040d2481e # v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
 
       - name: Install dependency
         run: yarn install
@@ -45,14 +52,12 @@ jobs:
         uses: gradle/actions/setup-gradle@d9c87d481d55275bb5441eef3fe0e46805f9ef70 # v3.5.0
 
       - name: Build
-        run: |
-          cd android
-          ./gradlew bundleRelease
+        run: eas build --non-interactive --local --output=./app-release.aab --profile production
 
       - name: Sign Release
         uses: r0adkll/sign-android-release@349ebdef58775b1e0d8099458af0816dc79b6407 # v1
         with:
-          releaseDirectory: android/app/build/outputs/bundle/release
+          releaseDirectory: ${{ env.RELEASE_FOLDER }}
           signingKeyBase64: ${{ secrets.SIGNING_KEY }}
           alias: ${{ secrets.ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
@@ -66,6 +71,6 @@ jobs:
         with:
           serviceAccountJson: service_account.json
           packageName: io.boterop.react_native_template
-          releaseFiles: android/app/build/outputs/bundle/release/app-release.aab
+          releaseFiles: ${{ env.RELEASE_FOLDER }}/app-release.aab
           track: production
           whatsNewDirectory: distribution/
