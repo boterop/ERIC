@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { View, TextInput, Alert, Text, TouchableOpacity } from "react-native";
+import { View, Alert, Text, TouchableOpacity } from "react-native";
 import userService from "@/services/userService";
 import storageService from "@/services/storageService";
 import { router } from "expo-router";
 import { useTranslation } from "react-i18next";
+import Input from "@/components/ui/Input";
 
 const LoginScreen = () => {
   const { t } = useTranslation();
@@ -31,13 +32,13 @@ const LoginScreen = () => {
         style={tw`flex gap-4 bg-white w-80% p-4 py-8 rounded shadow-md items-center justify-center`}
       >
         <Text style={tw`text-2xl capitalize`}>{t("login")}</Text>
-        <TextInput
+        <Input
           style={tw`w-full rounded-lg border-2 border-gray-300 p-2`}
           placeholder={t("email")}
           onChangeText={setEmail}
           value={email}
         />
-        <TextInput
+        <Input
           style={tw`w-full rounded-lg border-2 border-gray-300 p-2`}
           placeholder={t("password")}
           secureTextEntry
