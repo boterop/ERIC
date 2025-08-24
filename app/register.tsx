@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { View, TextInput, Alert, Text, TouchableOpacity } from "react-native";
+import { View, Alert, Text, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
 import userService from "@/services/userService";
 import storageService from "@/services/storageService";
 import { useTranslation } from "react-i18next";
+import Input from "@/components/ui/Input";
 
 const RegisterScreen = () => {
   const { t } = useTranslation();
@@ -44,26 +45,26 @@ const RegisterScreen = () => {
         style={tw`flex gap-4 bg-white w-80% p-4 py-8 rounded shadow-md items-center justify-center`}
       >
         <Text style={tw`text-2xl capitalize`}>{t("register")}</Text>
-        <TextInput
+        <Input
           style={tw`w-full rounded-lg border-2 border-gray-300 p-2`}
           placeholder={t("full_name")}
           onChangeText={setName}
           value={name}
         />
-        <TextInput
+        <Input
           style={tw`w-full rounded-lg border-2 border-gray-300 p-2`}
           placeholder={t("email")}
           onChangeText={setEmail}
           value={email}
         />
-        <TextInput
+        <Input
           style={tw`w-full rounded-lg border-2 border-gray-300 p-2`}
           placeholder={t("password")}
           secureTextEntry
           onChangeText={setPassword}
           value={password}
         />
-        <TextInput
+        <Input
           style={tw`w-full rounded-lg border-2 border-gray-300 p-2`}
           placeholder={t("confirm_password")}
           secureTextEntry

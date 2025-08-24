@@ -4,7 +4,7 @@ import answerService from "@/services/answerService";
 import scoreService from "@/services/scoreService";
 import storageService from "@/services/storageService";
 import { AntDesign } from "@expo/vector-icons";
-import { useLocalSearchParams } from "expo-router";
+import { router, useLocalSearchParams } from "expo-router";
 import { useCallback, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Text, TouchableOpacity, View } from "react-native";
@@ -72,7 +72,10 @@ const ScoreScreen = () => {
         </View>
       </View>
       <Text style={tw`text-center`}>{t("thank_you")}</Text>
-      <TouchableOpacity style={tw`w-full rounded-full bg-blue-500 py-2 px-4`}>
+      <TouchableOpacity
+        style={tw`w-full rounded-full bg-blue-500 py-2 px-4`}
+        onPress={() => router.replace("/home")}
+      >
         <Text style={tw`text-xl text-center text-white`}>{t("continue")}</Text>
       </TouchableOpacity>
     </View>
