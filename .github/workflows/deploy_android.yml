@@ -52,7 +52,7 @@ jobs:
         uses: gradle/actions/setup-gradle@d9c87d481d55275bb5441eef3fe0e46805f9ef70 # v3.5.0
 
       - name: Build
-        run: eas build --non-interactive --local --output=./app-release.aab --profile production
+        run: eas build --platform android --non-interactive --local --output=./app-release.aab --profile production
 
       - name: Sign Release
         uses: r0adkll/sign-android-release@349ebdef58775b1e0d8099458af0816dc79b6407 # v1
