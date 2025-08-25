@@ -1,4 +1,3 @@
-import { DefaultTheme, ThemeProvider } from "@react-navigation/native";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { StatusBar } from "expo-status-bar";
@@ -7,6 +6,7 @@ import "react-native-reanimated";
 
 import "./globals";
 import { Slot } from "expo-router";
+import { View } from "react-native";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -27,9 +27,9 @@ export default function RootLayout() {
   }
 
   return (
-    <ThemeProvider value={DefaultTheme}>
+    <View style={tw`flex-1 bg-white`}>
       <StatusBar hidden />
       <Slot />
-    </ThemeProvider>
+    </View>
   );
 }
