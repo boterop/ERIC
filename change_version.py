@@ -59,7 +59,7 @@ check_is_valid(new_version, current_version)
 change_package_json_version(current_version, new_version)
 create_whats_new_file(changes)
 
-os.system("npm i")
+os.system("yarn")
 os.system("git add .")
 
 message = f"""
