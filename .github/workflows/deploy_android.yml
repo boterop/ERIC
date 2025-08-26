@@ -3,15 +3,13 @@ name: Deploy to Playstore
 on:
   pull_request:
     branches:
-      - main
-    types: [closed]
+      - v0.1
 
 permissions: # added using https://github.com/step-security/secure-repo
   contents: read
 
 jobs:
   deploy:
-    if: ${{ github.event.pull_request.merged }}
     runs-on: ubuntu-latest
     env:
       PACKAGE_NAME: "com.sanbope.ERIC"
