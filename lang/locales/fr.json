@@ -93,8 +93,8 @@
     "french": "Français"
   },
   "procedural": {
-    "instructions": "Ensuite, vous trouverez une série de déclarations sur la compétence communicative interculturelle (CCI) et la dimension procédurale.\nIl n'y a pas de réponses correctes ou incorrectes. Veuillez remplir le questionnaire indiquant la fréquence avec laquelle cette déclaration fait.\nMerci beaucoup pour votre coopération et votre aide.\n\nSélectionnez le numéro correspondant à votre réponse\n\n1: presque jamais\n5: Presque toujours",
-    "description": "Quand je suis avec des gens d'autres cultures ...",
+    "instructions": "Veuillez lire attentivement les instructions suivantes :\nCi-dessous, vous trouverez une série d’affirmations portant sur la Compétence Communicative Interculturelle\n(CCI) et sa dimension procédurale. Il n’y a pas de réponses correctes ou incorrectes.\nVeuillez répondre au questionnaire en indiquant la fréquence avec laquelle vous mettez en pratique ce qui est\ndécrit dans chaque affirmation.\nNous vous remercions vivement pour votre participation et votre précieuse collaboration.\n\nCochez le numéro correspondant à votre réponse :\n1 : Presque jamais\n5 : Presque toujours",
+    "description": "Lorsque je suis avec des personnes provenant d’autres cultures…",
     "count": 13,
     "options": {
       "1": "Rarement",
@@ -104,19 +104,19 @@
       "5": "Presque toujours"
     },
     "questions": {
-      "1": "J'interprète leur comportement de mon point de vue culturel.",
-      "2": "Je qualifie ces gens en fonction des valeurs et des croyances de ma culture.",
-      "3": "Je me souviens de mes expériences interculturelles précédentes qui ont réussi à être plus efficaces.",
-      "4": "J'essaie de découvrir les objectifs et les objectifs que les autres ont en interaction.",
-      "5": "J'analyse auparavant la situation et les aspects qui peuvent influencer la communication.",
-      "6": "Je compare la communication non verbale (gestes, regards, distances, postures, etc.) de mon interlocuteur avec la pertinence de cette situation dans ma culture.",
-      "7": "J'adapte mes interventions au récepteur si je pense qu'il ne me comprend pas (je parle plus lentement, je fais plus de pauses, je prononce plus en détail, etc.)",
-      "8": "Je compare la façon de communiquer mon interlocuteur avec la situation appropriée à cette situation dans ma culture.",
-      "9": "J'analyse les coutumes et les habitudes du peuple de cette culture du point de vue de ma culture",
-      "10": "Je demande les choses que je veux connaître les gens de cette culture.",
-      "11": "Je participe à la vision du monde que les gens ont de cette culture même si cela implique de laisser de côté le mien.",
-      "12": "Je partage mes opinions sur les aspects culturels avec des gens de cette culture.",
-      "13": "Je réfléchis à ce que je sais déjà de cette culture quand je trouve des informations inconnues"
+      "1": "J’interprète leur comportement depuis ma perspective culturelle. ",
+      "2": "Je qualifie ces personnes selon les valeurs et croyances de ma culture",
+      "3": "Je me rappelle mes expériences interculturelles réussies afin d’être plus efficace",
+      "4": "J’essaie de découvrir les objectifs et les intentions des autres personnes dans l’interaction",
+      "5": "J’analyse au préalable la situation et ces aspects qui peuvent influencer la communication.",
+      "6": "Je compare la communication non verbale (gestes, regards, distances, postures etc…) de mon interlocuteur avec ce qui doit être adéquat à cette situation dans ma culture.",
+      "7": "J’adapte mes interventions au récepteur si je crois qu’il ne me comprend pas (je parle plus lentement, je fais plus de pauses, je prononce avec plus de précision, etc.).",
+      "8": "Je compare la manière de communiquer de mon interlocuteur avec ce qui est adéquat à cette situation dans ma culture.",
+      "9": "J’analyse les coutumes et les habitudes des gens de cette culture- là depuis la perspective de ma culture.",
+      "10": "Je demande aux gens de cette culture-là les choses que je veux savoir. ",
+      "11": "Je participe à la vision du monde que possèdent les gens de cette culture, même si cela implique de mettre de côté la mienne.",
+      "12": "Je partage mes opinions sur les aspects culturels avec les gens de cette culture-là.",
+      "13": "Je réfléchis à ce que je sais déjà de cette culture-là lors que je rencontre des informations inconnues."
     }
   },
   "all_fields_required": "Tous les champs sont obligatoires",
