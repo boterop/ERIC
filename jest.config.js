@@ -7,6 +7,7 @@ export default {
   collectCoverage: true,
   collectCoverageFrom: ["{app,components,hooks}/**/*.{js,jsx,ts,tsx}"],
   modulePathIgnorePatterns: [
+    "__tests__/fixtures/",
     "__tests__/__mocks__/",
     "__tests__/test_helper.ts",
   ],
