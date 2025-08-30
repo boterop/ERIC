@@ -97,8 +97,8 @@
     "description": "Lorsque je suis avec des personnes provenant d’autres cultures…",
     "count": 13,
     "options": {
-      "1": "Rarement",
-      "2": "Rarement",
+      "1": "Presque jamais",
+      "2": "rarement",
       "3": "Parfois",
       "4": "Fréquemment",
       "5": "Presque toujours"
