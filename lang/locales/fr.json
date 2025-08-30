@@ -59,32 +59,32 @@
     "critical": "Critique"
   },
   "emotional": {
-    "instructions": "Ensuite, vous trouverez une série de déclarations sur la compétence communicative interculturelle (CCI) dans sa dimension affective.\n\nIl n'y a pas de réponses correctes ou incorrectes. Veuillez remplir le questionnaire indiquant son degré d'accord sur ladite déclaration.\n\nMerci beaucoup pour votre coopération et votre aide.\n\nSélectionnez le numéro correspondant à votre réponse:\n1: en désaccord très\n5: Très d'accord",
+    "instructions": "Ci-dessous, vous trouverez une série d’affirmations portant sur la Compétence Communicative Interculturelle\n(CCI) et sa dimension affective. Il n’y a pas de réponses correctes ou incorrectes. Veuillez répondre au\nquestionnaire en indiquant votre degré d’accord sur chaque affirmation.\nNous vous remercions vivement pour votre participation et votre précieuse collaboration.\n\nCochez le numéro correspondant à votre réponse :\n1 : Totalement en désaccord\n5 : Totalement d’accord",
     "description": "",
     "count": 15,
     "options": {
-      "1": "Totalement en désaccord",
-      "2": "Être en désaccord",
+      "1": "Tout à fait d'accord",
+      "2": "En désaccord",
       "3": "Neutre",
-      "4": "D'ACCORD",
-      "5": "Totalement d'accord"
+      "4": "D'accord",
+      "5": "Tout à fait d'accord"
     },
     "questions": {
-      "1": "Je respecte les valeurs des personnes d'autres cultures.",
-      "2": "Je me modifie (je suis inquiet, je me dérange facilement) facilement quand j'interagis avec des gens d'autres cultures.",
-      "3": "Quand je suis entouré de gens d'origine culturelle différentes, je pense que mes valeurs sont menacées.",
-      "4": "Je sais toujours quoi dire quand je parle à des gens d'autres cultures.",
-      "5": "Je suis prêt à me distancier de mon identité culturelle pour mieux comprendre les autres cultures.",
-      "6": "Je peux être aussi sociable que vous le souhaitez lorsque j'interagis avec des gens d'autres cultures.",
-      "7": "J'évite les situations dans lesquelles je devrai faire face à des collègues avec des cultures autres que la mienne.",
-      "8": "Je respecte comment se comporter de personnes de différentes cultures à la mienne.",
-      "9": "Je n'accepterais pas les opinions de personnes, des cultures différentes à la mienne.",
-      "10": "Je fais confiance à ma capacité à surmonter les difficultés qui surviennent dans l'interaction avec les personnes d'autres cultures (incertitude, anxiété, critique, etc.).",
-      "11": "Je n'aime pas être avec des gens d'autres cultures.",
-      "12": "Je me sens généralement peu utile lorsque j'interagis avec des gens d'autres cultures.",
-      "13": "Je suis tout à fait sûr de moi lorsque j'interagis avec des gens d'autres cultures.",
-      "14": "J'apprécie la diversité culturelle parce que c'est une condition de l'être humain.",
-      "15": "Je me décourage généralement quand je suis avec des gens d'autres cultures."
+      "1": "Je respecte les valeurs des personnes d’autres cultures.",
+      "2": "Je me sens facilement troublé, inquiète ou perturbé lorsque j’interagis avec des personnes d’autres cultures",
+      "3": "Lorsque je suis entouré de personnes d’origines culturelles différentes, je sens que mes valeurs sont menacées.",
+      "4": "Je sais toujours quoi dire lorsque je parle avec des gens d’autres cultures.",
+      "5": "Je suis disposé à m’éloigner de mon identité culturelle pour mieux comprendre d’autres cultures.",
+      "6": "Je peux être aussi sociable que je veux lorsque j’interagis avec des gens d’autres cultures.",
+      "7": "J’évite des situations dans lesquelles je dois interagir avec des camarades de cultures différentes de la mienne.",
+      "8": "Je respecte la manière d’agir des personnes provenant de cultures différentes de la mienne.",
+      "9": "Je n’accepterais pas les opinions de personnes de cultures différentes de la mienne",
+      "10": "Je fais confiance à ma capacité à surmonter les difficultés qui peuvent survenir lors de l’interaction avec des personnes d’autres cultures (incertitude, anxiété, critiques etc…)",
+      "11": "Je n’apprécie pas être en compagnie des personnes provenant d’autres cultures.",
+      "12": "Je me sens normalement découragé quand je suis en compagnie d’autres cultures.",
+      "13": "Je suis assez sûr de moi-même quand j’interagis avec des personnes d’autres cultures.",
+      "14": "J’apprécie la diversité culturelle parce qu’elle est une condition propre à l’être humain.",
+      "15": "Je me décourage généralement quand je suis avec des personnes d'autres cultures."
     }
   },
   "language": {
