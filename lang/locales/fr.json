@@ -28,28 +28,28 @@
     }
   },
   "critical": {
-    "instructions": "Ensuite, vous trouverez une série de déclarations\nsur la compétence communicative interculturelle (CCI)\nSa dimension critique. Il n'y a pas de réponses correctes ou\nIncorrect, veuillez remplir le questionnaire indiquant le\nFréquence avec laquelle cette déclaration fait.\nMerci beaucoup pour votre coopération et votre aide.\nSélectionnez le numéro correspondant à votre réponse\n1: Presque jamais 5: Presque toujours.",
-    "description": "Enseignants: quand je suis\nLangues d'enseignement\nÉtrangers ...\nÉtudiants: quand je suis\nApprentissage des langues\nÉtrangers ...",
+    "instructions": "Ci-dessous, vous trouverez une série d’affirmations portant sur la Compétence Communicative Interculturelle\n(CCI) et sa dimension critique. Il n’y a pas de bonnes ou de mauvaises réponses.\nVeuillez répondre au questionnaire en indiquant la fréquence avec laquelle vous faites chaque affirmation.\nNous vous remercions vivement pour votre participation et votre précieuse collaboration.\n\nCochez le numéro correspondant à votre réponse :\n1 : Presque jamais\n5 : Presque toujours",
+    "description": "Enseignants : Lorsque j’enseigne les langues étrangères.\nÉtudiants : Lorsque j’apprends les langues étrangères.",
     "count": 11,
     "options": {
-      "1": "Rarement",
-      "2": "Rarement",
+      "1": "Presque jamais",
+      "2": "rarement",
       "3": "Parfois",
       "4": "Fréquemment",
       "5": "Presque toujours"
     },
     "questions": {
-      "1": "Nous créons des connaissances à partir de la diversité des langues et des cultures.",
-      "2": "Nous réfléchissons aux situations, aux comportements sociaux ou aux systèmes qui favorisent les relations de puissance et de soumission et empêcher les relations équitables et équitables",
-      "3": "Nous participons activement à la construction de connaissances pour visualiser des alternatives sociales d'amélioration en considérant les différents points de vue, expériences et connaissances.",
-      "4": "Nous promouvons la responsabilité collective dans la réalisation des objectifs locaux avec un impact mondial.",
-      "5": "Enrichissons nos perspectives pour prendre des décisions et résoudre les conflits du dialogue avec les autres.",
-      "6": "Nous promouvons le dialogue et la coconstruction des connaissances sur les questions liées à la démocratie, à la justice sociale, aux droits de l'homme, à la citoyenneté.",
-      "7": "Nous connectons l'apprentissage en classe avec le service à la communauté pour générer un impact positif à la fois local et mondial.",
-      "8": "Nous participons activement à des projets de soutien communautaire pour promouvoir des changements positifs dans ma communauté.",
-      "9": "Nous dialogues sur des concepts traditionnels tels que la culture, la nationalité, l'identité.",
-      "10": "Nous construisons des réflexions critiques sur les risques impliqués dans la généralisation, le stéréotype et avons des préjugés contre les cultures.",
-      "11": "Nous impliquons la reconnaissance des cultures et des langues minoritaires, visualisant la lutte des pouvoirs entre les langues mondiales et ancestrales ainsi que sa pertinence pour le développement critique des connaissances."
+      "1": "Nous construisons des connaissances à partir de la diversité de langues et cultures.",
+      "2": "Nous réfléchissons à des situations, des comportements sociaux ou des systèmes qui favorisent des relations de pouvoir et de soumission et qui empêchent des relations justes et équitables.",
+      "3": "Nous participons activement à la construction des savoirs afin d’envisager des alternatives sociales d’amélioration, en tenant compte des différents points de vue, expériences et savoirs.",
+      "4": "Nous promouvons la responsabilité collective dans la réussite des buts locaux qui ont un impact global.",
+      "5": "Nous enrichissons nos perspectives dans la prise de décisions et résolutions de conflits à partir du dialogue avec les autres.",
+      "6": "Nous promouvons le dialogue et la co-construction des savoirs autour des sujets reliés à la démocratie, la justice sociale, les droits humains et la citoyenneté.",
+      "7": "Nous relions l’apprentissage en classe au service de la communauté afin de générer un impact positif tant au niveau local que mondial.",
+      "8": "Nous participons activement dans des projets de support communautaire afin de promouvoir des changements positifs dans ma communauté.",
+      "9": "Nous dialoguons autour de concepts traditionnels tels que la culture, la nationalité et l’identité.",
+      "10": "Nous construisons des réflexions critiques sur les risques liés au fait de généraliser, de stéréotyper et d’avoir des préjugés envers les cultures.",
+      "11": "Nous favorisons la reconnaissance des cultures et des langues minoritaires, par l’analyse des rapports de pouvoir entre les langues globales et ancestrales, ainsi que leur pertinence pour le développement critique des savoirs."
     }
   },
   "dimension": {
