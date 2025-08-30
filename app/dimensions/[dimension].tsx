@@ -78,6 +78,19 @@ const DimensionScreen = () => {
 
     storageService.get("session").then((t) => {
       token.current = t || "";
+
+      answerService
+        .listByDimension(dimension.toString() as Dimension, t || "")
+        .then((answers) => {
+          let lastQuestion = 0;
+          for (const answer of answers) {
+            if (answer.question > lastQuestion) lastQuestion = answer.question;
+          }
+
+          setQuestion(lastQuestion + 1);
+          setIsReady(true);
+        });
+
       setIsReady(true);
     });
   }, []);
