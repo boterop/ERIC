@@ -119,8 +119,12 @@
       "13": "I reflect on what I already know about that culture when I find unknown information"
     }
   },
+  "start_screen": {
+    "1": "Welcome to the Critical Intercultural Resources Scale. This questionnaire will help you understand how you communicate with people from different cultures. Based on the results, you will be able to reflect on the best way to communicate appropriately and effectively.",
+    "2": "We wish to access the information without compromising your identity. Therefore, all the information you share will be used solely for research purposes, in an anonymous and secure manner."
+  },
   "all_fields_required": "All fields are mandatory",
-  "authors": "Authors:\nJacqueline García Botero\nMargarita Alexandra Botero Restrepo\nMónica Rolong\n\nApp Developed by\nSantiago Botero Pelaez",
+  "authors": "Authors:\n- Jacqueline García Botero\n- Margarita Alexandra Botero Restrepo\n- Mónica Rolong\n\nApp Developed by\nSantiago Botero Pelaez",
   "confirm_password": "Confirm Password",
   "connection_error": "There was an error connecting to the server. Please try again later.",
   "continue": "Continue",
@@ -142,7 +146,6 @@
   "select_dimension": "Select dimension",
   "select_language": "Select the language",
   "start": "Start",
-  "start_screen": "Welcome to the Critical Intercultural Resources Scale. This questionnaire will help you understand how you communicate with people from different cultures. Based on the results, you will be able to reflect on the best way to communicate appropriately and effectively.",
   "thank_you": "Thank you for completing the Critical Intercultural Resources Scale and Critical Dimension.",
   "waiting_connection": "Waiting for connection"
 }

@@ -104,7 +104,7 @@
       "5": "Presque toujours"
     },
     "questions": {
-      "1": "J’interprète leur comportement depuis ma perspective culturelle. ",
+      "1": "J’interprète leur comportement depuis ma perspective culturelle.",
       "2": "Je qualifie ces personnes selon les valeurs et croyances de ma culture",
       "3": "Je me rappelle mes expériences interculturelles réussies afin d’être plus efficace",
       "4": "J’essaie de découvrir les objectifs et les intentions des autres personnes dans l’interaction",
@@ -113,14 +113,18 @@
       "7": "J’adapte mes interventions au récepteur si je crois qu’il ne me comprend pas (je parle plus lentement, je fais plus de pauses, je prononce avec plus de précision, etc.).",
       "8": "Je compare la manière de communiquer de mon interlocuteur avec ce qui est adéquat à cette situation dans ma culture.",
       "9": "J’analyse les coutumes et les habitudes des gens de cette culture- là depuis la perspective de ma culture.",
-      "10": "Je demande aux gens de cette culture-là les choses que je veux savoir. ",
+      "10": "Je demande aux gens de cette culture-là les choses que je veux savoir.",
       "11": "Je participe à la vision du monde que possèdent les gens de cette culture, même si cela implique de mettre de côté la mienne.",
       "12": "Je partage mes opinions sur les aspects culturels avec les gens de cette culture-là.",
       "13": "Je réfléchis à ce que je sais déjà de cette culture-là lors que je rencontre des informations inconnues."
     }
   },
+  "start_screen": {
+    "1": "Bienvenue dans l’Échelle des Ressources Interculturelles et la Dimension Critique. Ce questionnaire vous permettra de comprendre comment vous communiquez avec des personnes de différentes cultures. En fonction des résultats, vous pourrez réfléchir à la meilleure façon de communiquer de manière appropriée et efficace.",
+    "2": "Nous souhaitons disposer des informations sans compromettre votre identité. Ainsi, toutes les informations que vous partagerez seront utilisées uniquement à des fins de recherche, de manière anonyme et sécurisée."
+  },
   "all_fields_required": "Tous les champs sont obligatoires",
-  "authors": "Auteurs:\nJacqueline García Botero\nMargarita Alexandra Botero Restrepo\nMónica Rolong\n\nApplication développée par\nSantiago Botero Pelaez",
+  "authors": "Auteurs:\n- Jacqueline García Botero\n- Margarita Alexandra Botero Restrepo\n- Mónica Rolong\n\nApplication développée par\nSantiago Botero Pelaez",
   "confirm_password": "Confirmer le mot de passe",
   "connection_error": "Erreur de connexion",
   "continue": "Continuer",
@@ -142,7 +146,6 @@
   "select_dimension": "Sélectionner la dimension",
   "select_language": "Sélectionnez la langue",
   "start": "Commencer",
-  "start_screen": "Bienvenue dans l’Échelle des Ressources Interculturelles et la Dimension Critique. Ce questionnaire vous permettra de comprendre comment vous communiquez avec des personnes de différentes cultures. En fonction des résultats, vous pourrez réfléchir à la meilleure façon de communiquer de manière appropriée et efficace.",
   "thank_you": "Merci d'avoir terminé l'Échelle des Ressources Interculturelles et la Dimension Critique.",
   "waiting_connection": "En attente de connexion"
 }
