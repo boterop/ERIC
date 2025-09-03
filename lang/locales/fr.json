@@ -1,6 +1,6 @@
 {
   "cognitive": {
-    "instructions": "Ci-dessous, vous trouverez une série d’affirmations portant sur la Compétence Communicative Interculturelle\n(CCI) et sa dimension cognitive. Il n’y a pas de réponses correctes ou incorrectes.\nVeuillez répondre au questionnaire rapidement et cochez la première impression, en indiquant à quelle mesure vous\nconnaissez ces faits.\nNous vous remercions vivement pour votre participation et votre précieuse collaboration.\n\nCochez le numéro correspondant à votre réponse :\n1 : Totalement en désaccord\n5 : Totalement d’accord",
+    "instructions": "Ci-dessous, vous trouverez une série d’affirmations portant sur la Compétence Communicative Interculturelle\n(CCI) et sa dimension cognitive. Il n’y a pas de réponses correctes ou incorrectes.\nVeuillez répondre au questionnaire rapidement et cochez la première impression, en indiquant à quelle mesure vous\nconnaissez ces faits.\nNous vous remercions vivement pour votre participation et votre précieuse collaboration.\n\n<b>Cochez le numéro correspondant à votre réponse :\n1 : Totalement en désaccord\n5 : Totalement d’accord</b>",
     "description": "",
     "count": 14,
     "options": {
@@ -28,7 +28,7 @@
     }
   },
   "critical": {
-    "instructions": "Ci-dessous, vous trouverez une série d’affirmations portant sur la Compétence Communicative Interculturelle\n(CCI) et sa dimension critique. Il n’y a pas de bonnes ou de mauvaises réponses.\nVeuillez répondre au questionnaire en indiquant la fréquence avec laquelle vous faites chaque affirmation.\nNous vous remercions vivement pour votre participation et votre précieuse collaboration.\n\nCochez le numéro correspondant à votre réponse :\n1 : Presque jamais\n5 : Presque toujours",
+    "instructions": "Ci-dessous, vous trouverez une série d’affirmations portant sur la Compétence Communicative Interculturelle\n(CCI) et sa dimension critique. Il n’y a pas de bonnes ou de mauvaises réponses.\nVeuillez répondre au questionnaire en indiquant la fréquence avec laquelle vous faites chaque affirmation.\nNous vous remercions vivement pour votre participation et votre précieuse collaboration.\n\n<b>Cochez le numéro correspondant à votre réponse :\n1 : Presque jamais\n5 : Presque toujours</b>",
     "description": "Enseignants : Lorsque j’enseigne les langues étrangères.\nÉtudiants : Lorsque j’apprends les langues étrangères.",
     "count": 11,
     "options": {
@@ -59,7 +59,7 @@
     "critical": "Critique"
   },
   "emotional": {
-    "instructions": "Ci-dessous, vous trouverez une série d’affirmations portant sur la Compétence Communicative Interculturelle\n(CCI) et sa dimension affective. Il n’y a pas de réponses correctes ou incorrectes. Veuillez répondre au\nquestionnaire en indiquant votre degré d’accord sur chaque affirmation.\nNous vous remercions vivement pour votre participation et votre précieuse collaboration.\n\nCochez le numéro correspondant à votre réponse :\n1 : Totalement en désaccord\n5 : Totalement d’accord",
+    "instructions": "Ci-dessous, vous trouverez une série d’affirmations portant sur la Compétence Communicative Interculturelle\n(CCI) et sa dimension affective. Il n’y a pas de réponses correctes ou incorrectes. Veuillez répondre au\nquestionnaire en indiquant votre degré d’accord sur chaque affirmation.\nNous vous remercions vivement pour votre participation et votre précieuse collaboration.\n\n<b>Cochez le numéro correspondant à votre réponse :\n1 : Totalement en désaccord\n5 : Totalement d’accord</b>",
     "description": "",
     "count": 15,
     "options": {
@@ -93,7 +93,7 @@
     "french": "Français"
   },
   "procedural": {
-    "instructions": "Veuillez lire attentivement les instructions suivantes :\nCi-dessous, vous trouverez une série d’affirmations portant sur la Compétence Communicative Interculturelle\n(CCI) et sa dimension procédurale. Il n’y a pas de réponses correctes ou incorrectes.\nVeuillez répondre au questionnaire en indiquant la fréquence avec laquelle vous mettez en pratique ce qui est\ndécrit dans chaque affirmation.\nNous vous remercions vivement pour votre participation et votre précieuse collaboration.\n\nCochez le numéro correspondant à votre réponse :\n1 : Presque jamais\n5 : Presque toujours",
+    "instructions": "Veuillez lire attentivement les instructions suivantes :\nCi-dessous, vous trouverez une série d’affirmations portant sur la Compétence Communicative Interculturelle\n(CCI) et sa dimension procédurale. Il n’y a pas de réponses correctes ou incorrectes.\nVeuillez répondre au questionnaire en indiquant la fréquence avec laquelle vous mettez en pratique ce qui est\ndécrit dans chaque affirmation.\nNous vous remercions vivement pour votre participation et votre précieuse collaboration.\n\n<b>Cochez le numéro correspondant à votre réponse :\n1 : Presque jamais\n5 : Presque toujours</b>",
     "description": "Lorsque je suis avec des personnes provenant d’autres cultures…",
     "count": 13,
     "options": {

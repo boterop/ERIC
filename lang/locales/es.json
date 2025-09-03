@@ -1,6 +1,6 @@
 {
   "cognitive": {
-    "instructions": "A continuación encontrará una serie de afirmaciones sobre la Competencia Comunicativa Intercultural (CCI) en su dimensión cognitiva.\n\nNo hay respuestas correctas o incorrectas. Por favor, rellene el cuestionario rápidamente y marque la primera impresión, indicando cuánto conoce dichos hechos.\n\nMuchas gracias por su cooperación y ayuda.\n\nSeleccione el número correspondiente a su respuesta:\n1: casi nada\n5: mucho",
+    "instructions": "A continuación encontrará una serie de afirmaciones sobre la Competencia Comunicativa Intercultural (CCI) en su dimensión cognitiva.\n\nNo hay respuestas correctas o incorrectas. Por favor, rellene el cuestionario rápidamente y marque la primera impresión, indicando cuánto conoce dichos hechos.\n\nMuchas gracias por su cooperación y ayuda.\n\n<b>Seleccione el número correspondiente a su respuesta:\n1: casi nada\n5: mucho</b>",
     "description": "",
     "count": 14,
     "options": {
@@ -28,7 +28,7 @@
     }
   },
   "critical": {
-    "instructions": "A continuación encontrará una serie de afirmaciones\nsobre la Competencia Comunicativa Intercultural (CCI) en\nsu dimensión crítica. No hay respuestas correctas o\nincorrectas. Por favor, rellene el cuestionario indicando la\nfrecuencia con la que realiza dicha afirmación.\nMuchas gracias por su cooperación y ayuda.\nSeleccione el número correspondiente a su respuesta\n1: casi nunca  5: casi siempre.",
+    "instructions": "A continuación encontrará una serie de afirmaciones\nsobre la Competencia Comunicativa Intercultural (CCI) en\nsu dimensión crítica. No hay respuestas correctas o\nincorrectas. Por favor, rellene el cuestionario indicando la\nfrecuencia con la que realiza dicha afirmación.\nMuchas gracias por su cooperación y ayuda.\n\n<b>Seleccione el número correspondiente a su respuesta\n1: casi nunca  5: casi siempre.</b>",
     "description": "DOCENTES: CUANDO ESTOY\nENSEÑANDO LENGUAS\nEXTRANJERAS...\nESTUDIANTES: CUANDO ESTOY\nAPRENDIENDO LENGUAS\nEXTRANJERAS…",
     "count": 11,
     "options": {
@@ -59,7 +59,7 @@
     "critical": "Crítica"
   },
   "emotional": {
-    "instructions": "A continuación encontrará una serie de afirmaciones sobre la Competencia Comunicativa Intercultural (CCI) en su dimensión afectiva.\n\nNo hay respuestas correctas o incorrectas. Por favor, rellene el cuestionario indicando su grado de acuerdo sobre dicha afirmación.\n\nMuchas gracias por su cooperación y ayuda.\n\nSeleccione el número correspondiente a su respuesta:\n1: muy en desacuerdo\n5: muy de acuerdo",
+    "instructions": "A continuación encontrará una serie de afirmaciones sobre la Competencia Comunicativa Intercultural (CCI) en su dimensión afectiva.\n\nNo hay respuestas correctas o incorrectas. Por favor, rellene el cuestionario indicando su grado de acuerdo sobre dicha afirmación.\n\nMuchas gracias por su cooperación y ayuda.\n\n<b>Seleccione el número correspondiente a su respuesta:\n1: muy en desacuerdo\n5: muy de acuerdo</b>",
     "description": "",
     "count": 15,
     "options": {
@@ -98,7 +98,7 @@
     "high": ""
   },
   "procedural": {
-    "instructions": "A continuación encontrará una serie de afirmaciones sobre la Competencia Comunicativa Intercultural (CCI) y la dimensión procedimental.\nNo hay respuestas correctas o incorrectas. Por favor, rellene el cuestionario indicando la frecuencia con la que realiza dicha afirmación.\nMuchas gracias por su cooperación y ayuda.\n\nSeleccione el número correspondiente a su respuesta\n\n1: casi nunca\n5: casi siempre",
+    "instructions": "A continuación encontrará una serie de afirmaciones sobre la Competencia Comunicativa Intercultural (CCI) y la dimensión procedimental.\nNo hay respuestas correctas o incorrectas. Por favor, rellene el cuestionario indicando la frecuencia con la que realiza dicha afirmación.\nMuchas gracias por su cooperación y ayuda.\n\n<b>Seleccione el número correspondiente a su respuesta\n\n1: casi nunca\n5: casi siempre</b>",
     "description": "CUANDO ESTOY CON PERSONAS DE OTRAS CULTURAS...",
     "count": 13,
     "options": {

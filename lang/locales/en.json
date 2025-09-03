@@ -1,6 +1,6 @@
 {
   "cognitive": {
-    "instructions": "Next you will find a series of statements on intercultural communicative competence (ICC) in its cognitive dimension.\n\nThere are no correct or incorrect answers. Please fill in the questionnaire, indicating how much you know about this facts.\n\nThank you very much for your cooperation and help.\n\nSelect the number corresponding to your answer:\n1: Almost nothing\n5: A lot",
+    "instructions": "Next you will find a series of statements on intercultural communicative competence (ICC) in its cognitive dimension.\n\nThere are no correct or incorrect answers. Please fill in the questionnaire, indicating how much you know about this facts.\n\nThank you very much for your cooperation and help.\n\n<b>Select the number corresponding to your answer:\n1: Almost nothing\n5: A lot</b>",
     "description": "",
     "count": 14,
     "options": {
@@ -28,7 +28,7 @@
     }
   },
   "critical": {
-    "instructions": "Next you will find a series of statements on intercultural communicative competence (ICC) in its critical dimension. There are no correct or incorrect answers.\nPlease fill in the questionnaire indicating the frequency with which you make this statement.\nThank you very much for your cooperation and help.\n\nSelect the number corresponding to your answer\n1: Almost never\n5: Almost always.",
+    "instructions": "Next you will find a series of statements on intercultural communicative competence (ICC) in its critical dimension. There are no correct or incorrect answers.\nPlease fill in the questionnaire indicating the frequency with which you make this statement.\nThank you very much for your cooperation and help.\n\n<b>Select the number corresponding to your answer\n1: Almost never\n5: Almost always.</b>",
     "description": "Teachers: when I am teaching foreign languages ...\n\nStudents: when I am learning foreign languages ...",
     "count": 11,
     "options": {
@@ -59,7 +59,7 @@
     "critical": "Critical"
   },
   "emotional": {
-    "instructions": "Next you will find a series of statements on intercultural communicative competence (ICC) in its affective dimension.\n\nThere are no correct or incorrect answers. Please fill in the questionnaire indicating its degree of agreement on said statement.\n\nThank you very much for your cooperation and help.\n\nSelect the number corresponding to your answer:\n1: Totaly disagree\n5: Totaly agree",
+    "instructions": "Next you will find a series of statements on intercultural communicative competence (ICC) in its affective dimension.\n\nThere are no correct or incorrect answers. Please fill in the questionnaire indicating its degree of agreement on said statement.\n\nThank you very much for your cooperation and help.\n\n<b>Select the number corresponding to your answer:\n1: Totaly disagree\n5: Totaly agree</b>",
     "description": "",
     "count": 15,
     "options": {
@@ -93,7 +93,7 @@
     "french": "French"
   },
   "procedural": {
-    "instructions": "Next you will find a series of statements on intercultural communicative competence (ICC) and the procedural dimension.\nThere are no correct or incorrect answers. Please fill in the questionnaire indicating the frequency with which you make this statement.\nThank you very much for your cooperation and help.\n\nSelect the number corresponding to your answer\n\n1: Almost never\n5: Almost always",
+    "instructions": "Next you will find a series of statements on intercultural communicative competence (ICC) and the procedural dimension.\nThere are no correct or incorrect answers. Please fill in the questionnaire indicating the frequency with which you make this statement.\nThank you very much for your cooperation and help.\n\n<b>Select the number corresponding to your answer\n\n1: Almost never\n5: Almost always</b>",
     "description": "When I am with people from other cultures ...",
     "count": 13,
     "options": {
