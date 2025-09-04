@@ -194,7 +194,7 @@ const DimensionScreen = () => {
           {options.map((option) => (
             <CheckBox
               key={option}
-              label={t(`${dimension}.options.${option}`)}
+              label={`${option} ${option === 1 || option === 5 ? t(`${dimension}.options.${option}`) : ""}`}
               checked={response === option}
               onPress={() => setResponse(option)}
             />

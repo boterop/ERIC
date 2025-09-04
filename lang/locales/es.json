@@ -5,9 +5,6 @@
     "count": 14,
     "options": {
       "1": "Casi nada",
-      "2": "Poco",
-      "3": "Algo",
-      "4": "Bastante",
       "5": "Mucho"
     },
     "questions": {
@@ -33,9 +30,6 @@
     "count": 11,
     "options": {
       "1": "Casi nunca",
-      "2": "Pocas veces",
-      "3": "A veces",
-      "4": "Frecuentemente",
       "5": "Casi siempre"
     },
     "questions": {
@@ -64,9 +58,6 @@
     "count": 15,
     "options": {
       "1": "Totalmente en desacuerdo",
-      "2": "En desacuerdo",
-      "3": "Neutral",
-      "4": "De acuerdo",
       "5": "Totalmente de acuerdo"
     },
     "questions": {
@@ -103,14 +94,11 @@
     "count": 13,
     "options": {
       "1": "Casi nunca",
-      "2": "Pocas veces",
-      "3": "A veces",
-      "4": "Frecuentemente",
       "5": "Casi siempre"
     },
     "questions": {
       "1": "Interpreto su comportamiento desde mi perspectiva cultural.",
-      "2": "Califico a éstas personas según los valores y creencias de mi cultura.",
+      "2": "Califico a estas personas según los valores y creencias de mi cultura.",
       "3": "Recuerdo mis experiencias interculturales previas que tuvieron éxito para ser más efectivo.",
       "4": "Intento descubrir los objetivos y los propósitos que tienen las otras personas en la interacción.",
       "5": "Analizo previamente la situación y aquellos aspectos que puedan influir en la comunicación.",
@@ -129,7 +117,7 @@
     "2": "Queremos disponer de la información sin comprometer tu identidad. Por eso, toda la información que compartas será utilizada únicamente con fines de investigación, de manera anónima y segura."
   },
   "all_fields_required": "Todos los campos son obligatorios",
-  "authors": "Autores:\n- Jacqueline García Botero\n- Margarita Alexandra Botero Restrepo\n- Mónica Rolong\n\nAplicación Desarrollada por\nhttps://boterop.io",
+  "authors": "Autores:\n- Jacqueline García Botero\n- Margarita Alexandra Botero Restrepo\n- Yeray González Plasencia\n- Mónica Rolong\n\nAplicación Desarrollada por\nhttps://boterop.io",
   "confirm_password": "Confirmar contraseña",
   "connection_error": "Hubo un error al conectar al servidor. Por favor, inténtelo de nuevo más tarde.",
   "continue": "Continuar",

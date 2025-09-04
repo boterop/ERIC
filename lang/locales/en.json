@@ -5,9 +5,6 @@
     "count": 14,
     "options": {
       "1": "Almost nothing",
-      "2": "A bit",
-      "3": "Something",
-      "4": "Quite",
       "5": "A lot"
     },
     "questions": {
@@ -33,9 +30,6 @@
     "count": 11,
     "options": {
       "1": "Almost never",
-      "2": "Rarely",
-      "3": "Sometimes",
-      "4": "Frequently",
       "5": "Almost always"
     },
     "questions": {
@@ -64,9 +58,6 @@
     "count": 15,
     "options": {
       "1": "Totally disagree",
-      "2": "Disagree",
-      "3": "Neutral",
-      "4": "Agree",
       "5": "Totally agree"
     },
     "questions": {
@@ -98,9 +89,6 @@
     "count": 13,
     "options": {
       "1": "Almost never",
-      "2": "Rarely",
-      "3": "Sometimes",
-      "4": "Frequently",
       "5": "Almost always"
     },
     "questions": {
@@ -124,7 +112,7 @@
     "2": "We wish to access the information without compromising your identity. Therefore, all the information you share will be used solely for research purposes, in an anonymous and secure manner."
   },
   "all_fields_required": "All fields are mandatory",
-  "authors": "Authors:\n- Jacqueline García Botero\n- Margarita Alexandra Botero Restrepo\n- Mónica Rolong\n\nApp Developed by\nhttps://boterop.io",
+  "authors": "Authors:\n- Jacqueline García Botero\n- Margarita Alexandra Botero Restrepo\n- Yeray González Plasencia\n- Mónica Rolong\n\nApp Developed by\nhttps://boterop.io",
   "confirm_password": "Confirm Password",
   "connection_error": "There was an error connecting to the server. Please try again later.",
   "continue": "Continue",

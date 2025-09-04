@@ -5,9 +5,6 @@
     "count": 14,
     "options": {
       "1": "Tout à fait d'accord",
-      "2": "En désaccord",
-      "3": "Neutre",
-      "4": "D'accord",
       "5": "Tout à fait d'accord"
     },
     "questions": {
@@ -33,9 +30,6 @@
     "count": 11,
     "options": {
       "1": "Presque jamais",
-      "2": "rarement",
-      "3": "Parfois",
-      "4": "Fréquemment",
       "5": "Presque toujours"
     },
     "questions": {
@@ -64,9 +58,6 @@
     "count": 15,
     "options": {
       "1": "Tout à fait d'accord",
-      "2": "En désaccord",
-      "3": "Neutre",
-      "4": "D'accord",
       "5": "Tout à fait d'accord"
     },
     "questions": {
@@ -98,9 +89,6 @@
     "count": 13,
     "options": {
       "1": "Presque jamais",
-      "2": "rarement",
-      "3": "Parfois",
-      "4": "Fréquemment",
       "5": "Presque toujours"
     },
     "questions": {
@@ -124,7 +112,7 @@
     "2": "Nous souhaitons disposer des informations sans compromettre votre identité. Ainsi, toutes les informations que vous partagerez seront utilisées uniquement à des fins de recherche, de manière anonyme et sécurisée."
   },
   "all_fields_required": "Tous les champs sont obligatoires",
-  "authors": "Auteurs:\n- Jacqueline García Botero\n- Margarita Alexandra Botero Restrepo\n- Mónica Rolong\n\nApplication développée par\nhttps://boterop.io",
+  "authors": "Auteurs:\n- Jacqueline García Botero\n- Margarita Alexandra Botero Restrepo\n- Yeray González Plasencia\n- Mónica Rolong\n\nApplication développée par\nhttps://boterop.io",
   "confirm_password": "Confirmer le mot de passe",
   "connection_error": "Erreur de connexion",
   "continue": "Continuer",
