@@ -2,6 +2,7 @@ import "./alert";
 import "./answerService";
 import "./async_storage";
 import "./expo_router";
+import "./formattedText";
 import "./i18n";
 import "./i18next";
 import "./react-native-svg";
