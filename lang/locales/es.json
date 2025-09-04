@@ -1,13 +1,10 @@
 {
   "cognitive": {
-    "instructions": "A continuación encontrará una serie de afirmaciones sobre la Competencia Comunicativa Intercultural (CCI) en su dimensión cognitiva.\n\nNo hay respuestas correctas o incorrectas. Por favor, rellene el cuestionario rápidamente y marque la primera impresión, indicando cuánto conoce dichos hechos.\n\nMuchas gracias por su cooperación y ayuda.\n\nSeleccione el número correspondiente a su respuesta:\n1: casi nada\n5: mucho",
+    "instructions": "A continuación encontrará una serie de afirmaciones sobre la Competencia Comunicativa Intercultural (CCI) en su dimensión cognitiva.\n\nNo hay respuestas correctas o incorrectas. Por favor, rellene el cuestionario rápidamente y marque la primera impresión, indicando cuánto conoce dichos hechos.\n\nMuchas gracias por su cooperación y ayuda.\n\n<b>Seleccione el número correspondiente a su respuesta:\n1: casi nada\n5: mucho</b>",
     "description": "",
     "count": 14,
     "options": {
       "1": "Casi nada",
-      "2": "Poco",
-      "3": "Algo",
-      "4": "Bastante",
       "5": "Mucho"
     },
     "questions": {
@@ -28,14 +25,11 @@
     }
   },
   "critical": {
-    "instructions": "A continuación encontrará una serie de afirmaciones\nsobre la Competencia Comunicativa Intercultural (CCI) en\nsu dimensión crítica. No hay respuestas correctas o\nincorrectas. Por favor, rellene el cuestionario indicando la\nfrecuencia con la que realiza dicha afirmación.\nMuchas gracias por su cooperación y ayuda.\nSeleccione el número correspondiente a su respuesta\n1: casi nunca  5: casi siempre.",
+    "instructions": "A continuación encontrará una serie de afirmaciones\nsobre la Competencia Comunicativa Intercultural (CCI) en\nsu dimensión crítica. No hay respuestas correctas o\nincorrectas. Por favor, rellene el cuestionario indicando la\nfrecuencia con la que realiza dicha afirmación.\nMuchas gracias por su cooperación y ayuda.\n\n<b>Seleccione el número correspondiente a su respuesta\n1: casi nunca  5: casi siempre.</b>",
     "description": "DOCENTES: CUANDO ESTOY\nENSEÑANDO LENGUAS\nEXTRANJERAS...\nESTUDIANTES: CUANDO ESTOY\nAPRENDIENDO LENGUAS\nEXTRANJERAS…",
     "count": 11,
     "options": {
       "1": "Casi nunca",
-      "2": "Pocas veces",
-      "3": "A veces",
-      "4": "Frecuentemente",
       "5": "Casi siempre"
     },
     "questions": {
@@ -59,14 +53,11 @@
     "critical": "Crítica"
   },
   "emotional": {
-    "instructions": "A continuación encontrará una serie de afirmaciones sobre la Competencia Comunicativa Intercultural (CCI) en su dimensión afectiva.\n\nNo hay respuestas correctas o incorrectas. Por favor, rellene el cuestionario indicando su grado de acuerdo sobre dicha afirmación.\n\nMuchas gracias por su cooperación y ayuda.\n\nSeleccione el número correspondiente a su respuesta:\n1: muy en desacuerdo\n5: muy de acuerdo",
+    "instructions": "A continuación encontrará una serie de afirmaciones sobre la Competencia Comunicativa Intercultural (CCI) en su dimensión afectiva.\n\nNo hay respuestas correctas o incorrectas. Por favor, rellene el cuestionario indicando su grado de acuerdo sobre dicha afirmación.\n\nMuchas gracias por su cooperación y ayuda.\n\n<b>Seleccione el número correspondiente a su respuesta:\n1: muy en desacuerdo\n5: muy de acuerdo</b>",
     "description": "",
     "count": 15,
     "options": {
       "1": "Totalmente en desacuerdo",
-      "2": "En desacuerdo",
-      "3": "Neutral",
-      "4": "De acuerdo",
       "5": "Totalmente de acuerdo"
     },
     "questions": {
@@ -98,19 +89,16 @@
     "high": ""
   },
   "procedural": {
-    "instructions": "A continuación encontrará una serie de afirmaciones sobre la Competencia Comunicativa Intercultural (CCI) y la dimensión procedimental.\nNo hay respuestas correctas o incorrectas. Por favor, rellene el cuestionario indicando la frecuencia con la que realiza dicha afirmación.\nMuchas gracias por su cooperación y ayuda.\n\nSeleccione el número correspondiente a su respuesta\n\n1: casi nunca\n5: casi siempre",
+    "instructions": "A continuación encontrará una serie de afirmaciones sobre la Competencia Comunicativa Intercultural (CCI) y la dimensión procedimental.\nNo hay respuestas correctas o incorrectas. Por favor, rellene el cuestionario indicando la frecuencia con la que realiza dicha afirmación.\nMuchas gracias por su cooperación y ayuda.\n\n<b>Seleccione el número correspondiente a su respuesta\n\n1: casi nunca\n5: casi siempre</b>",
     "description": "CUANDO ESTOY CON PERSONAS DE OTRAS CULTURAS...",
     "count": 13,
     "options": {
       "1": "Casi nunca",
-      "2": "Pocas veces",
-      "3": "A veces",
-      "4": "Frecuentemente",
       "5": "Casi siempre"
     },
     "questions": {
       "1": "Interpreto su comportamiento desde mi perspectiva cultural.",
-      "2": "Califico a éstas personas según los valores y creencias de mi cultura.",
+      "2": "Califico a estas personas según los valores y creencias de mi cultura.",
       "3": "Recuerdo mis experiencias interculturales previas que tuvieron éxito para ser más efectivo.",
       "4": "Intento descubrir los objetivos y los propósitos que tienen las otras personas en la interacción.",
       "5": "Analizo previamente la situación y aquellos aspectos que puedan influir en la comunicación.",
@@ -124,8 +112,12 @@
       "13": "Reflexiono sobre lo que ya sé de esa cultura cuando encuentro información desconocida"
     }
   },
+  "start_screen": {
+    "1": "Bienvenido a ERIC (Escala de Recursos Interculturales y Dimensión Crítica).\nEste cuestionario te permitirá entender cómo te comunicas con personas de diferentes culturas. Basado en los resultados, podrás reflexionar sobre la mejor manera de comunicarte apropiada y efectivamente",
+    "2": "Queremos disponer de la información sin comprometer tu identidad. Por eso, toda la información que compartas será utilizada únicamente con fines de investigación, de manera anónima y segura."
+  },
   "all_fields_required": "Todos los campos son obligatorios",
-  "authors": "Autores:\nJacqueline García Botero\nMargarita Alexandra Botero Restrepo\nMónica Rolong\n\nAplicación Desarrollada por\nSantiago Botero Pelaez",
+  "authors": "Autores:\n- Jacqueline García Botero\n- Margarita Alexandra Botero Restrepo\n- Yeray González Plasencia\n- Mónica Rolong\n\nAplicación Desarrollada por\nhttps://boterop.io",
   "confirm_password": "Confirmar contraseña",
   "connection_error": "Hubo un error al conectar al servidor. Por favor, inténtelo de nuevo más tarde.",
   "continue": "Continuar",
@@ -148,6 +140,5 @@
   "select_dimension": "Selecciona la dimensión",
   "select_language": "Selecciona el idioma",
   "start": "Empezar",
-  "start_screen": "Bienvenido a ERIC (Escala de Recursos Interculturales y Dimensión Crítica).\nEste cuestionario te permitirá entender cómo te comunicas con personas de diferentes culturas. Basado en los resultados, podrás reflexionar sobre la mejor manera de comunicarte apropiada y efectivamente",
   "waiting_connection": "Esperando conexión"
 }

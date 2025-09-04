@@ -1,3 +1,4 @@
+import FormattedText from "@/components/FormattedText";
 import { Dimension } from "@/domain/Answer";
 import answerService from "@/services/answerService";
 import storageService from "@/services/storageService";
@@ -134,7 +135,7 @@ const DimensionScreen = () => {
       <View
         style={tw`flex gap-8 bg-white w-90% p-4 py-8 rounded shadow-md items-center justify-center`}
       >
-        <Text style={tw``}>{t(`${dimension}.instructions`)}</Text>
+        <FormattedText>{t(`${dimension}.instructions`)}</FormattedText>
         <TouchableOpacity
           style={tw`w-full rounded-full bg-blue-500 py-2 px-4`}
           onPress={() => setShowInstructions(false)}
@@ -193,7 +194,7 @@ const DimensionScreen = () => {
           {options.map((option) => (
             <CheckBox
               key={option}
-              label={t(`${dimension}.options.${option}`)}
+              label={`${option} ${option === 1 || option === 5 ? t(`${dimension}.options.${option}`) : ""}`}
               checked={response === option}
               onPress={() => setResponse(option)}
             />

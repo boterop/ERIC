@@ -1,13 +1,10 @@
 {
   "cognitive": {
-    "instructions": "Ci-dessous, vous trouverez une série d’affirmations portant sur la Compétence Communicative Interculturelle\n(CCI) et sa dimension cognitive. Il n’y a pas de réponses correctes ou incorrectes.\nVeuillez répondre au questionnaire rapidement et cochez la première impression, en indiquant à quelle mesure vous\nconnaissez ces faits.\nNous vous remercions vivement pour votre participation et votre précieuse collaboration.\n\nCochez le numéro correspondant à votre réponse :\n1 : Totalement en désaccord\n5 : Totalement d’accord",
+    "instructions": "Ci-dessous, vous trouverez une série d’affirmations portant sur la Compétence Communicative Interculturelle\n(CCI) et sa dimension cognitive. Il n’y a pas de réponses correctes ou incorrectes.\nVeuillez répondre au questionnaire rapidement et cochez la première impression, en indiquant à quelle mesure vous\nconnaissez ces faits.\nNous vous remercions vivement pour votre participation et votre précieuse collaboration.\n\n<b>Cochez le numéro correspondant à votre réponse :\n1 : Totalement en désaccord\n5 : Totalement d’accord</b>",
     "description": "",
     "count": 14,
     "options": {
       "1": "Tout à fait d'accord",
-      "2": "En désaccord",
-      "3": "Neutre",
-      "4": "D'accord",
       "5": "Tout à fait d'accord"
     },
     "questions": {
@@ -28,14 +25,11 @@
     }
   },
   "critical": {
-    "instructions": "Ci-dessous, vous trouverez une série d’affirmations portant sur la Compétence Communicative Interculturelle\n(CCI) et sa dimension critique. Il n’y a pas de bonnes ou de mauvaises réponses.\nVeuillez répondre au questionnaire en indiquant la fréquence avec laquelle vous faites chaque affirmation.\nNous vous remercions vivement pour votre participation et votre précieuse collaboration.\n\nCochez le numéro correspondant à votre réponse :\n1 : Presque jamais\n5 : Presque toujours",
+    "instructions": "Ci-dessous, vous trouverez une série d’affirmations portant sur la Compétence Communicative Interculturelle\n(CCI) et sa dimension critique. Il n’y a pas de bonnes ou de mauvaises réponses.\nVeuillez répondre au questionnaire en indiquant la fréquence avec laquelle vous faites chaque affirmation.\nNous vous remercions vivement pour votre participation et votre précieuse collaboration.\n\n<b>Cochez le numéro correspondant à votre réponse :\n1 : Presque jamais\n5 : Presque toujours</b>",
     "description": "Enseignants : Lorsque j’enseigne les langues étrangères.\nÉtudiants : Lorsque j’apprends les langues étrangères.",
     "count": 11,
     "options": {
       "1": "Presque jamais",
-      "2": "rarement",
-      "3": "Parfois",
-      "4": "Fréquemment",
       "5": "Presque toujours"
     },
     "questions": {
@@ -59,14 +53,11 @@
     "critical": "Critique"
   },
   "emotional": {
-    "instructions": "Ci-dessous, vous trouverez une série d’affirmations portant sur la Compétence Communicative Interculturelle\n(CCI) et sa dimension affective. Il n’y a pas de réponses correctes ou incorrectes. Veuillez répondre au\nquestionnaire en indiquant votre degré d’accord sur chaque affirmation.\nNous vous remercions vivement pour votre participation et votre précieuse collaboration.\n\nCochez le numéro correspondant à votre réponse :\n1 : Totalement en désaccord\n5 : Totalement d’accord",
+    "instructions": "Ci-dessous, vous trouverez une série d’affirmations portant sur la Compétence Communicative Interculturelle\n(CCI) et sa dimension affective. Il n’y a pas de réponses correctes ou incorrectes. Veuillez répondre au\nquestionnaire en indiquant votre degré d’accord sur chaque affirmation.\nNous vous remercions vivement pour votre participation et votre précieuse collaboration.\n\n<b>Cochez le numéro correspondant à votre réponse :\n1 : Totalement en désaccord\n5 : Totalement d’accord</b>",
     "description": "",
     "count": 15,
     "options": {
       "1": "Tout à fait d'accord",
-      "2": "En désaccord",
-      "3": "Neutre",
-      "4": "D'accord",
       "5": "Tout à fait d'accord"
     },
     "questions": {
@@ -93,18 +84,15 @@
     "french": "Français"
   },
   "procedural": {
-    "instructions": "Veuillez lire attentivement les instructions suivantes :\nCi-dessous, vous trouverez une série d’affirmations portant sur la Compétence Communicative Interculturelle\n(CCI) et sa dimension procédurale. Il n’y a pas de réponses correctes ou incorrectes.\nVeuillez répondre au questionnaire en indiquant la fréquence avec laquelle vous mettez en pratique ce qui est\ndécrit dans chaque affirmation.\nNous vous remercions vivement pour votre participation et votre précieuse collaboration.\n\nCochez le numéro correspondant à votre réponse :\n1 : Presque jamais\n5 : Presque toujours",
+    "instructions": "Veuillez lire attentivement les instructions suivantes :\nCi-dessous, vous trouverez une série d’affirmations portant sur la Compétence Communicative Interculturelle\n(CCI) et sa dimension procédurale. Il n’y a pas de réponses correctes ou incorrectes.\nVeuillez répondre au questionnaire en indiquant la fréquence avec laquelle vous mettez en pratique ce qui est\ndécrit dans chaque affirmation.\nNous vous remercions vivement pour votre participation et votre précieuse collaboration.\n\n<b>Cochez le numéro correspondant à votre réponse :\n1 : Presque jamais\n5 : Presque toujours</b>",
     "description": "Lorsque je suis avec des personnes provenant d’autres cultures…",
     "count": 13,
     "options": {
       "1": "Presque jamais",
-      "2": "rarement",
-      "3": "Parfois",
-      "4": "Fréquemment",
       "5": "Presque toujours"
     },
     "questions": {
-      "1": "J’interprète leur comportement depuis ma perspective culturelle. ",
+      "1": "J’interprète leur comportement depuis ma perspective culturelle.",
       "2": "Je qualifie ces personnes selon les valeurs et croyances de ma culture",
       "3": "Je me rappelle mes expériences interculturelles réussies afin d’être plus efficace",
       "4": "J’essaie de découvrir les objectifs et les intentions des autres personnes dans l’interaction",
@@ -113,14 +101,18 @@
       "7": "J’adapte mes interventions au récepteur si je crois qu’il ne me comprend pas (je parle plus lentement, je fais plus de pauses, je prononce avec plus de précision, etc.).",
       "8": "Je compare la manière de communiquer de mon interlocuteur avec ce qui est adéquat à cette situation dans ma culture.",
       "9": "J’analyse les coutumes et les habitudes des gens de cette culture- là depuis la perspective de ma culture.",
-      "10": "Je demande aux gens de cette culture-là les choses que je veux savoir. ",
+      "10": "Je demande aux gens de cette culture-là les choses que je veux savoir.",
       "11": "Je participe à la vision du monde que possèdent les gens de cette culture, même si cela implique de mettre de côté la mienne.",
       "12": "Je partage mes opinions sur les aspects culturels avec les gens de cette culture-là.",
       "13": "Je réfléchis à ce que je sais déjà de cette culture-là lors que je rencontre des informations inconnues."
     }
   },
+  "start_screen": {
+    "1": "Bienvenue dans l’Échelle des Ressources Interculturelles et la Dimension Critique. Ce questionnaire vous permettra de comprendre comment vous communiquez avec des personnes de différentes cultures. En fonction des résultats, vous pourrez réfléchir à la meilleure façon de communiquer de manière appropriée et efficace.",
+    "2": "Nous souhaitons disposer des informations sans compromettre votre identité. Ainsi, toutes les informations que vous partagerez seront utilisées uniquement à des fins de recherche, de manière anonyme et sécurisée."
+  },
   "all_fields_required": "Tous les champs sont obligatoires",
-  "authors": "Auteurs:\nJacqueline García Botero\nMargarita Alexandra Botero Restrepo\nMónica Rolong\n\nApplication développée par\nSantiago Botero Pelaez",
+  "authors": "Auteurs:\n- Jacqueline García Botero\n- Margarita Alexandra Botero Restrepo\n- Yeray González Plasencia\n- Mónica Rolong\n\nApplication développée par\nhttps://boterop.io",
   "confirm_password": "Confirmer le mot de passe",
   "connection_error": "Erreur de connexion",
   "continue": "Continuer",
@@ -142,7 +134,6 @@
   "select_dimension": "Sélectionner la dimension",
   "select_language": "Sélectionnez la langue",
   "start": "Commencer",
-  "start_screen": "Bienvenue dans l’Échelle des Ressources Interculturelles et la Dimension Critique. Ce questionnaire vous permettra de comprendre comment vous communiquez avec des personnes de différentes cultures. En fonction des résultats, vous pourrez réfléchir à la meilleure façon de communiquer de manière appropriée et efficace.",
   "thank_you": "Merci d'avoir terminé l'Échelle des Ressources Interculturelles et la Dimension Critique.",
   "waiting_connection": "En attente de connexion"
 }
