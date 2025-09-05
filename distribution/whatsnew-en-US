@@ -1,1 +1,3 @@
-- Change default theme
+- [Fix fr translation](https://github.com/boterop/ERIC/pull/22)
+- [Fix answer start at the last answered question](https://github.com/boterop/ERIC/pull/23)
+- [Set authors and initial message](https://github.com/boterop/ERIC/pull/24)
