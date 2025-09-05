@@ -55,15 +55,6 @@ jobs:
       - name: Build
         run: eas build --platform android --non-interactive --local --output=./app-release.aab --profile production
 
-      - name: Sign Release
-        uses: r0adkll/sign-android-release@349ebdef58775b1e0d8099458af0816dc79b6407 # v1
-        with:
-          releaseDirectory: ${{ env.RELEASE_FOLDER }}
-          signingKeyBase64: ${{ secrets.SIGNING_KEY }}
-          alias: ${{ secrets.ALIAS }}
-          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
-          keyPassword: ${{ secrets.KEY_PASSWORD }}
-
       - name: Create service_account.json
         run: echo '${{ secrets.SERVICE_ACCOUNT_JSON }}' > service_account.json
 
