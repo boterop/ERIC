@@ -25,12 +25,12 @@ const StartScreen = () => {
         onPress={() => handleNext()}
       >
         <View style={tw`flex gap-8 w-[90%] border-2 shadow-md rounded-lg p-8`}>
-          <Text style={tw`text-xl text-start`}>
+          <Text style={tw`text-xl`}>
             {children}
             {"\n"}
             {step === steps.length - 1 && (
               <Text
-                style={tw`text-xl text-start underline`}
+                style={tw`underline`}
                 onPress={() => Linking.openURL(PORTFOLIO)}
               >
                 {PORTFOLIO}
