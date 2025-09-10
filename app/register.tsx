@@ -1,27 +1,75 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { View, Alert, Text, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
 import userService from "@/services/userService";
 import storageService from "@/services/storageService";
 import { useTranslation } from "react-i18next";
 import Input from "@/components/ui/Input";
+import { Picker } from "@react-native-picker/picker";
 
 const RegisterScreen = () => {
   const { t } = useTranslation();
+  const initialMount = useRef(true);
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [type, setType] = useState<"student" | "professor">("student");
+  const [country, setCountry] = useState("");
+  const [institution, setInstitution] = useState("");
+  const [age, setAge] = useState(0);
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
+  const [availableCountries, setAvailableCountries] = useState<string[]>([]);
+  const [availableInstitutions, setAvailableInstitutions] = useState<string[]>(
+    [],
+  );
+
+  useEffect(() => {
+    if (initialMount.current) {
+      initialMount.current = false;
+      fetch("https://restcountries.com/v3.1/all?fields=name")
+        .then((res) => res.json())
+        .then((data) => {
+          const countries = data.map((country) => country.name.common).sort();
+          setAvailableCountries(countries);
+        })
+        .catch((err) => Alert.alert("", err.message));
+    }
+  }, []);
+
+  useEffect(() => {
+    if (country) {
+      fetch(`http://universities.hipolabs.com/search?country=${country}`)
+        .then((res) => res.json())
+        .then((data) => {
+          const institutions = data
+            .map((institution) => institution.name)
+            .sort();
+          setAvailableInstitutions(institutions);
+        })
+        .catch((err) => Alert.alert("", err.message));
+    }
+  }, [country]);
+
   const handleRegister = () => {
-    if (!name || !email || !password || !confirmPassword)
+    if (
+      !name ||
+      !email ||
+      !password ||
+      !confirmPassword ||
+      !type ||
+      !country ||
+      !institution ||
+      !age
+    )
       return Alert.alert("", t("all_fields_required"));
 
     if (password !== confirmPassword)
       return Alert.alert("", t("passwords_dont_match"));
 
     userService
-      .register(name, email, password)
+      .register({ name, email, password, type, country, institution, age })
       .then(async (_user) => {
         const token = await userService.login(email, password);
 
@@ -59,6 +107,13 @@ const RegisterScreen = () => {
         />
         <Input
           style={tw`w-full rounded-lg border-2 border-gray-300 p-2`}
+          placeholder={t("age")}
+          onChangeText={setAge}
+          value={age}
+          type="number"
+        />
+        <Input
+          style={tw`w-full rounded-lg border-2 border-gray-300 p-2`}
           placeholder={t("password")}
           secureTextEntry
           onChangeText={setPassword}
@@ -71,6 +126,46 @@ const RegisterScreen = () => {
           onChangeText={setConfirmPassword}
           value={confirmPassword}
         />
+        <Picker
+          key="type"
+          selectedValue={type}
+          onValueChange={(value) => setType(value)}
+          style={tw`w-full rounded-lg border-2 border-gray-300 p-2`}
+        >
+          <Picker.Item label={t("select")} value="" />
+          <Picker.Item label={t("student")} value="student" />
+          <Picker.Item label={t("professor")} value="professor" />
+        </Picker>
+        {availableCountries.length > 0 && (
+          <Picker
+            key="country"
+            selectedValue={country}
+            onValueChange={(value) => setCountry(value)}
+            style={tw`w-full rounded-lg border-2 border-gray-300 p-2`}
+          >
+            <Picker.Item label={t("select")} value="" />
+            {availableCountries.map((country) => (
+              <Picker.Item key={country} label={country} value={country} />
+            ))}
+          </Picker>
+        )}
+        {availableInstitutions.length > 0 && (
+          <Picker
+            key="institution"
+            selectedValue={institution}
+            onValueChange={(value) => setInstitution(value)}
+            style={tw`w-full rounded-lg border-2 border-gray-300 p-2`}
+          >
+            <Picker.Item label={t("select")} value="" />
+            {availableInstitutions.map((institution) => (
+              <Picker.Item
+                key={institution}
+                label={institution}
+                value={institution}
+              />
+            ))}
+          </Picker>
+        )}
         <TouchableOpacity
           style={tw`w-full rounded-full bg-blue-500 py-2 px-4 text-white`}
           onPress={handleRegister}
