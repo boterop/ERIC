@@ -132,6 +132,7 @@
   "of": "de",
   "password": "Contraseña",
   "previous": "Anterior",
+  "professor": "Docente",
   "question": "Pregunta",
   "register": "Registro",
   "register_login": "¿Ya tienes cuenta? Iniciar sesión",
@@ -139,6 +140,9 @@
   "thank_you": "Gracias por completar la Escala de Recursos Interculturales y dimensión Crítica.",
   "select_dimension": "Selecciona la dimensión",
   "select_language": "Selecciona el idioma",
+  "select_country": "Selecciona el país",
+  "select_institution": "Selecciona la institución",
   "start": "Empezar",
+  "student": "Estudiante",
   "waiting_connection": "Esperando conexión"
 }

@@ -127,13 +127,17 @@
   "of": "de",
   "password": "Mot de passe",
   "previous": "Ancien",
+  "professor": "Professeur",
   "question": "Demander",
   "register": "Enregistrer",
   "register_login": "Avez-vous déjà un compte? Se connecter",
   "results": "Résultats",
   "select_dimension": "Sélectionner la dimension",
   "select_language": "Sélectionnez la langue",
+  "select_country": "Sélectionnez le pays",
+  "select_institution": "Sélectionnez l'institution",
   "start": "Commencer",
+  "student": "Étudiant",
   "thank_you": "Merci d'avoir terminé l'Échelle des Ressources Interculturelles et la Dimension Critique.",
   "waiting_connection": "En attente de connexion"
 }

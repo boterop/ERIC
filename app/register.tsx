@@ -130,9 +130,9 @@ const RegisterScreen = () => {
           key="type"
           selectedValue={type}
           onValueChange={(value) => setType(value)}
-          style={tw`w-full rounded-lg border-2 border-gray-300 p-2`}
+          style={tw`w-full`}
+          mode="dropdown"
         >
-          <Picker.Item label={t("select")} value="" />
           <Picker.Item label={t("student")} value="student" />
           <Picker.Item label={t("professor")} value="professor" />
         </Picker>
@@ -141,9 +141,9 @@ const RegisterScreen = () => {
             key="country"
             selectedValue={country}
             onValueChange={(value) => setCountry(value)}
-            style={tw`w-full rounded-lg border-2 border-gray-300 p-2`}
+            style={tw`w-full`}
           >
-            <Picker.Item label={t("select")} value="" />
+            <Picker.Item label={t("select_country")} value="" />
             {availableCountries.map((country) => (
               <Picker.Item key={country} label={country} value={country} />
             ))}
@@ -154,9 +154,9 @@ const RegisterScreen = () => {
             key="institution"
             selectedValue={institution}
             onValueChange={(value) => setInstitution(value)}
-            style={tw`w-full rounded-lg border-2 border-gray-300 p-2`}
+            style={tw`w-full`}
           >
-            <Picker.Item label={t("select")} value="" />
+            <Picker.Item label={t("select_institution")} value="" />
             {availableInstitutions.map((institution) => (
               <Picker.Item
                 key={institution}
