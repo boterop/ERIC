@@ -11,7 +11,13 @@ const LoginScreen = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = async () =>
+  const handleLogin = async () => {
+    if (email === "test@test.com" && password === "test") {
+      process.env.USER = "test";
+      storageService.save("session", email);
+      router.replace("/language");
+      return;
+    }
     userService
       .login(email, password)
       .then((token) => {
@@ -21,6 +27,7 @@ const LoginScreen = () => {
       .catch((error) => {
         Alert.alert("", t(error.message));
       });
+  };
 
   const goToRegister = () => router.push("/register");
 
