@@ -10,7 +10,5 @@ jest.mock("@/services/userService", () => ({
     if (!user) throw new Error("invalid_credentials");
     return `session-${email}-${password}`;
   }),
-  register: jest.fn((name, email, password) =>
-    Promise.resolve(users.push({ name, email, password })),
-  ),
+  register: jest.fn((user) => Promise.resolve(users.push(user))),
 }));

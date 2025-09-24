@@ -2,7 +2,9 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Text, TouchableOpacity, View } from "react-native";
+import { Linking, Text, TouchableOpacity, View } from "react-native";
+
+const PORTFOLIO = "https://www.boterop.io";
 
 const StartScreen = () => {
   const { t } = useTranslation();
@@ -23,7 +25,18 @@ const StartScreen = () => {
         onPress={() => handleNext()}
       >
         <View style={tw`flex gap-8 w-[90%] border-2 shadow-md rounded-lg p-8`}>
-          <Text style={tw`text-xl text-justify`}>{children}</Text>
+          <Text style={tw`text-xl`}>
+            {children}
+            {"\n"}
+            {step === steps.length - 1 && (
+              <Text
+                style={tw`underline`}
+                onPress={() => Linking.openURL(PORTFOLIO)}
+              >
+                {PORTFOLIO}
+              </Text>
+            )}
+          </Text>
           <View style={tw`flex-row w-full items-center justify-center`}>
             <Text style={tw`text-lg text-center font-bold`}>
               {t("continue")}

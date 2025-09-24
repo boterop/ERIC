@@ -22,19 +22,13 @@ export const userApi: UserApi = {
 
     return (await response.json()).data;
   },
-  register: async (name, email, password) => {
+  register: async (user) => {
     const response = await fetch(`${API_URL}/register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        user: {
-          name,
-          email,
-          password,
-        },
-      }),
+      body: JSON.stringify({ user }),
     });
 
     if (!response.ok) {

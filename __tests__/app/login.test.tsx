@@ -39,7 +39,15 @@ describe("LoginScreen", () => {
   it("loggin with valid credentials", async () => {
     const email = "test@example.com";
     const password = "123456";
-    userService.register(email, email, password);
+    userService.register({
+      name: email,
+      email,
+      password,
+      type: "student",
+      country: "Spain",
+      institution: "University",
+      age: 20,
+    });
 
     const buttonText = en.login;
     const component = render(<LoginScreen />);

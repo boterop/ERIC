@@ -112,7 +112,7 @@
     "2": "Nous souhaitons disposer des informations sans compromettre votre identité. Ainsi, toutes les informations que vous partagerez seront utilisées uniquement à des fins de recherche, de manière anonyme et sécurisée."
   },
   "all_fields_required": "Tous les champs sont obligatoires",
-  "authors": "Auteurs:\n- Jacqueline García Botero\n- Margarita Alexandra Botero Restrepo\n- Yeray González Plasencia\n- Mónica Rolong\n\nApplication développée par\nhttps://boterop.io",
+  "authors": "Auteurs:\n- Jacqueline García Botero\n- Margarita Alexandra Botero Restrepo\n- Yeray González Plasencia\n- Mónica Rolong\n\nApplication développée par",
   "confirm_password": "Confirmer le mot de passe",
   "connection_error": "Erreur de connexion",
   "continue": "Continuer",
@@ -127,13 +127,17 @@
   "of": "de",
   "password": "Mot de passe",
   "previous": "Ancien",
+  "professor": "Professeur",
   "question": "Demander",
   "register": "Enregistrer",
   "register_login": "Avez-vous déjà un compte? Se connecter",
   "results": "Résultats",
   "select_dimension": "Sélectionner la dimension",
   "select_language": "Sélectionnez la langue",
+  "select_country": "Sélectionnez le pays",
+  "select_institution": "Sélectionnez l'institution",
   "start": "Commencer",
+  "student": "Étudiant",
   "thank_you": "Merci d'avoir terminé l'Échelle des Ressources Interculturelles et la Dimension Critique.",
   "waiting_connection": "En attente de connexion"
 }
