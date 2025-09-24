@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3 (24.09.2025)
+
+- Play store release
+
 ## 0.1.2 (04.09.2025)
 
 - [Fix fr translation](https://github.com/boterop/ERIC/pull/22)
