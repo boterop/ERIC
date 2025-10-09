@@ -31,7 +31,7 @@ const IndexPage = () => {
   return (
     <I18nextProvider i18n={i18n}>
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-        <ActivityIndicator size="large" />
+        <ActivityIndicator size="large" testID="activity-indicator" />
       </View>
     </I18nextProvider>
   );
