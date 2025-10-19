@@ -30,7 +30,9 @@ describe("IndexPage", () => {
   it("renders loading indicator", () => {
     const IndexPage = require("@/app/index").default;
     const component = render(<IndexPage />);
-    const indicator = component.UNSAFE_getByType(require("react-native").ActivityIndicator);
+    const indicator = component.UNSAFE_getByType(
+      require("react-native").ActivityIndicator,
+    );
     expect(indicator).toBeTruthy();
   });
 
