@@ -58,8 +58,11 @@ describe("ScoreScreen", () => {
     });
   });
 
-  it("renders without crashing", () => {
+  it("renders without crashing", async () => {
     const ScoreScreen = require("@/app/score").default;
-    expect(() => render(<ScoreScreen />)).not.toThrow();
+    const component = render(<ScoreScreen />);
+    await waitFor(() => {
+      expect(component).toBeTruthy();
+    });
   });
 });
