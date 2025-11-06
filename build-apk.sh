@@ -1,3 +1,1 @@
-npx expo prebuild --platform android
-cd android
-./gradlew assembleDebug
+eas build --platform android --non-interactive --local --profile preview

@@ -11,4 +11,7 @@ export default {
     "__tests__/__mocks__/",
     "__tests__/test_helper.ts",
   ],
+  moduleNameMapper: {
+    "^@/(.*)$": "<rootDir>/$1",
+  },
 };

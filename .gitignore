@@ -40,3 +40,7 @@ app-example
 # Test
 coverage/
 __snapshots__/
+
+# Python virtual environments
+.venv/
+venv/
