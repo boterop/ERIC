@@ -6,6 +6,7 @@ import storageService from "@/services/storageService";
 import { useTranslation } from "react-i18next";
 import Input from "@/components/ui/Input";
 import { Picker } from "@react-native-picker/picker";
+import { universityApi } from "@/adapters/universityApi";
 
 const RegisterScreen = () => {
   const { t } = useTranslation();
@@ -42,10 +43,8 @@ const RegisterScreen = () => {
   useEffect(() => {
     if (country) {
       setInstitution("");
-      fetch(
-        `http://universities.hipolabs.com/search?country=${encodeURIComponent(country)}`,
-      )
-        .then((res) => res.json())
+      universityApi
+        .search(country)
         .then((data) => {
           if (!data.length) return setWriteInstitution(true);
           setWriteInstitution(false);
@@ -147,7 +146,6 @@ const RegisterScreen = () => {
             key="country"
             selectedValue={country}
             onValueChange={(value) => setCountry(value)}
-            style={tw`w-full text-black`}
           >
             <Picker.Item label={t("select_country")} value="" />
             {availableCountries.map((country) => (
