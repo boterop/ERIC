@@ -3,10 +3,10 @@ import { View, Alert, Text, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
 import userService from "@/services/userService";
 import storageService from "@/services/storageService";
+import universityService from "@/services/universityService";
 import { useTranslation } from "react-i18next";
 import Input from "@/components/ui/Input";
 import { Picker } from "@react-native-picker/picker";
-import { universityApi } from "@/adapters/universityApi";
 
 const RegisterScreen = () => {
   const { t } = useTranslation();
@@ -43,7 +43,7 @@ const RegisterScreen = () => {
   useEffect(() => {
     if (country) {
       setInstitution("");
-      universityApi
+      universityService
         .search(country)
         .then((data) => {
           if (!data.length) return setWriteInstitution(true);
@@ -146,6 +146,7 @@ const RegisterScreen = () => {
             key="country"
             selectedValue={country}
             onValueChange={(value) => setCountry(value)}
+            style={tw`w-full text-black`}
           >
             <Picker.Item label={t("select_country")} value="" />
             {availableCountries.map((country) => (
