@@ -21,8 +21,8 @@ const HomeScreen = () => {
 
   const [dimensionButtons, setDimensionButtons] = useState<ReactNode[]>([]);
 
-  const goTo = (dimension: string, editable: boolean = true) =>
-    router.push(`/dimensions/${dimension}?isEditable=${editable}`);
+  const goTo = (dimension: string, readonly: boolean = false) =>
+    router.push(`/dimensions/${dimension}?readonly=${readonly}`);
 
   const Score = ({ score, color }: { score: number; color?: string }) => {
     return (
@@ -65,9 +65,8 @@ const HomeScreen = () => {
 
     return (
       <TouchableOpacity
-        testID={`${title}-button`}
         onPress={() => {
-          if (isCompleted) goTo(dimension, false);
+          if (isCompleted) goTo(dimension, true);
         }}
         style={tw`flex-col gap-4 items-center justify-between w-[90%] rounded-lg border-2 border-gray-300 p-4`}
       >

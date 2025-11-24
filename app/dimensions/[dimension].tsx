@@ -11,10 +11,10 @@ import ProgressBar from "react-native-progress/Bar";
 
 const DimensionScreen = () => {
   const { t } = useTranslation();
-  const { dimension, isEditable } = useLocalSearchParams();
+  const { dimension, readonly } = useLocalSearchParams();
 
   const token = useRef<string>("");
-  const editable = isEditable === "true";
+  const editable = readonly === "false";
 
   const options = Array.from({ length: 5 }, (_, i) => i + 1);
   const count = parseInt(t(`${dimension}.count`));

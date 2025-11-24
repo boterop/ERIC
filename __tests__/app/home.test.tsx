@@ -68,7 +68,9 @@ describe("HomeScreen", () => {
       const element = component.getByTestId(buttonText);
 
       fireEvent.press(element);
-      expect(router.push).toHaveBeenCalledWith("/dimensions/procedural");
+      expect(router.push).toHaveBeenCalledWith(
+        "/dimensions/procedural?readonly=false",
+      );
     });
   });
 
