@@ -10,10 +10,12 @@ import { Alert, Text, TouchableOpacity, View } from "react-native";
 import ProgressBar from "react-native-progress/Bar";
 
 const DimensionScreen = () => {
-  const token = useRef<string>("");
-
   const { t } = useTranslation();
-  const { dimension } = useLocalSearchParams();
+  const { dimension, readonly } = useLocalSearchParams();
+
+  const token = useRef<string>("");
+  const editable = readonly !== "true";
+
   const options = Array.from({ length: 5 }, (_, i) => i + 1);
   const count = parseInt(t(`${dimension}.count`));
 
@@ -34,6 +36,7 @@ const DimensionScreen = () => {
   }, [dimension, question]);
 
   const saveResp = useCallback(async () => {
+    if (!editable) return true;
     const resp = await answerService.create(
       {
         question: question,
@@ -48,6 +51,7 @@ const DimensionScreen = () => {
 
   const updateResp = useCallback(
     async (id: string) => {
+      if (!editable) return true;
       const resp = await answerService.update(
         {
           id: id,
@@ -88,8 +92,8 @@ const DimensionScreen = () => {
             if (answer.question > lastQuestion) lastQuestion = answer.question;
           }
 
-          setQuestion(lastQuestion + 1);
           setIsReady(true);
+          setQuestion(editable ? lastQuestion + 1 : 1);
         });
 
       setIsReady(true);
@@ -146,18 +150,26 @@ const DimensionScreen = () => {
     </View>
   );
 
-  const CheckBox = ({ checked, onPress, label }) => (
+  const CheckBox = ({
+    checked,
+    onPress,
+    label,
+  }: {
+    checked: boolean;
+    onPress: () => void;
+    label: string;
+  }) => (
     <View style={tw`flex-row w-full gap-2`}>
       <TouchableOpacity
         style={tw`flex-row gap-2 w-full items-center justify-start`}
-        onPress={onPress}
+        onPress={() => editable && onPress()}
       >
         <Feather
           name={checked ? "check-circle" : "circle"}
           size={24}
-          color="black"
+          color={editable ? "black" : "gray"}
         />
-        <Text style={tw`text-xl`}>{label}</Text>
+        <Text style={tw`text-xl ${!editable && "text-gray-500"}`}>{label}</Text>
       </TouchableOpacity>
     </View>
   );

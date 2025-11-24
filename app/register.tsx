@@ -3,6 +3,7 @@ import { View, Alert, Text, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
 import userService from "@/services/userService";
 import storageService from "@/services/storageService";
+import universityService from "@/services/universityService";
 import { useTranslation } from "react-i18next";
 import Input from "@/components/ui/Input";
 import { Picker } from "@react-native-picker/picker";
@@ -24,6 +25,7 @@ const RegisterScreen = () => {
   const [availableInstitutions, setAvailableInstitutions] = useState<string[]>(
     [],
   );
+  const [writeInstitution, setWriteInstitution] = useState<boolean>(false);
 
   useEffect(() => {
     if (initialMount.current) {
@@ -40,15 +42,18 @@ const RegisterScreen = () => {
 
   useEffect(() => {
     if (country) {
-      fetch(`http://universities.hipolabs.com/search?country=${country}`)
-        .then((res) => res.json())
+      setInstitution("");
+      universityService
+        .search(country)
         .then((data) => {
+          if (!data.length) return setWriteInstitution(true);
+          setWriteInstitution(false);
           const institutions = data
             .map((institution) => institution.name)
             .sort();
           setAvailableInstitutions(institutions);
         })
-        .catch((err) => Alert.alert("", err.message));
+        .catch((_err) => setWriteInstitution(true));
     }
   }, [country]);
 
@@ -130,7 +135,7 @@ const RegisterScreen = () => {
           key="type"
           selectedValue={type}
           onValueChange={(value) => setType(value)}
-          style={tw`w-full`}
+          style={tw`w-full text-black`}
           mode="dropdown"
         >
           <Picker.Item label={t("student")} value="student" />
@@ -141,7 +146,7 @@ const RegisterScreen = () => {
             key="country"
             selectedValue={country}
             onValueChange={(value) => setCountry(value)}
-            style={tw`w-full`}
+            style={tw`w-full text-black`}
           >
             <Picker.Item label={t("select_country")} value="" />
             {availableCountries.map((country) => (
@@ -149,12 +154,12 @@ const RegisterScreen = () => {
             ))}
           </Picker>
         )}
-        {availableInstitutions.length > 0 && (
+        {availableInstitutions.length > 0 && !writeInstitution && (
           <Picker
             key="institution"
             selectedValue={institution}
             onValueChange={(value) => setInstitution(value)}
-            style={tw`w-full`}
+            style={tw`w-full text-black`}
           >
             <Picker.Item label={t("select_institution")} value="" />
             {availableInstitutions.map((institution) => (
@@ -165,6 +170,14 @@ const RegisterScreen = () => {
               />
             ))}
           </Picker>
+        )}
+        {writeInstitution && (
+          <Input
+            style={tw`w-full rounded-lg border-2 border-gray-300 p-2`}
+            placeholder={t("Institution")}
+            onChangeText={setInstitution}
+            value={institution}
+          />
         )}
         <TouchableOpacity
           style={tw`w-full rounded-full bg-blue-500 py-2 px-4 text-white`}
