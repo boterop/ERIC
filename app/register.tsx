@@ -3,6 +3,7 @@ import { View, Alert, Text, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
 import userService from "@/services/userService";
 import storageService from "@/services/storageService";
+import universityService from "@/services/universityService";
 import { useTranslation } from "react-i18next";
 import Input from "@/components/ui/Input";
 import { Picker } from "@react-native-picker/picker";
@@ -42,10 +43,8 @@ const RegisterScreen = () => {
   useEffect(() => {
     if (country) {
       setInstitution("");
-      fetch(
-        `http://universities.hipolabs.com/search?country=${encodeURIComponent(country)}`,
-      )
-        .then((res) => res.json())
+      universityService
+        .search(country)
         .then((data) => {
           if (!data.length) return setWriteInstitution(true);
           setWriteInstitution(false);
