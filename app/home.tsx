@@ -21,7 +21,8 @@ const HomeScreen = () => {
 
   const [dimensionButtons, setDimensionButtons] = useState<ReactNode[]>([]);
 
-  const goTo = (dimension: string) => router.push(`/dimensions/${dimension}`);
+  const goTo = (dimension: string, editable: boolean = true) =>
+    router.push(`/dimensions/${dimension}?isEditable=${editable}`);
 
   const Score = ({ score, color }: { score: number; color?: string }) => {
     return (
@@ -63,7 +64,11 @@ const HomeScreen = () => {
     );
 
     return (
-      <View
+      <TouchableOpacity
+        testID={`${title}-button`}
+        onPress={() => {
+          if (isCompleted) goTo(dimension, false);
+        }}
         style={tw`flex-col gap-4 items-center justify-between w-[90%] rounded-lg border-2 border-gray-300 p-4`}
       >
         <View style={tw`flex-row w-full items-center justify-between`}>
@@ -83,7 +88,7 @@ const HomeScreen = () => {
           )) || <AnswersLeft />}
         </View>
         {isCompleted && <Score score={score} color={color} />}
-      </View>
+      </TouchableOpacity>
     );
   };
 
