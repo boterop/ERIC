@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.4 (24.11.2025)
+
+- [Review answered questions](https://github.com/boterop/ERIC/pull/34)
+- [List universities](https://github.com/boterop/ERIC/pull/33)
+
 ## 0.1.3 (24.09.2025)
 
 - Play store release
