@@ -29,11 +29,23 @@ describe("HomeScreen", () => {
     const component = render(<HomeScreen />);
 
     await waitFor(() => {
+      fireEvent.press(component.getByTestId("home-menu-button"));
       const element = component.getByText(buttonText);
 
       fireEvent.press(element);
 
       expect(router.replace).toHaveBeenCalledWith("/login");
+    });
+  });
+
+  it("navigates to students screen", async () => {
+    const component = render(<HomeScreen />);
+
+    await waitFor(() => {
+      fireEvent.press(component.getByTestId("home-menu-button"));
+      fireEvent.press(component.getByText(en.students));
+
+      expect(router.push).toHaveBeenCalledWith("/students");
     });
   });
 

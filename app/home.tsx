@@ -1,6 +1,12 @@
 import { router } from "expo-router";
 import { useTranslation } from "react-i18next";
-import { StyleProp, Text, TextStyle, TouchableOpacity, View } from "react-native";
+import {
+  StyleProp,
+  Text,
+  TextStyle,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import {
   AntDesign,
   Entypo,
@@ -20,9 +26,21 @@ const HomeScreen = () => {
   const { t } = useTranslation();
 
   const [dimensionButtons, setDimensionButtons] = useState<ReactNode[]>([]);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const goTo = (dimension: string, readonly: boolean = false) =>
     router.push(`/dimensions/${dimension}?readonly=${readonly}`);
+
+  const goToStudents = () => {
+    setIsMenuOpen(false);
+    router.push("/students");
+  };
+
+  const logout = async () => {
+    setIsMenuOpen(false);
+    storageService.remove("session");
+    router.replace("/login");
+  };
 
   const Score = ({ score, color }: { score: number; color?: string }) => {
     return (
@@ -172,16 +190,35 @@ const HomeScreen = () => {
 
   return (
     <View style={tw`flex gap-8 w-full h-full items-center justify-start p-4`}>
-      <TouchableOpacity
-        style={tw`flex-row gap-2 w-full items-center justify-end`}
-        onPress={async () => {
-          storageService.remove("session");
-          router.replace("/login");
-        }}
-      >
-        <Text style={tw`capitalize`}>{t("logout")}</Text>
-        <AntDesign name="logout" size={13} color="black" />
-      </TouchableOpacity>
+      <View style={tw`w-full items-end z-10`}>
+        <TouchableOpacity
+          testID="home-menu-button"
+          style={tw`h-10 w-10 rounded-full items-center justify-center`}
+          onPress={() => setIsMenuOpen((open) => !open)}
+        >
+          <Feather name="menu" size={22} color="black" />
+        </TouchableOpacity>
+        {isMenuOpen && (
+          <View
+            style={tw`absolute top-12 right-0 w-44 rounded-lg border border-gray-300 bg-white shadow-md`}
+          >
+            <TouchableOpacity
+              style={tw`flex-row gap-2 items-center justify-between px-4 py-3 border-b border-gray-200`}
+              onPress={goToStudents}
+            >
+              <Text style={tw`capitalize`}>{t("students")}</Text>
+              <Feather name="users" size={16} color="black" />
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={tw`flex-row gap-2 items-center justify-between px-4 py-3`}
+              onPress={logout}
+            >
+              <Text style={tw`capitalize`}>{t("logout")}</Text>
+              <AntDesign name="logout" size={13} color="black" />
+            </TouchableOpacity>
+          </View>
+        )}
+      </View>
       <Text style={tw`text-2xl capitalize`}>{t("select_dimension")}</Text>
       {dimensionButtons.length === 0 ? (
         <Loading />
