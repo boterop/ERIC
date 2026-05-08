@@ -16,11 +16,10 @@ describe("HomeScreen", () => {
   });
 
   it("loading view", async () => {
-    const expectedText = en.waiting_connection;
     const component = render(<HomeScreen />);
 
     await waitFor(() => {
-      expect(component.getByText(expectedText)).toBeTruthy();
+      expect(component.getAllByTestId("home-skeleton-card")).toHaveLength(4);
     });
   });
 
