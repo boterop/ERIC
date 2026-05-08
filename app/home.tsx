@@ -1,6 +1,6 @@
 import { router } from "expo-router";
 import { useTranslation } from "react-i18next";
-import { Text, TouchableOpacity, View } from "react-native";
+import { StyleProp, Text, TextStyle, TouchableOpacity, View } from "react-native";
 import {
   AntDesign,
   Entypo,
@@ -57,7 +57,7 @@ const HomeScreen = () => {
     score?: number;
     color?: string;
   }) => {
-    const AnswersLeft = ({ style }: { style?: string }) => (
+    const AnswersLeft = ({ style }: { style?: StyleProp<TextStyle> }) => (
       <Text style={style || tw`text-xl`}>
         {answerCount}/{t(`${dimension}.count`)}
       </Text>
@@ -82,7 +82,7 @@ const HomeScreen = () => {
               style={tw`flex gap-2 items-center justify-center`}
             >
               <AntDesign name="play" size={24} color="#007AFF" />
-              <AnswersLeft style="text-sm" />
+              <AnswersLeft style={tw`text-sm`} />
             </TouchableOpacity>
           )) || <AnswersLeft />}
         </View>
@@ -93,7 +93,7 @@ const HomeScreen = () => {
 
   const Loading = () => (
     <View style={tw`flex gap-4 items-center justify-center`}>
-      <ProgressCircle size={30} indeterminate={true} />;
+      <ProgressCircle size={30} indeterminate={true} />
       <Text style={tw`text-2xl capitalize`}>{t("waiting_connection")}</Text>
     </View>
   );
