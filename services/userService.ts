@@ -5,6 +5,7 @@ const userService = {
   login: async (email: string, password: string) =>
     userApi.login(email, password),
   register: async (user: User) => userApi.register(user),
+  me: async (token: string) => userApi.me(token),
 };
 
 export default userService;

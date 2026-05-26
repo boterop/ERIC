@@ -21,6 +21,7 @@ import answerService from "@/services/answerService";
 import { Dimension } from "@/domain/Answer";
 import ProgressCircle from "react-native-progress/Circle";
 import scoreService from "@/services/scoreService";
+import userService from "@/services/userService";
 
 const dimensions = ["procedural", "emotional", "cognitive", "critical"];
 
@@ -31,6 +32,7 @@ const HomeScreen = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [shimmer] = useState(() => new Animated.Value(0));
+  const [isProfessor, setIsProfessor] = useState(false);
 
   useEffect(() => {
     const animation = Animated.loop(
@@ -118,7 +120,9 @@ const HomeScreen = () => {
               onPress={() => goTo(dimension)}
               style={tw`items-center justify-center`}
             >
-              <View style={tw`h-7 w-7 items-center justify-center rounded-full border border-blue-200 bg-blue-50`}>
+              <View
+                style={tw`h-7 w-7 items-center justify-center rounded-full border border-blue-200 bg-blue-50`}
+              >
                 <AntDesign name="play" size={16} color="#007AFF" />
               </View>
             </TouchableOpacity>
@@ -161,10 +165,11 @@ const HomeScreen = () => {
 
     return (
       <View
-        style={tw.style(
-          `overflow-hidden bg-gray-200`,
-          { width, height, borderRadius: rounded },
-        )}
+        style={tw.style(`overflow-hidden bg-gray-200`, {
+          width,
+          height,
+          borderRadius: rounded,
+        })}
       >
         <Animated.View
           style={{
@@ -186,11 +191,21 @@ const HomeScreen = () => {
     >
       <View style={tw`flex-row w-full items-center justify-between`}>
         <View style={tw`flex-row gap-2 items-center justify-center`}>
-          <SkeletonBlock width={24} height={24} rounded={12} shimmer={shimmer} />
+          <SkeletonBlock
+            width={24}
+            height={24}
+            rounded={12}
+            shimmer={shimmer}
+          />
           <SkeletonBlock width={110} height={18} shimmer={shimmer} />
         </View>
         <View style={tw`items-center justify-center gap-2`}>
-          <SkeletonBlock width={28} height={28} rounded={14} shimmer={shimmer} />
+          <SkeletonBlock
+            width={28}
+            height={28}
+            rounded={14}
+            shimmer={shimmer}
+          />
           <SkeletonBlock width={44} height={12} shimmer={shimmer} />
         </View>
       </View>
@@ -205,6 +220,8 @@ const HomeScreen = () => {
     setIsLoading(true);
 
     const token = await storageService.get("session");
+    const user = await userService.me(token || "");
+    setIsProfessor(user!.type === "professor" || false);
     for (const dimension of dimensions) {
       const answers = await answerService.listByDimension(
         dimension as Dimension,
@@ -288,13 +305,15 @@ const HomeScreen = () => {
           <View
             style={tw`absolute top-12 right-0 w-44 rounded-lg border border-gray-300 bg-white shadow-md`}
           >
-            <TouchableOpacity
-              style={tw`flex-row gap-2 items-center justify-between px-4 py-3 border-b border-gray-200`}
-              onPress={goToStudents}
-            >
-              <Text style={tw`capitalize`}>{t("students")}</Text>
-              <Feather name="users" size={16} color="black" />
-            </TouchableOpacity>
+            {isProfessor && (
+              <TouchableOpacity
+                style={tw`flex-row gap-2 items-center justify-between px-4 py-3 border-b border-gray-200`}
+                onPress={goToStudents}
+              >
+                <Text style={tw`capitalize`}>{t("students")}</Text>
+                <Feather name="users" size={16} color="black" />
+              </TouchableOpacity>
+            )}
             <TouchableOpacity
               style={tw`flex-row gap-2 items-center justify-between px-4 py-3`}
               onPress={logout}
