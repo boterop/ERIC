@@ -14,7 +14,6 @@ const RegisterScreen = () => {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [type, setType] = useState<"student" | "professor">("student");
   const [country, setCountry] = useState("");
   const [institution, setInstitution] = useState("");
   const [age, setAge] = useState(0);
@@ -83,7 +82,6 @@ const RegisterScreen = () => {
         router.replace("/language");
       })
       .catch((error) => {
-        console.log(error);
         Alert.alert("", error.message);
       });
   };

@@ -7,6 +7,8 @@ jest.mock("@/adapters/userApi", () => ({
   userApi: {
     login: jest.fn(),
     register: jest.fn(),
+    me: jest.fn(),
+    students: jest.fn(),
   },
 }));
 
@@ -109,6 +111,25 @@ describe("userService", () => {
       const result = await userService.register(user);
 
       expect(result).toEqual(expectedResult);
+    });
+  });
+
+  describe("students", () => {
+    it("calls userApi students with token", async () => {
+      const students: User[] = [
+        {
+          id: "1",
+          email: "student@example.com",
+          name: "Student",
+          type: "student",
+        },
+      ];
+      (userApi.students as jest.Mock).mockResolvedValue(students);
+
+      const result = await userService.students("test-token");
+
+      expect(userApi.students).toHaveBeenCalledWith("test-token");
+      expect(result).toEqual(students);
     });
   });
 });

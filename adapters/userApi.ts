@@ -54,4 +54,19 @@ export const userApi: UserApi = {
 
     return (await response.json()).data;
   },
+  students: async (token) => {
+    const response = await fetch(`${API_URL}/users?type=student`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error((await response.json()).error);
+    }
+
+    return (await response.json()).data;
+  },
 };
