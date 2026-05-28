@@ -14,7 +14,6 @@ const RegisterScreen = () => {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [type, setType] = useState<"student" | "professor">("student");
   const [country, setCountry] = useState("");
   const [institution, setInstitution] = useState("");
   const [age, setAge] = useState(0);
@@ -63,7 +62,6 @@ const RegisterScreen = () => {
       !email ||
       !password ||
       !confirmPassword ||
-      !type ||
       !country ||
       !institution ||
       !age
@@ -74,7 +72,7 @@ const RegisterScreen = () => {
       return Alert.alert("", t("passwords_dont_match"));
 
     userService
-      .register({ name, email, password, type, country, institution, age })
+      .register({ name, email, password, country, institution, age })
       .then(async (_user) => {
         const token = await userService.login(email, password);
 
@@ -131,16 +129,6 @@ const RegisterScreen = () => {
           onChangeText={setConfirmPassword}
           value={confirmPassword}
         />
-        <Picker
-          key="type"
-          selectedValue={type}
-          onValueChange={(value) => setType(value)}
-          style={tw`w-full text-black`}
-          mode="dropdown"
-        >
-          <Picker.Item label={t("student")} value="student" />
-          <Picker.Item label={t("professor")} value="professor" />
-        </Picker>
         {availableCountries.length > 0 && (
           <Picker
             key="country"

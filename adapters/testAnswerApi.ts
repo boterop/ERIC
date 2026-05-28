@@ -24,6 +24,6 @@ export const testAnswerApi: AnswerApi = {
 
     return answer;
   },
-  listByDimension: async (dimension, _token) =>
+  listByDimension: async (dimension, _token, _userId) =>
     answers.filter((a) => a.dimension === dimension),
 };

@@ -60,7 +60,7 @@ const ScoreScreen = () => {
       <View
         style={tw`flex items-center justify-center rounded-full bg-[#A1D8F7] p-8`}
       >
-        <AntDesign name="Trophy" size={64} color={color} />
+        <AntDesign name="trophy" size={64} color={color} />
       </View>
       <View style={tw`flex gap-4 items-center justify-center`}>
         <Text style={tw`text-lg capitalize`}>{params.dimension}</Text>

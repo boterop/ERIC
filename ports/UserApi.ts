@@ -1,6 +1,8 @@
 import { User } from "@/domain/User";
 
 export interface UserApi {
-  login(email: string, password: string): Promise<string | null>;
-  register(user: User): Promise<User | null>;
+  login(_email: string, _password: string): Promise<string | null>;
+  register(_user: User): Promise<User | null>;
+  me(_token: string): Promise<User | null>;
+  students(_token: string): Promise<User[]>;
 }

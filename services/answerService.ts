@@ -15,9 +15,13 @@ const answerService = {
     const adapter = process.env.USER === "test" ? testAnswerApi : answerApi;
     return adapter.update(answer, token);
   },
-  listByDimension: async (dimension: Dimension, token: string) => {
+  listByDimension: async (
+    dimension: Dimension,
+    token: string,
+    userId?: string,
+  ) => {
     const adapter = process.env.USER === "test" ? testAnswerApi : answerApi;
-    return adapter.listByDimension(dimension, token);
+    return adapter.listByDimension(dimension, token, userId);
   },
 };
 

@@ -49,14 +49,18 @@ export const answerApi: AnswerApi = {
 
     return (await response.json()).data;
   },
-  listByDimension: async (dimension, token) => {
-    const response = await fetch(`${API_URL}/answers/dimension/${dimension}`, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
+  listByDimension: async (dimension, token, userId) => {
+    const query = userId ? `?user_id=${encodeURIComponent(userId)}` : "";
+    const response = await fetch(
+      `${API_URL}/answers/dimension/${dimension}${query}`,
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
       },
-    });
+    );
 
     if (!response.ok) {
       throw new Error((await response.json()).error);
