@@ -13,6 +13,7 @@ import {
   AntDesign,
   Entypo,
   Feather,
+  FontAwesome,
   MaterialCommunityIcons,
 } from "@expo/vector-icons/";
 import storageService from "@/services/storageService";
@@ -123,7 +124,7 @@ const HomeScreen = () => {
               <View
                 style={tw`h-7 w-7 items-center justify-center rounded-full border border-blue-200 bg-blue-50`}
               >
-                <AntDesign name="play" size={16} color="#007AFF" />
+                <FontAwesome name="play-circle" size={28} color="#007AFF" />
               </View>
             </TouchableOpacity>
           )) || <AnswersLeft style={tw`text-sm`} />}
