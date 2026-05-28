@@ -69,12 +69,6 @@ const StudentsScreen = () => {
 
   const loadStudents = useCallback(async () => {
     const session = await storageService.get("session");
-    const currentUser = await userService.me(session || "");
-
-    if (currentUser?.type !== "professor") {
-      router.replace("/home");
-      return;
-    }
 
     const loadedStudents = await userService.students(session || "");
     setToken(session || "");
