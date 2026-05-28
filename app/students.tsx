@@ -6,7 +6,6 @@ import scoreService from "@/services/scoreService";
 import storageService from "@/services/storageService";
 import userService from "@/services/userService";
 import { AntDesign, Feather, MaterialCommunityIcons } from "@expo/vector-icons";
-import { router } from "expo-router";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import {
