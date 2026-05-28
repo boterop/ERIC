@@ -5,6 +5,7 @@ import "./expo_router";
 import "./formattedText";
 import "./i18n";
 import "./i18next";
+import "./reanimated";
 import "./react-native-svg";
 import "./userService";
 import "./vector-icons";
