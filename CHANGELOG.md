@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.0 (22.06.2026)
+
+- [Create Professor view](https://github.com/boterop/ERIC/pull/37)
+- [Show students score](https://github.com/boterop/ERIC/pull/38)
+
 ## 0.1.4 (24.11.2025)
 
 - [Review answered questions](https://github.com/boterop/ERIC/pull/34)
