@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.1 (22.06.2026)
+
+- Fix API URL
+
 ## 0.3.0 (22.06.2026)
 
 - [Create Professor view](https://github.com/boterop/ERIC/pull/37)
