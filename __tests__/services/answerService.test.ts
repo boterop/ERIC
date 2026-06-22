@@ -135,6 +135,7 @@ describe("answerService", () => {
       expect(answerApi.listByDimension).toHaveBeenCalledWith(
         dimension,
         testToken,
+        undefined,
       );
       expect(testAnswerApi.listByDimension).not.toHaveBeenCalled();
       expect(result).toEqual(answers);
@@ -149,6 +150,7 @@ describe("answerService", () => {
       expect(testAnswerApi.listByDimension).toHaveBeenCalledWith(
         dimension,
         testToken,
+        undefined,
       );
       expect(answerApi.listByDimension).not.toHaveBeenCalled();
       expect(result).toEqual(answers);
@@ -165,8 +167,24 @@ describe("answerService", () => {
       for (const dim of dimensions) {
         (answerApi.listByDimension as jest.Mock).mockResolvedValue([]);
         await answerService.listByDimension(dim, testToken);
-        expect(answerApi.listByDimension).toHaveBeenCalledWith(dim, testToken);
+        expect(answerApi.listByDimension).toHaveBeenCalledWith(
+          dim,
+          testToken,
+          undefined,
+        );
       }
+    });
+
+    it("passes user id when provided", async () => {
+      (answerApi.listByDimension as jest.Mock).mockResolvedValue(answers);
+
+      await answerService.listByDimension(dimension, testToken, "student-1");
+
+      expect(answerApi.listByDimension).toHaveBeenCalledWith(
+        dimension,
+        testToken,
+        "student-1",
+      );
     });
   });
 });

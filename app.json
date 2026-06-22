@@ -2,14 +2,14 @@
   "expo": {
     "name": "ERIC",
     "slug": "ERIC",
-    "version": "0.1.4",
+    "version": "0.3.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sanbope.ERIC"
     },
     "android": {
       "adaptiveIcon": {

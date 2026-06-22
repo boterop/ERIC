@@ -39,4 +39,34 @@ export const userApi: UserApi = {
 
     return (await response.json()).data;
   },
+  me: async (token) => {
+    const response = await fetch(`${API_URL}/users/me`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error((await response.json()).error);
+    }
+
+    return (await response.json()).data;
+  },
+  students: async (token) => {
+    const response = await fetch(`${API_URL}/users/students`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error((await response.json()).error);
+    }
+
+    return (await response.json()).data;
+  },
 };

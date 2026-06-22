@@ -20,10 +20,10 @@ Fixes #
 
 1. Pull this branch.
 2. Install dependencies.
-3. Run `npm run test` to ensure all tests pass.
-4. Run `npm run lint` to ensure code quality.
-5. Run `npm run format` to ensure code formatting.
-6. Run `npm run build` to ensure build process.
+3. Run `yarn test` to ensure all tests pass.
+4. Run `yarn lint` to ensure code quality.
+5. Run `yarn format` to ensure code formatting.
+6. Run `yarn build` to ensure the build process.
 
 ## Screenshots (if applicable)
 

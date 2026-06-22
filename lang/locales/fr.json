@@ -132,12 +132,16 @@
   "register": "Enregistrer",
   "register_login": "Avez-vous déjà un compte? Se connecter",
   "results": "Résultats",
+  "download_only_web": "Le téléchargement est disponible dans la version web.",
+  "no_students": "Il n'y a pas d'étudiants à afficher.",
+  "search": "Rechercher",
   "select_dimension": "Sélectionner la dimension",
   "select_language": "Sélectionnez la langue",
   "select_country": "Sélectionnez le pays",
   "select_institution": "Sélectionnez l'institution",
   "start": "Commencer",
   "student": "Étudiant",
+  "students": "Étudiants",
   "thank_you": "Merci d'avoir terminé l'Échelle des Ressources Interculturelles et la Dimension Critique.",
   "waiting_connection": "En attente de connexion"
 }

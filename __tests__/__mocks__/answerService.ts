@@ -8,7 +8,7 @@ jest.mock("@/services/answerService", () => ({
   ),
   create: jest.fn((answer, _token) => Promise.resolve(answers.push(answer))),
   update: jest.fn((answer, _token) => Promise.resolve(answers.push(answer))),
-  listByDimension: jest.fn((dimension, _token) =>
+  listByDimension: jest.fn((dimension, _token, _userId) =>
     Promise.resolve(answers.filter((a) => a.dimension === dimension)),
   ),
 }));
