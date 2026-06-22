@@ -7,6 +7,8 @@ import universityService from "@/services/universityService";
 import { useTranslation } from "react-i18next";
 import Input from "@/components/ui/Input";
 import { Picker } from "@react-native-picker/picker";
+import countryService from "@/services/countryService";
+import { Country } from "@/domain/Country";
 
 const RegisterScreen = () => {
   const { t } = useTranslation();
@@ -29,11 +31,11 @@ const RegisterScreen = () => {
   useEffect(() => {
     if (initialMount.current) {
       initialMount.current = false;
-      fetch("https://restcountries.com/v3.1/all?fields=name")
-        .then((res) => res.json())
-        .then((data) => {
-          const countries = data.map((country) => country.name.common).sort();
-          setAvailableCountries(countries);
+      countryService
+        .list()
+        .then((data: Country[]) => {
+          const names = data.map((country: Country) => country.name).sort();
+          setAvailableCountries(names);
         })
         .catch((err) => Alert.alert("", err.message));
     }
