@@ -10,7 +10,6 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import {
   Alert,
-  Platform,
   ScrollView,
   Text,
   TextInput,
@@ -126,36 +125,14 @@ const StudentsScreen = () => {
   };
 
   const downloadStudents = () => {
-    if (Platform.OS !== "web") {
-      Alert.alert(t("students"), t("download_only_web"));
-      return;
-    }
-
-    const header = ["Nombre", "Correo", "Pais", "Institucion", "Edad"];
-    const rows = sortedStudents.map((student) => [
-      student.name,
-      student.email,
-      student.country || "",
-      student.institution || "",
-      student.age?.toString() || "",
-    ]);
-    const escapeCell = (value: string) =>
-      value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-    const tableRows = [header, ...rows]
-      .map(
-        (row) =>
-          `<tr>${row.map((cell) => `<td>${escapeCell(cell)}</td>`).join("")}</tr>`,
-      )
-      .join("");
-    const blob = new Blob([`<table>${tableRows}</table>`], {
-      type: "application/vnd.ms-excel",
-    });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = "students.xls";
-    link.click();
-    URL.revokeObjectURL(url);
+    scoreService
+      .generateExcel(token)
+      .catch((err) => {
+        Alert.alert(t("professor"), err.message);
+      })
+      .finally(() => {
+        Alert.alert(t("professor"), t("excel_sent_by_email"));
+      });
   };
 
   const Score = ({ score, color }: { score: number; color: string }) => (

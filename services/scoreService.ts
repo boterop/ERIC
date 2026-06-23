@@ -8,6 +8,7 @@ const scoreService: Score = {
   toLevel: (score: number) => adapter.toLevel(score),
   calculate: (dimension: Dimension, answers: Answer[]) =>
     adapter.calculate(dimension, answers),
+  generateExcel: (token: string) => adapter.generateExcel(token),
 };
 
 export default scoreService;
