@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.2 (23.06.2026)
+
+- Fix minor bugs
+
 ## 0.3.1 (22.06.2026)
 
 - Fix API URL
