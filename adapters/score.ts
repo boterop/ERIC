@@ -1,3 +1,4 @@
+import { API_URL } from "@/config/api";
 import { Answer, Dimension } from "@/domain/Answer";
 import { Level } from "@/domain/Level";
 import { Score } from "@/ports/Score";
@@ -40,6 +41,19 @@ const score: Score = {
     const qualification = calc(dimension, dimensionAnswers) / length;
 
     return qualification;
+  },
+  generateExcel: async (token: string) => {
+    const response = await fetch(`${API_URL}/gen-excel`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error(response.statusText);
+    }
   },
 };
 
