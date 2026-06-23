@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.0 (23.06.2026)
+
+- [Professors can now download all students' results as a CSV file.](https://github.com/boterop/ERIC/pull/46)
+
 ## 0.3.2 (23.06.2026)
 
 - Fix minor bugs
