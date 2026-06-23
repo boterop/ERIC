@@ -12,11 +12,8 @@ const LoginScreen = () => {
   const [password, setPassword] = useState("");
 
   const handleLogin = async () => {
-    if (email === "test@test.com" && password === "test") {
+    if (email === "test@test.com") {
       process.env.USER = "test";
-      storageService.save("session", email);
-      router.replace("/language");
-      return;
     }
     userService
       .login(email, password)
