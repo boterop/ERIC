@@ -2,7 +2,7 @@
   "expo": {
     "name": "ERIC",
     "slug": "ERIC",
-    "version": "0.3.2",
+    "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",

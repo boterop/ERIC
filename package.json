@@ -1,7 +1,7 @@
 {
   "name": "eric",
   "main": "expo-router/entry",
-  "version": "0.3.2",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "start": "expo start",
