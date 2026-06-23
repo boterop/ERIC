@@ -124,16 +124,15 @@ const StudentsScreen = () => {
     setScores(nextScores);
   };
 
-  const downloadStudents = () => {
+  const downloadStudents = () =>
     scoreService
       .generateExcel(token)
+      .then(() => {
+        Alert.alert(t("professor"), t("excel_sent_by_email"));
+      })
       .catch((err) => {
         Alert.alert(t("professor"), err.message);
-      })
-      .finally(() => {
-        Alert.alert(t("professor"), t("excel_sent_by_email"));
       });
-  };
 
   const Score = ({ score, color }: { score: number; color: string }) => (
     <ProgressCircle
