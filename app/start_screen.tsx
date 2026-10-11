@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Linking, Text, TouchableOpacity, View } from "react-native";
 
-const PORTFOLIO = "https://www.boterop.io";
+const PORTFOLIO = "https://www.boterop.com";
 
 const StartScreen = () => {
   const { t } = useTranslation();
